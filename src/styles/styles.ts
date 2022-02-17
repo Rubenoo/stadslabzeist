@@ -27,12 +27,12 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #f1cfe5;
         overflow-x: hidden;
     }
 
     a:hover {
-        color: #18216d;
+        color: #FFF;
     }
 
     input,
@@ -104,6 +104,7 @@ export const Styles = createGlobalStyle`
         flex-direction: column;
         text-align: left;
         padding-top: 1.5rem;
+        background-color: #f1cfe5;
     }
 
     .ant-drawer-content-wrapper {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Row, Col, Drawer } from "antd";
+import { Row, Col, Drawer, Image } from "antd";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -37,22 +37,20 @@ const Header = ({ t }: any) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("introductie")}>
+          <Span>HALLO</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mission")}</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("hoe")}>
+          <Span>HOE</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("overons")}>
+          <Span>OVER ONS</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
-        >
-          <Span>
-            <Button>{t("Contact")}</Button>
-          </Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("resultaten")}>
+          <Span>RESULTATEN</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={() => scrollTo("roadmap")}>
+          <Span>ROADMAP</Span>
         </CustomNavLinkSmall>
       </>
     );
@@ -63,7 +61,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <Image width={80} preview={false} loading="lazy" src="https://stadslabzeist.nl/wordpress/wp-content/uploads/2020/12/StadslabZeist_Rood_RGB_groot-1.png" alt="" title="StadslabZeist"/>
           </LogoContainer>
           <NotHidden>
             <MenuItem />
