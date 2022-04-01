@@ -22,11 +22,11 @@ const MiddleBlock = ({ title, content, button, t, id, fullWidth }: MiddleBlockPr
   };
   return (
     <MiddleBlockSection>
-      <Slide direction="up">
+      <Slide direction="up" style={{ width: "100%", height: "100%", }}>
         <Row justify="center" align="middle" id={id}>
-          <ContentWrapper fullWidth={fullWidth}>
+          <ContentWrapper fullWidth={fullWidth} style={{ width: "100%", height: "100%", }}>
             <Col lg={24} md={24} sm={24} xs={24}>
-              <h6>{(title && title)}</h6>
+              {(title && <h6>{title}</h6>)}
               <Content>{content}</Content>
               {button && (
                 <Button name="submit" onClick={() => scrollTo("mission")}>

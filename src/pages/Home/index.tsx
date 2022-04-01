@@ -10,7 +10,9 @@ import HoeContent from "../../content/HoeContent.json";
 import OveronsContent from "../../content/OveronsContent.json";
 import Results from "../../components/results/results";
 import { Button } from "../../common/Button";
-import { Row, Image } from 'antd';
+import { Row, Image, Col } from 'antd';
+import { Content } from "antd/lib/layout/layout";
+import Samen from "./samen";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -22,24 +24,10 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
-      <iframe width="100%" height="431px" src="https://www.youtube.com/embed/f-aTBG3nx3k?autoplay=1&mute=1" title="YouTube video player" allow="autoplay"></iframe>
-      <ContentBlock
-        type="right"
-        title={"‘WIE WIL JIJ EEN HART ONDER DE RIEM STEKEN?’"}
-        content={<>
-                  <Row justify="center">
-                    HART VOOR ZEIST:  JANUARI T/M 9 FEBRUARI 2021
-                  </Row>
-                  <Row justify="center">
-                    <Button>BEKIJK HIER HET PROJECT</Button>
-                  </Row>
-                </>}
-        secondContent={<>
-            <Image height={"100%"} src="https://stadslabzeist.nl/wordpress/wp-content/uploads/2021/01/sidebar-stock0hart.jpg" /> 
-        </>}
-        icon="product-launch.svg"
-        id="hart"
-      />
+      <div className="ratio ratio-21x9">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/f-aTBG3nx3k?autoplay=1&mute=1" title="YouTube video player" allow="autoplay"></iframe>
+      </div>      
+      <Samen/>
       <ContentBlock
         type="left"
         title={HalloContent.title}

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const RightBlockContainer = styled("section")`
+export const RightBlockContainer =  styled("section")<{ backgroundColor?: string}>`
   position: relative;
   padding: 10rem 0 8rem;
-
+  ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor)};
   @media only screen and (max-width: 1024px) {
     padding: 8rem 0 6rem;
   }
