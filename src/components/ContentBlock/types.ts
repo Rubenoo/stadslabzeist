@@ -9,4 +9,6 @@ export interface ContentBlockProps {
   id: string;
   type?: string;
   backgroundColor?: string;
+  backgroundSVG?: string;
+  fadeRight?: boolean;
 }

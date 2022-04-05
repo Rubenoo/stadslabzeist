@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col } from "antd";
-import { CoffeeOutlined, SmileOutlined, BulbOutlined } from '@ant-design/icons';
+import { Row, Col, Divider } from "antd";
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
@@ -13,48 +12,69 @@ const Results = () => {
         setVisible(isVisible)
     }
     return (
-        <VisibilitySensor partialVisibility onChange={onChange} offset={{ bottom: 200 }}>
-            <Row align="middle" justify="space-around">               
-                <Col lg={4} md={4} sm={4} xs={4}> 
-                    <Row justify="space-around">
-                        <Col span={24}> 
-                            <CoffeeOutlined style={{ fontSize: "64px", paddingBottom: "21px", }}/>
+        <VisibilitySensor partialVisibility onChange={onChange} offset={{ bottom: 100 }}>
+            <div className='d-flex flex-column flex-md-row justify-content-around align-items-center'>               
+                <Col lg={4} md={6} sm={8} xs={10}> 
+                    <Row justify="space-around" align="middle">
+                        <Col className={"px-4"} span={24}> 
+                            <Divider style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
-                        <Col span={24}>                          
-                            {visible ? <CountUp end={186} duration={3} /> : null}
+                        <Col span={24}>   
+                            <h1>                       
+                                {
+                                    visible ? <CountUp end={11} duration={3} /> : null
+                                }
+                            </h1>
                         </Col>
                         <Col span={24}>  
-                            <p>Koffies</p>                      
+                            <p>AFGERONDEN PROJECTEN</p>                      
+                        </Col>
+                        <Col className={"px-4 d-md-flex d-none"} span={24}> 
+                            <Divider style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={4} md={4} sm={4} xs={4}>
-                    <Row justify="space-around">
-                        <Col span={24}> 
-                            <SmileOutlined style={{ fontSize: "64px", paddingBottom: "21px", marginTop: "0.5em"}}/>
+                <Col lg={4} md={6} sm={8} xs={10}> 
+                    <Row justify="space-around" align="middle">
+                        <Col className={"px-4"} span={24}> 
+                            <Divider style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
-                        <Col span={24}> 
-                            {visible ? <CountUp end={29} duration={3} /> : null}
+                        <Col span={24}>   
+                            <h1>                       
+                                {
+                                    visible ? <CountUp end={32} duration={3} /> : null
+                                }
+                            </h1>
                         </Col>
-                        <Col span={24}> 
-                            <p>Nieuwe verbindingen</p>
+                        <Col span={24}>  
+                            <p>NIEUWE VERBINDINGEN</p>                      
                         </Col>
-                    </Row>
-                </Col>
-                <Col lg={4} md={4} sm={4} xs={4}>
-                    <Row justify="space-around">
-                        <Col span={24}> 
-                            <BulbOutlined style={{ fontSize: "64px", paddingBottom: "21px", }}/>
-                        </Col>
-                        <Col span={24}> 
-                            {visible ? <CountUp end={2} duration={3} /> : null}
-                        </Col>
-                        <Col span={24}> 
-                            <p>projecten</p>
+                        <Col className={"px-4 d-md-flex d-none"} span={24}> 
+                            <Divider style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                     </Row>
                 </Col>
-            </Row>
+                <Col lg={4} md={6} sm={8} xs={10}> 
+                    <Row justify="space-around" align="middle">
+                        <Col className={"px-4"} span={24}> 
+                            <Divider style={{ borderTop: "4px solid #1B3888" }} />
+                        </Col>
+                        <Col span={24}>   
+                            <h1>                       
+                                {
+                                    visible ? <CountUp end={83} duration={3} /> : null
+                                }
+                            </h1>
+                        </Col>
+                        <Col span={24}>  
+                            <p>VERBONDEN STADMAKERS</p>                      
+                        </Col>
+                        <Col className={"px-4"} span={24}> 
+                            <Divider style={{ borderTop: "4px solid #1B3888" }} />
+                        </Col>
+                    </Row>
+                </Col>
+            </div>
         </VisibilitySensor>
     )
 }

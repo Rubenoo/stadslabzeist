@@ -24,6 +24,8 @@ const LeftContentBlock = ({
   secondContent,
   t,
   id,
+  backgroundColor,
+  backgroundSVG,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -32,7 +34,7 @@ const LeftContentBlock = ({
     });
   };
   return (
-    <LeftContentSection>
+    <LeftContentSection backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
       <Fade direction="left">
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={12} xs={24}>
@@ -48,7 +50,7 @@ const LeftContentBlock = ({
                     return (
                       <Button
                         key={id}
-                        color={item.color}
+                        backgroundColor={item.color}
                         fixedWidth={true}
                         onClick={() => scrollTo("about")}
                       >

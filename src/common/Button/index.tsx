@@ -2,12 +2,13 @@ import { StyledButton } from "./styles";
 import { ButtonProps } from "../types";
 
 export const Button = ({
-  color,
+  backgroundColor,
+  textColor,
   fixedWidth,
   children,
   onClick,
 }: ButtonProps) => (
-  <StyledButton color={color} fixedWidth={fixedWidth} onClick={onClick}>
+  <StyledButton backgroundColor={backgroundColor} textColor={textColor} fixedWidth={fixedWidth} onClick={onClick}>
     {children}
   </StyledButton>
 );

@@ -20,6 +20,8 @@ const RightBlock = ({
   t,
   id,
   backgroundColor,
+  backgroundSVG,
+  fadeRight,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -28,8 +30,8 @@ const RightBlock = ({
     });
   };
   return (
-    <RightBlockContainer backgroundColor={backgroundColor}>
-      <Fade direction="right">
+    <RightBlockContainer backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
+      <Fade direction={fadeRight ? "right" : "left"}>
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
@@ -41,7 +43,7 @@ const RightBlock = ({
                     return (
                       <Button
                         key={id}
-                        color={item.color}
+                        backgroundColor={item.color}
                         fixedWidth={true}
                         onClick={() => scrollTo("about")}
                       >

@@ -4,13 +4,13 @@ export const Styles = createGlobalStyle`
 
     @font-face {
         font-family: "Neue Haas";
-        src: url("/fonts/Motiva-Sans-Light.ttf") format("truetype");
+        src: url("/fonts/Neue-Haas.ttf") format("truetype");
         font-style: normal;
     }
 
     @font-face {
         font-family: "Neue Haas Bold";
-        src: url("/fonts/Motiva-Sans-Bold.ttf") format("truetype");
+        src: url("/fonts/Neue-Haas-Bold.ttf") format("truetype");
         font-style: normal;
     }
 

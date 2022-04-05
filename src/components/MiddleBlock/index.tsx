@@ -10,10 +10,12 @@ interface MiddleBlockProps {
   button: string;
   t: any;
   id: string;
+  backgroundColor?: string;
   fullWidth?: boolean;
+  fullHeight?: boolean;
 }
 
-const MiddleBlock = ({ title, content, button, t, id, fullWidth }: MiddleBlockProps) => {
+const MiddleBlock = ({ title, content, button, t, id, fullWidth, fullHeight, backgroundColor }: MiddleBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -21,10 +23,10 @@ const MiddleBlock = ({ title, content, button, t, id, fullWidth }: MiddleBlockPr
     });
   };
   return (
-    <MiddleBlockSection>
-      <Slide direction="up" style={{ width: "100%", height: "100%", }}>
+    <MiddleBlockSection backgroundColor={backgroundColor}>
+      <Slide triggerOnce delay={300} direction="up" style={{ width: "100%", height: "100%", }}>
         <Row justify="center" align="middle" id={id}>
-          <ContentWrapper fullWidth={fullWidth} style={{ width: "100%", height: "100%", }}>
+          <ContentWrapper fullHeight={fullHeight} fullWidth={fullWidth} style={{ width: "100%", height: "100%", }}>
             <Col lg={24} md={24} sm={24} xs={24}>
               {(title && <h6>{title}</h6>)}
               <Content>{content}</Content>

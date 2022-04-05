@@ -1,15 +1,22 @@
 import styled from "styled-components";
 
-export const RightBlockContainer =  styled("section")<{ backgroundColor?: string}>`
+export const RightBlockContainer =  styled("section")<{ backgroundColor?: string, backgroundSVG?: string}>`
   position: relative;
-  padding: 10rem 0 8rem;
-  ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor)};
+  padding: 10rem 2rem 8rem;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
+  ${(props) => (props.backgroundSVG && "background-image: url(/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
+
   @media only screen and (max-width: 1024px) {
-    padding: 8rem 0 6rem;
+    padding: 8rem 2rem 6rem;
+    min-height: 400px;
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 4rem 0 3rem;
+    padding: 4rem 2rem 3rem;
+    min-height: 400px;
   }
 `;
 

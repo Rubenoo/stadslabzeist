@@ -4,7 +4,8 @@ export interface ContainerProps {
 }
 
 export interface ButtonProps {
-  color?: string;
+  backgroundColor?: string;
+  textColor?: string;
   fixedWidth?: boolean;
   name?: string;
   children: React.ReactNode;
