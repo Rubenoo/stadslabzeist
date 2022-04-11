@@ -61,7 +61,7 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <Image width={80} preview={false} loading="lazy" src="https://stadslabzeist.nl/wordpress/wp-content/uploads/2020/12/StadslabZeist_Rood_RGB_groot-1.png" alt="" title="StadslabZeist"/>
+            <Image width={80} preview={false} loading="lazy" src="/img/logo.png" alt="" title="StadslabZeist"/>
           </LogoContainer>
           <NotHidden>
             <MenuItem />

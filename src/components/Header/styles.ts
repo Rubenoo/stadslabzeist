@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
 
   .ant-row-space-between {
     align-items: center;
