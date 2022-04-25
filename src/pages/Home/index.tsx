@@ -7,6 +7,8 @@ import OveronsContent from "../../content/OveronsContent.json";
 import Results from "../../components/results/results";
 import Samen from "./samen";
 import Idee from "./idee";
+import WieZijnWij from "./wiezijnwij";
+import VrijMiBo from "./vrijmibo";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -33,51 +35,20 @@ const Home = () => {
         id="resultaten"
         backgroundColor="#5DC0E1"
       />
-        <MiddleBlock
-        title={""}
-        content={<div>
-                  <img loading='lazy' src="/img/smiley.gif" style={{ backgroundRepeat: 'repeat-x', height: '539px', width: '100%', }} alt="smiley"></img>
-                </div>
-                }
-        button={""}
-        fullWidth={true}
-        fullHeight={true}
-        id="smiley"
-        backgroundColor="#5DC0E1"
-      />
-      <ContentBlock
-        type="left"
-        title={HalloContent.title}
-        content={HalloContent.text}
-        icon="waving.svg"
-        id="introductie"
-      />
-      <ContentBlock
-        type="right"
-        title={HoeContent.title}
-        content={HoeContent.text}
-        icon="waving.svg"
-        id="hoe"
-      />
-      <ContentBlock
-        type="left"
-        title={OveronsContent.title}
-        content={OveronsContent.text}
-        icon="waving.svg"
-        id="overons"
-        button={OveronsContent.button}
-      />
+      <WieZijnWij/>
       <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        button={"roadmap"}
-        id="roadmap"
+      title={""}
+      content={<div>
+                <img loading='lazy' src="/img/smiley.gif" style={{ backgroundRepeat: 'repeat-x', height: '539px', width: '100%', }} alt="smiley"></img>
+              </div>
+              }
+      button={""}
+      fullWidth={true}
+      fullHeight={true}
+      id="smiley"
+      backgroundColor="#5DC0E1"
       />
-      <Contact
-        title={ContactContent.title}
-        content={ContactContent.text}
-        id="contact"
-      />
+     <VrijMiBo/>
     </Container>
   );
 };

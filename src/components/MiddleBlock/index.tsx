@@ -13,9 +13,11 @@ interface MiddleBlockProps {
   backgroundColor?: string;
   fullWidth?: boolean;
   fullHeight?: boolean;
+  backgroundSVG?: string;
 }
 
-const MiddleBlock = ({ title, content, button, t, id, fullWidth, fullHeight, backgroundColor }: MiddleBlockProps) => {
+const MiddleBlock = ({ title, content, button, t, id, fullWidth, fullHeight, backgroundColor,   backgroundSVG,
+}: MiddleBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -23,7 +25,7 @@ const MiddleBlock = ({ title, content, button, t, id, fullWidth, fullHeight, bac
     });
   };
   return (
-    <MiddleBlockSection backgroundColor={backgroundColor}>
+    <MiddleBlockSection backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
       <Slide triggerOnce delay={300} direction="up" style={{ width: "100%", height: "100%", }}>
         <Row justify="center" align="middle" id={id}>
           <ContentWrapper fullHeight={fullHeight} fullWidth={fullWidth} style={{ width: "100%", height: "100%", }}>

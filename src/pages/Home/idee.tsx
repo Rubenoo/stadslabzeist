@@ -11,11 +11,11 @@ const Idee = () => {
         content={<div>
                   <h1 className={"text-white"}>HEB JIJ EEN IDEE?</h1>
                 </div>}
-        secondContent={<div>
-                        <div className="d-flex justify-content-end">
+        secondContent={
+                        <div className="d-flex justify-content-end pt-sm-5 pt-0">
                           <Button backgroundColor={"#fff"} textColor={"#1B3888"}>JA IK HEB EEN IDEE!</Button>
                         </div>
-                      </div>}
+                      }
         icon="Website-Achtergrond-blauw.svg"
         id="idee"
         backgroundSVG="Website-Achtergrond-blauw.svg"

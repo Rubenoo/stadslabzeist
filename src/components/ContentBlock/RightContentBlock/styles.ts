@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const RightBlockContainer =  styled("section")<{ backgroundColor?: string, backgroundSVG?: string}>`
   position: relative;
   padding: 10rem 2rem 8rem;
-  min-height: 800px;
+  max-height: 800px;
+
   display: flex;
   align-items: center;
   ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
@@ -26,6 +27,7 @@ export const Content = styled("p")`
 
 export const ContentWrapper = styled("div")`
   position: relative;
+  width: 100%;
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {

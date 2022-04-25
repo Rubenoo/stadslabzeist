@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export const MiddleBlockSection = styled("section")<{ backgroundColor?: string}>`
+export const MiddleBlockSection = styled("section")<{ backgroundColor?: string, backgroundSVG?: string}>`
   position: relative;
   ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
-  padding: 7.5rem 0 3rem;
+  ${(props) => (props.backgroundSVG && "background-image: url(/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
+
+  padding: 7.5rem 0 0rem;
   text-align: center;
   display: flex;
   justify-content: center;
+  height: 800px;
   
   @media screen and (max-width: 1024px) {
     padding: 5.5rem 0 3rem;
