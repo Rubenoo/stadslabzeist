@@ -4,9 +4,10 @@ export const RightBlockContainer =  styled("section")<{ backgroundColor?: string
   position: relative;
   padding: 10rem 2rem 8rem;
   max-height: 800px;
-
   display: flex;
   align-items: center;
+  height: 800px;
+
   ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
   ${(props) => (props.backgroundSVG && "background-image: url(/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
 

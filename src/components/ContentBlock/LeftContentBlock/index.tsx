@@ -31,12 +31,13 @@ const LeftContentBlock = ({
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     });
   };
   return (
     <LeftContentSection backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
-      <Fade direction="left">
-        <Row justify="space-between" align="middle" id={id}>
+      <Fade className="w-100" direction="left">
+        <Row justify="space-between" align="middle" style={{scrollMarginTop: '120px'}} id={id}>
           <Col lg={11} md={11} sm={12} xs={24}>
             {secondContent ? secondContent : <SvgIcon src={icon} width="100%" height="100%" />}
           </Col>

@@ -32,11 +32,22 @@ const Home = () => {
                 </>}
         button={"ZIN OM MEE TE DOEN?"}
         fullWidth={true}
+        fullHeight={true}
         id="resultaten"
         backgroundColor="#5DC0E1"
       />
       <WieZijnWij/>
-      <MiddleBlock
+      
+     <VrijMiBo/>
+    </Container>
+  );
+};
+
+export default Home;
+//<div className='img-fluid' style={{ backgroundImage: 'url(/img/smiley.gif)', backgroundRepeat: 'repeat-x', height: '539px', width: '100%'}}>
+//</div>
+/*
+<MiddleBlock
       title={""}
       content={<div>
                 <img loading='lazy' src="/img/smiley.gif" style={{ backgroundRepeat: 'repeat-x', height: '539px', width: '100%', }} alt="smiley"></img>
@@ -48,11 +59,4 @@ const Home = () => {
       id="smiley"
       backgroundColor="#5DC0E1"
       />
-     <VrijMiBo/>
-    </Container>
-  );
-};
-
-export default Home;
-//<div className='img-fluid' style={{ backgroundImage: 'url(/img/smiley.gif)', backgroundRepeat: 'repeat-x', height: '539px', width: '100%'}}>
-//</div>
+*/

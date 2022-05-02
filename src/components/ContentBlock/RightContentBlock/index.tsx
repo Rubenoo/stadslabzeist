@@ -27,12 +27,13 @@ const RightBlock = ({
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     });
   };
   return (
     <RightBlockContainer backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
-      <Fade direction={fadeRight ? "right" : "left"}>
-        <Row justify="space-between" align="middle" id={id}>
+      <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
+        <Row justify="space-between" align="middle" style={{scrollMarginTop: '120px'}} id={id}>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h6>{t(title)}</h6>

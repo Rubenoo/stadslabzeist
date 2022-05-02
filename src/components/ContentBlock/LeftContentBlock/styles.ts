@@ -3,16 +3,20 @@ import styled from "styled-components";
 export const LeftContentSection = styled("section")<{ backgroundColor?: string, backgroundSVG?: string}>`
   position: relative;
   padding: 10rem 2rem 8rem;
+  max-height: 800px;
+  height: 800px;
 
   ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
   ${(props) => (props.backgroundSVG && "background-image: url(/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
   
   @media only screen and (max-width: 1024px) {
     padding: 8rem 2rem 6rem;
+    min-height: 400px;
   }
 
   @media only screen and (max-width: 768px) {
     padding: 4rem 2rem 3rem;
+    min-height: 400px;
   }
 `;
 
@@ -32,6 +36,8 @@ export const ContentWrapper = styled("div")`
 export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: space-between;
+  width: 100%;
+
   max-width: 100%;
 `;
 

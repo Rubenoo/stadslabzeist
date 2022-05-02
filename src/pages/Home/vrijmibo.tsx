@@ -7,7 +7,7 @@ const VrijMiBo = () => {
   return (
       <MiddleBlock
         title={""}
-        content={<div className="d-flex h-100 w-100 align-items-center justify-content-center">
+        content={<div style={{height: "650px", }} className="d-flex w-100 align-items-center justify-content-center">
                   <h1 style={{color: "RGBA(240, 207,229,1)"}}>ZIEN WE JE OP DE VRIJMIBO?</h1>
                 </div>}
         id="idee"

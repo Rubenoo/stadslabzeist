@@ -7,10 +7,8 @@ const Samen = () => {
   return (
       <ContentBlock
         type="right"
-        title={""}
-        content={<div>
-                    <h1>SAMEN MAKEN WE DE STAD!</h1>
-                </div>}
+        title={"SAMEN MAKEN WE DE STAD!"}
+        content={null}
         secondContent={<div>
                         <p>
                           Welkom bij Stadslab Zeist. Wij zijn een beweging
