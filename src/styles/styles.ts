@@ -13,7 +13,11 @@ export const Styles = createGlobalStyle`
         src: url("/fonts/Neue-Haas-Bold.ttf") format("truetype");
         font-style: normal;
     }
-
+    @font-face {
+        font-family: "Neue Haas Medium";
+        src: url("/fonts/Neue-Haas-Medium.ttf") format("truetype");
+        font-style: normal;
+    }
 
     body,
     html,
@@ -47,7 +51,6 @@ export const Styles = createGlobalStyle`
 
         :focus-within {
             background: none;
-            box-shadow: #2e186a 0px 0px 0px 1px;
         }
     }
 

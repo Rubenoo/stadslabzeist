@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const LeftContentSection = styled("section")<{ backgroundColor?: string, backgroundSVG?: string}>`
   position: relative;
-  padding: 10rem 2rem 8rem;
-  max-height: 800px;
-  height: 800px;
+  padding: 10rem 8rem 8rem;
+  height: 100%;
 
   ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
   ${(props) => (props.backgroundSVG && "background-image: url(/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
@@ -27,6 +26,7 @@ export const Content = styled("p")`
 export const ContentWrapper = styled("div")`
   position: relative;
   max-width: 540px;
+  height: 100%;
 
   @media only screen and (max-width: 575px) {
     padding-top: 4rem;

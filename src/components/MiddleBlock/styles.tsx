@@ -9,16 +9,29 @@ export const MiddleBlockSection = styled("section")<{ backgroundColor?: string, 
   text-align: center;
   display: flex;
   justify-content: center;
-  height: ${(props) => (props.fullBackground ? "1200px" : "800px")};
+  height: 100%;
 
   @media screen and (max-width: 1024px) {
     padding: 5.5rem 0 3rem;
-    height: 800px;
   }
 `;
 
 export const Content = styled("p")`
   padding: 0;
+`;
+export const PhotoContainer = styled("div")`
+  position: relative;
+  top: -88px;
+  @media screen and (min-width: 992px) {
+    top: -120px;
+  }
+`;
+export const SecondContentContainer = styled("div")<{ top: string,}>`
+  position: relative;
+  top: 0;
+  @media screen and (min-width: 992px) {
+    ${(props) => (props.top && "top: " + props.top + ";")}
+  }
 `;
 
 export const ContentWrapper = styled("div")<{ fullWidth?: boolean, fullHeight?: boolean}>`

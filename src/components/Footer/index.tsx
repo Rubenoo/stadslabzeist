@@ -1,24 +1,12 @@
-import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
-
-import i18n from "i18next";
-import {
-  FooterSection,
-  Title,
+import {  
   NavLink,
   Extra,
-  LogoContainer,
-  Para,
-  Large,
-  Chat,
-  Empty,
+  LogoContainer,  
   FooterContainer,
-  Language,
-  Label,
-  LanguageSwitch,
-  LanguageSwitchContainer,
+  FooterLink,  
 } from "./styles";
 
 interface SocialLinkProps {
@@ -26,10 +14,7 @@ interface SocialLinkProps {
   src: string;
 }
 
-const Footer = ({ t }: any) => {
-  const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
-  };
+const Footer = ({ show }: any) => {
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
@@ -39,6 +24,7 @@ const Footer = ({ t }: any) => {
         rel="noopener noreferrer"
         key={src}
         aria-label={src}
+        className={"pe-3"}
       >
         <SvgIcon src={src} width="50px" height="50px" />
       </a>
@@ -47,93 +33,10 @@ const Footer = ({ t }: any) => {
 
   return (
     <>
-      <FooterSection>
-        <Container>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
-              <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
-              </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Policy")}</Title>
-              <Large to="/" left="true">
-                {t("Application Security")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Software Principles")}
-              </Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Empty />
-              <Large left="true" to="/">
-                {t("Support Center")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Customer Support")}
-              </Large>
-            </Col>
-          </Row>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Empty />
-              <Language>{t("Address")}</Language>
-              <Para>Rancho Santa Margarita</Para>
-              <Para>2131 Elk Street</Para>
-              <Para>California</Para>
-            </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{t("Company")}</Title>
-              <Large left="true" to="/">
-                {t("About")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Blog")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Press")}
-              </Large>
-              <Large left="true" to="/">
-                {t("Careers & Culture")}
-              </Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
-              <LanguageSwitchContainer>
-                <LanguageSwitch onClick={() => handleChange("en")}>
-                  <SvgIcon
-                    src="united-states.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-                <LanguageSwitch onClick={() => handleChange("es")}>
-                  <SvgIcon
-                    src="spain.svg"
-                    aria-label="homepage"
-                    width="30px"
-                    height="30px"
-                  />
-                </LanguageSwitch>
-              </LanguageSwitchContainer>
-            </Col>
-          </Row>
-        </Container>
-      </FooterSection>
-      <Extra>
-        <Container border={true}>
-          <Row
-            justify="space-between"
-            align="middle"
-            style={{ paddingTop: "3rem" }}
-          >
-            <NavLink to="/">
+      <Extra show={show}>
+        <Container border={true} >
+          <div className="d-flex flex-row justify-content-between align-items-center py-2">
+            <NavLink className="w-100" to="/">
               <LogoContainer>
                 <SvgIcon
                   src="logo.svg"
@@ -143,7 +46,18 @@ const Footer = ({ t }: any) => {
                 />
               </LogoContainer>
             </NavLink>
-            <FooterContainer>
+            <div className="w-100 text-nowrap text-center d-lg-flex flex-column align-items-center justify-content-center d-none">
+              <div className={"d-none d-lg-block"}>
+                <div>
+                  <FooterLink className="w-100" style={{fontSize: "19px"}} target="_blank" href="http://maps.google.nl/?q=EMMAPLEIN 206, 3701 DH ZEIST">EMMAPLEIN 206, 3701 DH ZEIST</FooterLink>
+                </div>
+                <div>
+                  <FooterLink className="w-100" style={{fontSize: "19px"}} target="_blank" href="mailto: WIJZIJN@STADSLABZEIST.NL">WIJZIJN@STADSLABZEIST.NL</FooterLink>
+                </div>
+              </div>
+              
+            </div>
+            <FooterContainer className="w-100" >
               <SocialLink
                 href="https://www.instagram.com/stadslabzeist/"
                 src="instagram.svg"
@@ -152,8 +66,16 @@ const Footer = ({ t }: any) => {
                 href="https://www.linkedin.com/company/stadslab-zeist/"
                 src="linkedin.svg"
               />
-            </FooterContainer>
-          </Row>
+            </FooterContainer>            
+          </div>
+          <div className={"d-lg-none d-block text-center pb-2"}>
+                <div>
+                  <FooterLink style={{fontSize: "13px"}} className="w-100" target="_blank" href="http://maps.google.nl/?q=EMMAPLEIN 206, 3701 DH ZEIST">EMMAPLEIN 206, 3701 DH ZEIST</FooterLink>
+                </div>
+                <div>
+                  <FooterLink style={{fontSize: "13px"}} className="w-100" target="_blank" href="mailto: WIJZIJN@STADSLABZEIST.NL">WIJZIJN@STADSLABZEIST.NL</FooterLink>
+                </div>
+              </div>
         </Container>
       </Extra>
     </>

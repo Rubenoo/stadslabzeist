@@ -4,7 +4,10 @@ import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
   padding: 1rem 2rem;
-
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
   .ant-row-space-between {
     align-items: center;
     text-align: center;
@@ -43,20 +46,10 @@ export const ContactWrapper = styled("div")<any>`
 `;
 
 export const Burger = styled("div")`
-  @media only screen and (max-width: 890px) {
-    display: block;
-  }
-
-  display: none;
+  display: block;
 
   svg {
-    fill: #e74241;
-  }
-`;
-
-export const NotHidden = styled("div")`
-  @media only screen and (max-width: 890px) {
-    display: none;
+    fill: #fff;
   }
 `;
 
@@ -72,6 +65,7 @@ export const CustomNavLinkSmall = styled(NavLink)`
   color: #FF0000;
   transition: color 0.2s ease-in;
   margin: 0.5rem 2rem;
+  font-family: Neue Haas Bold;
 
   @media only screen and (max-width: 768px) {
     margin: 1.25rem 2rem;

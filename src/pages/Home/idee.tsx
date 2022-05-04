@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import { Button } from "../../common/Button";
+import { SecondContentContainer } from "../../components/MiddleBlock/styles";
 
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
@@ -8,13 +9,20 @@ const Idee = () => {
       <ContentBlock
         type="right"
         title={""}
-        content={<div>
-                  <h1 className={"text-white"}>HEB JIJ EEN IDEE?</h1>
-                </div>}
+        content={<>
+                  <div className={"d-none d-lg-block"}>
+                    <h1 style={{fontSize: "173px"}} className={"text-white text-nowrap"}>HEB JIJ</h1>
+                    <h1 style={{fontSize: "173px"}} className={"text-white text-nowrap"}>EEN IDEE?</h1>
+                  </div>
+                  <div className={"d-lg-none d-block"}>
+                    <h1 style={{fontSize: "69px"}} className={"text-white text-nowrap"}>HEB JIJ</h1>
+                    <h1 style={{fontSize: "69px"}} className={"text-white text-nowrap"}>EEN IDEE?</h1>
+                  </div>
+                </>}
         secondContent={
-                        <div className="d-flex justify-content-end pt-sm-5 pt-0">
+                        <SecondContentContainer top="25vh" className="d-flex justify-content-end align-items-end pt-sm-5 pt-0">
                           <Button backgroundColor={"#fff"} textColor={"#1B3888"}>JA IK HEB EEN IDEE!</Button>
-                        </div>
+                        </SecondContentContainer>
                       }
         icon="Website-Achtergrond-blauw.svg"
         id="idee"

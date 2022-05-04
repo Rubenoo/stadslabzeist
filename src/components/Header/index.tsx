@@ -8,7 +8,6 @@ import {
   HeaderSection,
   LogoContainer,
   Burger,
-  NotHidden,
   Menu,
   CustomNavLinkSmall,
   Label,
@@ -29,28 +28,25 @@ const Header = ({ t }: any) => {
 
   const MenuItem = () => {
     const scrollTo = (id: string) => {
+      window.fullpage_api.moveTo(id, 0);
       setVisibility(false);
-      const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      }); 
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("introductie")}>
-          <Span>HALLO</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("2")}>
+          <Span>SAMEN MAKEN WE DE STAD</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("hoe")}>
-          <Span>HOE</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("3")}>
+          <Span>HEB JIJ EEN IDEE</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("overons")}>
-          <Span>OVER ONS</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("4")}>
+          <Span>DOEN</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("resultaten")}>
-          <Span>RESULTATEN</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("5")}>
+          <Span>WIE ZIJN WIJ</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("roadmap")}>
-          <Span>ROADMAP</Span>
+        <CustomNavLinkSmall onClick={() => scrollTo("6")}>
+          <Span>DOMIBO</Span>
         </CustomNavLinkSmall>
       </>
     );
@@ -61,20 +57,17 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <Image width={80} preview={false} loading="lazy" src="/img/logo.png" alt="" title="StadslabZeist"/>
+            <SvgIcon src="logowit.svg" width="80px" height="80px" />
           </LogoContainer>
-          <NotHidden>
-            <MenuItem />
-          </NotHidden>
           <Burger onClick={showDrawer}>
             <Outline />
           </Burger>
         </Row>
         <Drawer closable={false} visible={visible} onClose={onClose}>
           <Col style={{ marginBottom: "2.5rem" }}>
-            <Label onClick={onClose}>
-              <Col span={12}>
-                <Menu>Menu</Menu>
+            <Label className={"d-flex align-items-center justify-content-between"} onClick={onClose}>
+              <Col  span={12}>
+                <Menu className="mb-0">Menu</Menu>
               </Col>
               <Col span={12}>
                 <Outline />

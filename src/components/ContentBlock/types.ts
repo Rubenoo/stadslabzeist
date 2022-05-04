@@ -1,6 +1,7 @@
 export interface ContentBlockProps {
   icon: string;
   title: string;
+  titleSize?: string;
   content: any;
   secondContent?: any;
   section?: any;

@@ -12,6 +12,11 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
+declare global {
+  interface Window {
+    fullpage_api: any;
+  }
+}
 export interface SvgIconProps {
   src: string;
   width: string;
