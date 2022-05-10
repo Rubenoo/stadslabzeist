@@ -2,9 +2,7 @@ import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 import {  
-  NavLink,
   Extra,
-  LogoContainer,  
   FooterContainer,
   FooterLink,  
 } from "./styles";
@@ -36,16 +34,7 @@ const Footer = ({ show }: any) => {
       <Extra show={show}>
         <Container border={true} >
           <div className="d-flex flex-row justify-content-between align-items-center py-2">
-            <NavLink className="w-100" to="/">
-              <LogoContainer>
-                <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="101px"
-                  height="64px"
-                />
-              </LogoContainer>
-            </NavLink>
+            <div className="w-100"/>
             <div className="w-100 text-nowrap text-center d-lg-flex flex-column align-items-center justify-content-center d-none">
               <div className={"d-none d-lg-block"}>
                 <div>

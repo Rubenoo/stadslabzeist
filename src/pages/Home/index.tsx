@@ -6,6 +6,7 @@ import WieZijnWij from "./wiezijnwij";
 import DoMiBo from "./domibo";
 import ReactFullpage from '@fullpage/react-fullpage';
 import Footer from "../../components/Footer";
+import Youtube from "./youtube";
 
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -32,9 +33,7 @@ const Home = () => {
             <>
               <div id="fullpage-wrapper">             
                 <div className="section">
-                  <div className="ratio ratio-21x9">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/f-aTBG3nx3k?autoplay=1&mute=1" title="YouTube video player" allow="autoplay"></iframe>
-                  </div>
+                  <Youtube/>
                 </div>
                 <div className="section">
                   <Samen/>

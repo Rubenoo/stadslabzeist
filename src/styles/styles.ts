@@ -18,6 +18,11 @@ export const Styles = createGlobalStyle`
         src: url("/fonts/Neue-Haas-Medium.ttf") format("truetype");
         font-style: normal;
     }
+    @font-face {
+        font-family: "Neue Haas Black";
+        src: url("/fonts/Neue-Haas-Black.ttf") format("truetype");
+        font-style: normal;
+    }
 
     body,
     html,
@@ -54,14 +59,20 @@ export const Styles = createGlobalStyle`
         }
     }
 
-    h1,
+    h1 {
+        font-family: 'Neue Haas Black', serif;
+        color: #E4E4E4;
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 0;
+    }
     h2,
     h3,
     h4,
     h5,
     h6 {
         font-family: 'Neue Haas Bold', serif;
-        color: #18216d;
+        color: #E4E4E4;
         font-size: 56px;
         line-height: 1.18;
 
@@ -75,7 +86,7 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #18216d;
+        color: #E4E4E4;
         font-size: 21px;        
         line-height: 1.41;
     }

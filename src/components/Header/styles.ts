@@ -12,6 +12,9 @@ export const HeaderSection = styled("header")`
     align-items: center;
     text-align: center;
   }
+  @media only screen and (max-width: 992px) {
+    padding: 1rem 1rem;
+  }
 `;
 
 export const LogoContainer = styled(Link)`

@@ -11,12 +11,12 @@ const Idee = () => {
         title={""}
         content={<>
                   <div className={"d-none d-lg-block"}>
-                    <h1 style={{fontSize: "173px"}} className={"text-white text-nowrap"}>HEB JIJ</h1>
-                    <h1 style={{fontSize: "173px"}} className={"text-white text-nowrap"}>EEN IDEE?</h1>
+                    <h1 style={{fontSize: "173px"}} className={"text-nowrap"}>HEB JIJ</h1>
+                    <h1 style={{fontSize: "173px"}} className={"text-nowrap"}>EEN IDEE?</h1>
                   </div>
                   <div className={"d-lg-none d-block"}>
-                    <h1 style={{fontSize: "69px"}} className={"text-white text-nowrap"}>HEB JIJ</h1>
-                    <h1 style={{fontSize: "69px"}} className={"text-white text-nowrap"}>EEN IDEE?</h1>
+                    <h1 style={{fontSize: "63px"}} className={"text-nowrap"}>HEB JIJ</h1>
+                    <h1 style={{fontSize: "63px"}} className={"text-nowrap"}>EEN IDEE?</h1>
                   </div>
                 </>}
         secondContent={

@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Row, Col, Drawer, Image } from "antd";
+import { Row, Col, Drawer } from "antd";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
-import { Button } from "../../common/Button";
 import {
   HeaderSection,
   LogoContainer,
@@ -57,7 +56,8 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logowit.svg" width="80px" height="80px" />
+            <SvgIcon className={"d-none d-lg-block"} src="logowit.svg" width="80px" height="80px" />
+            <SvgIcon className={"d-lg-none d-block"} src="logowit.svg" width="50px" height="50px" />
           </LogoContainer>
           <Burger onClick={showDrawer}>
             <Outline />

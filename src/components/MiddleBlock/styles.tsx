@@ -21,11 +21,34 @@ export const Content = styled("p")`
 `;
 export const PhotoContainer = styled("div")`
   position: relative;
-  top: 66px;
+  top: -88px;
   @media screen and (min-width: 992px) {
-    top: -120px;
+    top: -110px;
   }
 `;
+export const AnimatedContainer = styled("div")`
+  -webkit-animation: MoveUpDown 1.5s infinite  alternate;
+  animation: MoveUpDown 1.5s infinite  alternate;
+
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 25px;
+  }
+  @-webkit-keyframes MoveUpDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+`;
+
 export const SecondContentContainer = styled("div")<{ top: string,}>`
   position: relative;
   top: 0;

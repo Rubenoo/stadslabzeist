@@ -9,13 +9,13 @@ const DoMiBo = () => {
         title={""}
         content={<>
           <div className={"d-none d-lg-block text-start"}>
-            <h1 style={{fontSize: "110px", color: "RGBA(240, 207,229,1)"}}>ZIEN WE JE </h1>
-            <h1 style={{fontSize: "110px", color: "RGBA(240, 207,229,1)"}}>OP DE DOMIBO?</h1>
+            <h1 style={{fontSize: "110px"}}>ZIEN WE JE </h1>
+            <h1 style={{fontSize: "110px"}}>OP DE DOMIBO?</h1>
           </div>
           <div className={"d-lg-none d-block text-start"}>
-            <h1 style={{fontSize: "55px", color: "RGBA(240, 207,229,1)"}}>ZIEN WE JE </h1>
-            <h1 style={{fontSize: "55px", color: "RGBA(240, 207,229,1)"}}>OP DE</h1>
-            <h1 style={{fontSize: "55px", color: "RGBA(240, 207,229,1)"}}>DOMIBO?</h1>
+            <h1 style={{fontSize: "55px",}}>ZIEN WE JE </h1>
+            <h1 style={{fontSize: "55px"}}>OP DE</h1>
+            <h1 style={{fontSize: "55px",}}>DOMIBO?</h1>
           </div>
           <div className={"d-flex justify-content-end mt-0 mt-lg-5 pt-0 pt-lg-5"}>
             <Button backgroundColor={"#fff"} textColor={"#e30613"}>JA</Button>
