@@ -33,7 +33,7 @@ export const AnimatedContainer = styled("div")`
   position: absolute;
   left: 50%;
   right: 50%;
-  bottom: 25px;
+  bottom: 15px;
   }
   @-webkit-keyframes MoveUpDown {
     0% { transform: translateY(0); }
