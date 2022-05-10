@@ -23,7 +23,7 @@ export const PhotoContainer = styled("div")`
   position: relative;
   top: -88px;
   @media screen and (min-width: 992px) {
-    top: -110px;
+    top: -120px;
   }
 `;
 export const AnimatedContainer = styled("div")`

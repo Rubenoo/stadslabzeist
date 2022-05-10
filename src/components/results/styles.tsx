@@ -9,6 +9,15 @@ color: #364B9B;
   font-size: 145px;
 }
 `;
+export const H1WZW = styled("h1")`
+font-size: 55px;
+font-family: Neue Haas Bold;
+color: #E4E4E4;
+
+@media screen and (min-width: 992px) {
+  font-size: 130px;
+}
+`;
 export const P = styled("p")`
 font-size: 22px;
 font-family: Neue Haas Medium;

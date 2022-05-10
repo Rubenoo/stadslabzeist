@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import { SvgIcon } from "../../common/SvgIcon";
 import { PhotoContainer } from "../../components/MiddleBlock/styles";
+import { H1WZW } from "../../components/results/styles";
 
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 
@@ -10,9 +11,11 @@ const WieZijnWij = () => {
     title={""}
     content={<PhotoContainer className="text-center">
                 <img  loading='lazy' src="/img/wiezijnwij.png" style={{ height: '100vh', width: '100%', objectFit: 'cover',}} alt="wiezijnwij"></img>
-                <div style={{ position: 'absolute' , top: '50%' , left: '50%', transform: 'translate(-50%, -50%)'}} >
-                  <h1>WIE ZIJN WIJ</h1>
-                  <SvgIcon src="wiezijnwij.svg" width="70%" height="70%"/>
+                <div className={"d-flex flex-column align-items-start"} style={{ position: 'absolute' , top: '50%' , left: '50%', transform: 'translate(-50%, -50%)'}} >
+                  <H1WZW>WIE</H1WZW>
+                  <H1WZW>ZIJN</H1WZW>
+                  <H1WZW>WIJ</H1WZW>
+                  <SvgIcon className={"d-flex align-self-center pt-2 pt-lg-1"} src="wiezijnwij.svg" width="100%" height="100%"/>
                 </div>
             </PhotoContainer>
             }
