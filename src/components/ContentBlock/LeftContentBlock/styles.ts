@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const LeftContentSection = styled("section")<{ backgroundColor?: string, backgroundSVG?: string}>`
   position: relative;
-  padding: 10rem 8rem 8rem;
+  padding: 10rem 8rem 10rem;
+  display: flex;
+  align-items: center;
   height: 100%;
 
   ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
@@ -21,18 +23,19 @@ export const LeftContentSection = styled("section")<{ backgroundColor?: string, 
 
 export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
+  height: 100%;
 `;
 
 export const ContentWrapper = styled("div")`
   position: relative;
+  width: 100%;
   max-width: 540px;
   height: 100%;
 
   @media only screen and (max-width: 575px) {
-    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 `;
-
 export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: space-between;

@@ -23,6 +23,7 @@ const RightBlock = ({
   backgroundSVG,
   fadeRight,
   titleSize,
+  person,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -34,26 +35,11 @@ const RightBlock = ({
   return (
     <RightBlockContainer backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
       <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
-        <Row justify="space-between" align="middle" id={id}>
-          <Col lg={11} md={11} sm={11} xs={24}>
+        <Row justify={person ? "space-around": "space-between"} align="middle" id={id}>
+          <Col className={person ? "d-flex align-items-center justify-content-center" : ""} lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
                 <h6 style={titleSize ? {fontSize: titleSize}: {}}>{t(title)}</h6>
-              <Content>{content}</Content>
-              <ButtonWrapper>
-                {typeof button === "object" &&
-                  button.map((item: any, id: number) => {
-                    return (
-                      <Button
-                        key={id}
-                        backgroundColor={item.color}
-                        fixedWidth={true}
-                        onClick={() => scrollTo("about")}
-                      >
-                        {t(item.title)}
-                      </Button>
-                    );
-                  })}
-              </ButtonWrapper>
+              <Content >{content}</Content>              
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>

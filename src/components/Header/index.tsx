@@ -26,31 +26,18 @@ const Header = ({ t }: any) => {
   };
 
   const MenuItem = () => {
-    const scrollTo = (id: string) => {
-      window.fullpage_api.moveTo(id, 0);
-      setVisibility(false);
-    };
+
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("2")}>
-          <Span>SAMEN MAKEN WE DE STAD</Span>
+        <CustomNavLinkSmall to="/" onClick={() => onClose()}>
+          <Span>HOME</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("3")}>
-          <Span>HEB JIJ EEN IDEE</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("4")}>
-          <Span>DOEN</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("5")}>
-          <Span>WIE ZIJN WIJ</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("6")}>
-          <Span>DOMIBO</Span>
+        <CustomNavLinkSmall to="/ditzijnwij" onClick={() => onClose()}>
+          <Span>DIT ZIJN WIJ</Span>
         </CustomNavLinkSmall>
       </>
     );
   };
-
   return (
     <HeaderSection>
       <Container>

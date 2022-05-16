@@ -16,7 +16,7 @@ const Results = () => {
                 <Col lg={4} md={6} sm={8} xs={10}> 
                     <Row justify="space-around" align="middle">
                         <Col className={"px-4"} span={24}> 
-                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #364B9B" }} />
+                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                         <Col span={24}>   
                             <H1>                       
@@ -29,14 +29,14 @@ const Results = () => {
                             <P>AFGERONDEN PROJECTEN</P>                      
                         </Col>
                         <Col className={"px-4 d-md-flex d-none"} span={24}> 
-                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #364B9B" }} />
+                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                     </Row>
                 </Col>
                 <Col lg={4} md={6} sm={8} xs={10}> 
                     <Row justify="space-around" align="middle">
                         <Col className={"px-4"} span={24}> 
-                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #364B9B" }} />
+                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                         <Col span={24}>   
                             <H1>                       
@@ -49,14 +49,14 @@ const Results = () => {
                             <P>NIEUWE VERBINDINGEN</P>                      
                         </Col>
                         <Col className={"px-4 d-md-flex d-none"} span={24}> 
-                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #364B9B" }} />
+                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                     </Row>
                 </Col>
                 <Col lg={4} md={6} sm={8} xs={10}> 
                     <Row justify="space-around" align="middle">
                         <Col className={"px-4"} span={24}> 
-                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #364B9B" }} />
+                            <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                         <Col span={24}>   
                             <H1>                       
@@ -69,7 +69,7 @@ const Results = () => {
                             <P>VERBONDEN STADMAKERS</P>                      
                         </Col>
                         <Col className={"px-4"} span={24}> 
-                            <Divider className={"my-lg-5 my-3 mb-4"} style={{ borderTop: "4px solid #364B9B" }} />
+                            <Divider className={"my-lg-5 my-3 mb-4"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                     </Row>
                 </Col>

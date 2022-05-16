@@ -27,6 +27,8 @@ const LeftContentBlock = ({
   backgroundColor,
   backgroundSVG,
   titleSize,
+  fadeRight,
+  person,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -37,12 +39,12 @@ const LeftContentBlock = ({
   };
   return (
     <LeftContentSection backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
-      <Fade className="w-100" direction="left">
-        <Row justify="space-between" align="middle" id={id}>
-          <Col lg={11} md={11} sm={12} xs={24}>
+      <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
+        <Row justify={person ? "space-around": "space-between"} align="middle" id={id}>
+          <Col lg={{span: 11, order: 0}} md={{span: 11, order: 0}} sm={{span: 12, order: 0}} xs={{span: 24, order: 1}}>
             {secondContent ? secondContent : <SvgIcon src={icon} width="100%" height="100%" />}
           </Col>
-          <Col lg={11} md={11} sm={11} xs={24}>
+          <Col className={person ? "d-flex align-items-center justify-content-center" : ""} lg={{span: 11, order: 1}} md={{span: 11, order: 1}} sm={{span: 11, order: 1}} xs={{span: 24, order: 0}}>
             <ContentWrapper>
                 <h6 style={titleSize ? {fontSize: titleSize}: {}}>{t(title)}</h6>
               <Content>{content}</Content>

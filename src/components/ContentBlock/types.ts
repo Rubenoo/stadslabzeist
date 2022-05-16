@@ -12,4 +12,5 @@ export interface ContentBlockProps {
   backgroundColor?: string;
   backgroundSVG?: string;
   fadeRight?: boolean;
+  person?: boolean;
 }

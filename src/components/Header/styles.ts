@@ -63,7 +63,7 @@ export const Menu = styled("h5")`
   color: #FF0000;
 `;
 
-export const CustomNavLinkSmall = styled(NavLink)`
+export const CustomNavLinkSmall = styled(Link)`
   font-size: 1.2rem;
   color: #FF0000;
   transition: color 0.2s ease-in;

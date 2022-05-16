@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const H1 = styled("h1")`
 font-size: 80px;
 font-family: Neue Haas Black;
-color: #364B9B;
+color: #1B3888;
 
 @media screen and (min-width: 992px) {
   font-size: 145px;
@@ -21,7 +21,7 @@ color: #E4E4E4;
 export const P = styled("p")`
 font-size: 22px;
 font-family: Neue Haas Medium;
-color: #364B9B;
+color: #1B3888;
 text-align: center;
 margin-bottom: 0;
 

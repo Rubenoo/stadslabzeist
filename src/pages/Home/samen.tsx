@@ -12,15 +12,15 @@ const Samen = () => {
         title={""}
         content={<div >
                   <div className={"d-none d-lg-block"}>
-                    <h1 style={{fontSize: "121px", color: "#364B9B"}}>SAMEN MAKEN WE DE STAD!</h1>
+                    <h1 style={{fontSize: "121px", color: "#1B3888"}}>SAMEN MAKEN WE DE STAD!</h1>
                   </div>
                   <div className={"d-lg-none d-block"}>
-                    <h1 style={{fontSize: "59px", color: "#364B9B"}}>SAMEN MAKEN</h1>
-                    <h1 style={{fontSize: "59px", color: "#364B9B"}}>WE DE STAD!</h1>
+                    <h1 style={{fontSize: "59px", color: "#1B3888"}}>SAMEN MAKEN</h1>
+                    <h1 style={{fontSize: "59px", color: "#1B3888"}}>WE DE STAD!</h1>
                   </div>
                 </div>}
         secondContent={<SecondContentContainer top={"11.5vh"} className="h-100 d-flex flex-column align-items-start align-items-lg-end">
-                        <P style={{color: "#364B9B"}}> 
+                        <P style={{color: "#1B3888"}}> 
                           Welkom bij Stadslab Zeist. Wij zijn een beweging
                           van stadmakers. Een stadmaker is iemand
                           die de plek waar hij of zij woont nóg beter wil
