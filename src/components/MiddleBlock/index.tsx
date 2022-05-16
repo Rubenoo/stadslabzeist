@@ -36,7 +36,7 @@ const MiddleBlock = ({ title, content, button, t, id, fullWidth, fullHeight, bac
               <Content>{content}</Content>
               {button && (
                 <Button name="submit" onClick={() => scrollTo("mission")}>
-                  {t(button)}
+                  {button}
                 </Button>
               )}
             </Col>

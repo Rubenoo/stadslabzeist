@@ -1,6 +1,5 @@
 import { Divider } from "antd";
 import { lazy } from "react";
-import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
 import { AnimatedContainer } from "../../components/MiddleBlock/styles";
 import { H1 } from "../../components/results/styles";

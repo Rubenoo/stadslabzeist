@@ -1,17 +1,12 @@
 import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../../common/SvgIcon";
 import { ContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal";
 import { Button } from "../../../common/Button";
-
 import {
   LeftContentSection,
   Content,
   ContentWrapper,
-  ServiceWrapper,
-  MinTitle,
-  MinPara,
   ButtonWrapper,
 } from "./styles";
 
@@ -20,7 +15,6 @@ const LeftContentBlock = ({
   title,
   content,
   button,
-  section,
   secondContent,
   t,
   id,
@@ -37,6 +31,7 @@ const LeftContentBlock = ({
       block: "center",
     });
   };
+  
   return (
     <LeftContentSection backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
       <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
@@ -46,7 +41,7 @@ const LeftContentBlock = ({
           </Col>
           <Col className={person ? "d-flex align-items-center justify-content-center" : ""} lg={{span: 11, order: 1}} md={{span: 11, order: 1}} sm={{span: 11, order: 1}} xs={{span: 24, order: 0}}>
             <ContentWrapper>
-                <h6 style={titleSize ? {fontSize: titleSize}: {}}>{t(title)}</h6>
+                <h6 style={titleSize ? {fontSize: titleSize}: {}}>{title}</h6>
               <Content>{content}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&
@@ -63,20 +58,6 @@ const LeftContentBlock = ({
                     );
                   })}
               </ButtonWrapper>
-              <ServiceWrapper>
-                <Row justify="space-between">
-                  {typeof section === "object" &&
-                    section.map((item: any, id: number) => {
-                      return (
-                        <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
-                          <MinTitle>{t(item.title)}</MinTitle>
-                          <MinPara>{t(item.content)}</MinPara>
-                        </Col>
-                      );
-                    })}
-                </Row>
-              </ServiceWrapper>
             </ContentWrapper>
           </Col>
         </Row>
@@ -85,4 +66,4 @@ const LeftContentBlock = ({
   );
 };
 
-export default withTranslation()(LeftContentBlock);
+export default LeftContentBlock;

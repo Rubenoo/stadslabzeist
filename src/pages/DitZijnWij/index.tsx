@@ -3,10 +3,8 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Footer from "../../components/Footer";
 import DoeJeMee from "./doejemee";
 import DitZijnWijBlock from "./ditzijnwij";
-import Saskia from "./PersonContainer";
 import PersonContainer from "./PersonContainer";
 
-const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 

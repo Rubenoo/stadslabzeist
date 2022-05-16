@@ -36,26 +36,7 @@ export const ContentWrapper = styled("div")`
     padding-bottom: 4rem;
   }
 `;
-export const ServiceWrapper = styled("div")`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 
-  max-width: 100%;
-`;
-
-export const MinTitle = styled("h6")`
-  font-size: 15px;
-  line-height: 1rem;
-  padding: 0.5rem 0;
-  text-transform: uppercase;
-  color: #000;
-  font-family: "Neue Haas", sans-serif;
-`;
-
-export const MinPara = styled("p")`
-  font-size: 13px;
-`;
 export const ButtonWrapper = styled("div")`
   display: flex;
   justify-content: space-between;
