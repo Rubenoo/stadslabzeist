@@ -1,5 +1,4 @@
 import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
@@ -8,7 +7,6 @@ interface MiddleBlockProps {
   title?: string;
   content: any;
   button: string;
-  t: any;
   id: string;
   backgroundColor?: string;
   fullWidth?: boolean;
@@ -17,15 +15,8 @@ interface MiddleBlockProps {
   backgroundSVG?: string;
 }
 
-const MiddleBlock = ({ title, content, button, t, id, fullWidth, fullHeight, backgroundColor, fullBackground, backgroundSVG,
+const MiddleBlock = ({ title, content, button, id, fullWidth, fullHeight, backgroundColor, fullBackground, backgroundSVG,
 }: MiddleBlockProps) => {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  };
   return (
     <MiddleBlockSection fullBackground={fullBackground} backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
       <Slide triggerOnce delay={300} direction="up" className={fullBackground ? "h-100 w-100" : "d-flex align-items-center"}   >
@@ -35,7 +26,7 @@ const MiddleBlock = ({ title, content, button, t, id, fullWidth, fullHeight, bac
               {(title && <h6>{title}</h6>)}
               <Content>{content}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
+                <Button name="submit">
                   {button}
                 </Button>
               )}
@@ -47,4 +38,4 @@ const MiddleBlock = ({ title, content, button, t, id, fullWidth, fullHeight, bac
   );
 };
 
-export default withTranslation()(MiddleBlock);
+export default MiddleBlock;

@@ -1,4 +1,3 @@
-import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 import {  
@@ -71,4 +70,4 @@ const Footer = ({ show }: any) => {
   );
 };
 
-export default withTranslation()(Footer);
+export default Footer;

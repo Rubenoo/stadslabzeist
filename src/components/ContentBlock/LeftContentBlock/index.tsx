@@ -16,7 +16,6 @@ const LeftContentBlock = ({
   content,
   button,
   secondContent,
-  t,
   id,
   backgroundColor,
   backgroundSVG,
@@ -24,14 +23,7 @@ const LeftContentBlock = ({
   fadeRight,
   person,
 }: ContentBlockProps) => {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  };
-  
+ 
   return (
     <LeftContentSection backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
       <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
@@ -50,10 +42,9 @@ const LeftContentBlock = ({
                       <Button
                         key={id}
                         backgroundColor={item.color}
-                        fixedWidth={true}
-                        onClick={() => scrollTo("about")}
+                        fixedWidth={true}                        
                       >
-                        {t(item.title)}
+                        {item.title}
                       </Button>
                     );
                   })}

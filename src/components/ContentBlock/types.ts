@@ -6,7 +6,6 @@ export interface ContentBlockProps {
   secondContent?: any;
   section?: any;
   button?: any;
-  t?: any;
   id: string;
   type?: string;
   backgroundColor?: string;
