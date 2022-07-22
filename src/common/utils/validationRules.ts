@@ -3,16 +3,19 @@ import { validateProps } from "../../common/types";
 export default function validate(values: validateProps) {
   let errors = {} as validateProps;
 
-  if (!values.name) {
-    errors.name = "Name is required";
+  if (!values.naam) {
+    errors.naam = "Naam is vereist";
   }
   if (!values.email) {
-    errors.email = "Email address is required";
+    errors.email = "Email adres is vereist";
   } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-    errors.email = "Email address is invalid";
+    errors.email = "Email adres is niet geldig";
   }
-  if (!values.message) {
-    errors.message = "Message is required";
+  if (!values.bericht) {
+    errors.bericht = "Bericht is vereist";
+  }
+  if (!values.onderwerp) {
+    errors.onderwerp = "Onderwerp is vereist";
   }
   return errors;
 }

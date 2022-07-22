@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { notification } from "antd";
-import axios from "axios";
+import emailjs from '@emailjs/browser';
 
 export const useForm = (validate: any) => {
   const [values, setValues] = useState({});
@@ -10,22 +10,20 @@ export const useForm = (validate: any) => {
   const openNotificationWithIcon = () => {
     notification["success"]({
       message: "Success",
-      description: "Your message has been sent!",
+      description: "Je bericht is verzonden!",
     });
   };
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
     setErrors(validate(values));
-    // Your url for API
-    const url = "";
-    if (Object.keys(values).length === 3) {
-      axios
-        .post(url, {
-          ...values,
-        })
-        .then(() => {
-          setShouldSubmit(true);
+    if (Object.keys(values).length === 4 && Object.keys(errors).length === 0 ) {
+        emailjs.sendForm('service_cpgl62m', 'template_fz5iyg4', event.target, 'qvzcPVOT10aFtud3C')
+        .then((result) => {
+            console.log(result.text);
+            setShouldSubmit(true);
+        }, (error) => {
+            console.log(error.text);
         });
     }
   };

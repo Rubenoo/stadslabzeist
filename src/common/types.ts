@@ -1,5 +1,6 @@
 export interface ContainerProps {
   border?: boolean;
+  backgroundSVG?: string;
   children: React.ReactNode;
 }
 
@@ -37,7 +38,8 @@ export interface InputProps {
 }
 
 export interface validateProps {
-  name: string;
-  message: string;
-  email: string;
+  naam: string;
+  bericht: string;
+  onderwerp: string;
+  email: string
 }

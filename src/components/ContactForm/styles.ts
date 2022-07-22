@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled("div")`
-  padding: 5rem 0;
-
+  padding: 5em 0;
+  margin-bottom: 2em;
+  height: 100%;
+  margin: 0em 3em;
   @media only screen and (max-width: 1024px) {
     padding: 3rem 0;
+    margin: 0em 1em;
   }
 `;
 

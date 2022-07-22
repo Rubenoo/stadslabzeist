@@ -1,4 +1,4 @@
-import { Container, TextWrapper, Content } from "./styles";
+import { Container, TextWrapper, Content, H6 } from "./styles";
 
 interface Props {
   title: string;
@@ -8,7 +8,7 @@ interface Props {
 const Block = ({ title, content }: Props) => {
   return (
     <Container>
-      <h6>{title}</h6>
+      <H6>{title}</H6>
       <TextWrapper>
         <Content>{content}</Content>
       </TextWrapper>

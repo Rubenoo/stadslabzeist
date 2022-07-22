@@ -8,8 +8,9 @@ import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
+import { render } from "react-dom";
 
-const Contact = ({ title, content, id, t }: ContactProps) => {
+const Contact = ({ title, content, id }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(
     validate
   ) as any;
@@ -22,7 +23,6 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
       </Zoom>
     );
   };
-
   return (
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
@@ -38,34 +38,44 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Col span={24}>
                   <Input
                     type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    value={values.name || ""}
+                    name="naam"
+                    placeholder="NAAM"
+                    value={values.naam || ""}
                     onChange={handleChange}
                   />
-                  <ValidationType type="name" />
+                  <ValidationType type="naam" />
                 </Col>
                 <Col span={24}>
                   <Input
                     type="text"
                     name="email"
-                    placeholder="Your Email"
+                    placeholder="EMAILADRES"
                     value={values.email || ""}
                     onChange={handleChange}
                   />
                   <ValidationType type="email" />
                 </Col>
                 <Col span={24}>
-                  <TextArea
-                    placeholder="Your Message"
-                    value={values.message || ""}
-                    name="message"
+                  <Input
+                    type="text"
+                    name="onderwerp"
+                    placeholder="ONDERWERP"
+                    value={values.ondewerp || ""}
                     onChange={handleChange}
                   />
-                  <ValidationType type="message" />
+                  <ValidationType type="onderwerp" />
+                </Col>
+                <Col span={24}>
+                  <TextArea
+                    placeholder="BERICHT"
+                    value={values.bericht || ""}
+                    name="bericht"
+                    onChange={handleChange}
+                  />
+                  <ValidationType type="bericht" />
                 </Col>
                 <ButtonContainer>
-                  <Button name="submit">{t("Submit")}</Button>
+                  <Button name="submit">{"VERSTUUR"}</Button>
                 </ButtonContainer>
               </FormGroup>
             </>

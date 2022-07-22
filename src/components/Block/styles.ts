@@ -2,6 +2,24 @@ import styled from "styled-components";
 
 export const Content = styled("p")`
   margin-top: 1.5rem;
+  white-space: pre;
+  font-family: Neue Haas Medium;
+  font-size: 15px;
+  color: #1B3888;
+
+  @media screen and (min-width: 992px) {
+    font-size: 25px;
+  }
+`;
+export const H6 = styled("h6")`
+  margin-top: 1.5rem;
+  font-family: Neue Haas Black;
+  font-size: 59px;
+  color: #1B3888;
+
+  @media screen and (min-width: 992px) {
+    font-size: 121px;
+  }
 `;
 
 export const Container = styled("div")`

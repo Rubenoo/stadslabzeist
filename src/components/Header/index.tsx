@@ -34,6 +34,9 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall to="/ditzijnwij" onClick={() => onClose()}>
           <Span>DIT ZIJN WIJ</Span>
         </CustomNavLinkSmall>
+        <CustomNavLinkSmall to="/zienwejedan" onClick={() => onClose()}>
+          <Span>ZIEN WE JE DAN</Span>
+        </CustomNavLinkSmall>
       </>
     );
   };

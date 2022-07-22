@@ -39,15 +39,6 @@ export const CustomNavLink = styled("div")`
   }
 `;
 
-export const ContactWrapper = styled("div")<any>`
-  cursor: pointer;
-  width: ${(p) => (p.width ? "100%" : "110px")};
-  font-weight: 700;
-  text-align: center;
-  border-radius: 1.25rem;
-  display: inline-block;
-`;
-
 export const Burger = styled("div")`
   display: block;
 
