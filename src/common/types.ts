@@ -11,6 +11,7 @@ export interface ButtonProps {
   name?: string;
   children: React.ReactNode;
   onClick?: () => void;
+  linkTo?: string;
 }
 
 declare global {

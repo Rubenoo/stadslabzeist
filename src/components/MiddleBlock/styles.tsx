@@ -19,13 +19,6 @@ export const MiddleBlockSection = styled("section")<{ backgroundColor?: string, 
 export const Content = styled("p")`
   padding: 0;
 `;
-export const PhotoContainer = styled("div")`
-  position: relative;
-  top: -88px;
-  @media screen and (min-width: 992px) {
-    top: -120px;
-  }
-`;
 export const AnimatedContainer = styled("div")`
   -webkit-animation: MoveUpDown 1.5s infinite  alternate;
   animation: MoveUpDown 1.5s infinite  alternate;

@@ -8,7 +8,6 @@ import Block from "../Block";
 import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
-import { render } from "react-dom";
 
 const Contact = ({ title, content, id }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(
@@ -33,52 +32,50 @@ const Contact = ({ title, content, id }: ContactProps) => {
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right">
-            <>
-              <FormGroup autoComplete="off" onSubmit={handleSubmit}>
-                <Col span={24}>
-                  <Input
-                    type="text"
-                    name="naam"
-                    placeholder="NAAM"
-                    value={values.naam || ""}
-                    onChange={handleChange}
-                  />
-                  <ValidationType type="naam" />
-                </Col>
-                <Col span={24}>
-                  <Input
-                    type="text"
-                    name="email"
-                    placeholder="EMAILADRES"
-                    value={values.email || ""}
-                    onChange={handleChange}
-                  />
-                  <ValidationType type="email" />
-                </Col>
-                <Col span={24}>
-                  <Input
-                    type="text"
-                    name="onderwerp"
-                    placeholder="ONDERWERP"
-                    value={values.ondewerp || ""}
-                    onChange={handleChange}
-                  />
-                  <ValidationType type="onderwerp" />
-                </Col>
-                <Col span={24}>
-                  <TextArea
-                    placeholder="BERICHT"
-                    value={values.bericht || ""}
-                    name="bericht"
-                    onChange={handleChange}
-                  />
-                  <ValidationType type="bericht" />
-                </Col>
-                <ButtonContainer>
-                  <Button name="submit">{"VERSTUUR"}</Button>
-                </ButtonContainer>
-              </FormGroup>
-            </>
+            <FormGroup autoComplete="off" onSubmit={handleSubmit}>
+              <Col span={24}>
+                <Input
+                  type="text"
+                  name="naam"
+                  placeholder="NAAM"
+                  value={values.naam || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="naam" />
+              </Col>
+              <Col span={24}>
+                <Input
+                  type="text"
+                  name="email"
+                  placeholder="EMAILADRES"
+                  value={values.email || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="email" />
+              </Col>
+              <Col span={24}>
+                <Input
+                  type="text"
+                  name="onderwerp"
+                  placeholder="ONDERWERP"
+                  value={values.onderwerp || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="onderwerp" />
+              </Col>
+              <Col span={24}>
+                <TextArea
+                  placeholder="BERICHT"
+                  value={values.bericht || ""}
+                  name="bericht"
+                  onChange={handleChange}
+                />
+                <ValidationType type="bericht" />
+              </Col>
+              <ButtonContainer>
+                <Button name="submit">{"VERSTUUR"}</Button>
+              </ButtonContainer>
+            </FormGroup>
           </Slide>
         </Col>
       </Row>

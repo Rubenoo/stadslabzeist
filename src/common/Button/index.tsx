@@ -1,5 +1,6 @@
 import { StyledButton } from "./styles";
 import { ButtonProps } from "../types";
+import { Link } from "react-router-dom";
 
 export const Button = ({
   backgroundColor,
@@ -7,8 +8,19 @@ export const Button = ({
   fixedWidth,
   children,
   onClick,
-}: ButtonProps) => (
-  <StyledButton backgroundColor={backgroundColor} textColor={textColor} fixedWidth={fixedWidth} onClick={onClick}>
+  linkTo,
+}: ButtonProps) => {
+  if(linkTo) return (
+    <Link to={linkTo}>
+      <StyledButton backgroundColor={backgroundColor} textColor={textColor} fixedWidth={fixedWidth} onClick={onClick}>
+        {children}
+      </StyledButton>
+    </Link>
+  )
+  return (
+    <StyledButton backgroundColor={backgroundColor} textColor={textColor} fixedWidth={fixedWidth} onClick={onClick}>
     {children}
-  </StyledButton>
-);
+    </StyledButton>
+  )
+  }
+;

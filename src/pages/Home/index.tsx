@@ -14,10 +14,10 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 
 const Home = () => {
   const [fullpageIndex, setFullpageIndex] = useState(0);
-  const [resetFullPage, setResetFullPage] = useState(false);
+
   return (
     <Container>
-      <ScrollToTop onClick={() => setResetFullPage(true)} show={fullpageIndex > 0}/>
+      <ScrollToTop show={fullpageIndex > 0}/>
       <ReactFullpage   
           licenseKey={'8N0K9-BXM78-CKADI-YNQJ9-VEXHK'}
           scrollingSpeed = {1000}
@@ -25,23 +25,19 @@ const Home = () => {
             setFullpageIndex(destination.index);
           }}
           render={({ state, fullpageApi }) => {
-            if (resetFullPage) {
-              fullpageApi.moveTo(1, 0);
-              setResetFullPage(false);
-            }
             return (
             <>
               <div id="fullpage-wrapper">             
-                <div className="section">
+                <div className="section vh-100" >
                   <Youtube/>
                 </div>
-                <div className="section">
+                <div className="section vh-100">
                   <Samen/>
                 </div>
-                <div className="section">
+                <div className="section vh-100">
                   <Idee/>
                 </div>
-                <div className="section">
+                <div className="section vh-100">
                   <MiddleBlock
                     title={""}
                     content={<>
@@ -54,19 +50,19 @@ const Home = () => {
                     backgroundColor="#5DC0E1"
                   />
                 </div>
-                <div className="section">
+                <div className="section vh-100">
                   <WieZijnWij/>
                 </div>
-                <div className="section">
+                <div className="section vh-100">
                   <DoMiBo/>
-                </div>              
+                  <Footer absulute={false} show={true}/>
+                </div>               
               </div>
             </>
           );
         }}
-      />      
-    <Footer show={fullpageIndex === 5}/>
-    </Container>
+      />
+    </Container>    
   );
 };
 

@@ -10,10 +10,10 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 
 const DitZijnWij = () => {
   const [fullpageIndex, setFullpageIndex] = useState(0);
-  const [resetFullPage, setResetFullPage] = useState(false);
+  console.log("index scroll: ", fullpageIndex)
   return (
     <Container>
-      <ScrollToTop onClick={() => setResetFullPage(true)} show={fullpageIndex > 0}/>
+      <ScrollToTop show={fullpageIndex > 0}/>
       <ReactFullpage   
           licenseKey={'8N0K9-BXM78-CKADI-YNQJ9-VEXHK'}
           scrollingSpeed = {1000}
@@ -21,17 +21,13 @@ const DitZijnWij = () => {
             setFullpageIndex(destination.index);
           }}
           render={({ state, fullpageApi }) => {
-            if (resetFullPage) {
-              fullpageApi.moveTo(1, 0);
-              setResetFullPage(false);
-            }
             return (
             <>
               <div id="fullpage-wrapper">
-                <div className="section">
+                <div className="section vh-100">
                   <DitZijnWijBlock/>
                 </div>   
-                <div className="section">
+                <div className="section vh-100">
                   <PersonContainer 
                     type="right" 
                     img="/img/saskia_portret.png" 
@@ -51,7 +47,7 @@ const DitZijnWij = () => {
                       textColor="#F0CFE5"
                     />
                 </div>
-                <div className="section">
+                <div className="section vh-100">
                   <PersonContainer 
                     type="left" 
                     img="/img/merel_portret.png" 
@@ -70,7 +66,7 @@ const DitZijnWij = () => {
                       aangevuld!)"
                     />
                 </div>
-                <div className="section">
+                <div className="section vh-100">
                   <PersonContainer 
                     type="right" 
                     img="/img/emma_portret.png" 
@@ -90,7 +86,7 @@ const DitZijnWij = () => {
                       textColor="#F0CFE5"
                     />
                 </div>
-                <div className="section">
+                <div className="section vh-100">
                   <PersonContainer 
                     type="left" 
                     img="/img/marloes_portret.png" 
@@ -109,7 +105,7 @@ const DitZijnWij = () => {
                       aangevuld!)"
                     />
                 </div>                
-                <div className="section">
+                <div className="section vh-100">
                   <DoeJeMee/>
                 </div>                
               </div>
@@ -117,7 +113,7 @@ const DitZijnWij = () => {
           );
         }}
       />      
-    <Footer show={fullpageIndex === 5}/>
+    <Footer absolute show={fullpageIndex === 5}/>
     </Container>
   );
 };

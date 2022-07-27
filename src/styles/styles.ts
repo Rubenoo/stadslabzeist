@@ -6,22 +6,26 @@ export const Styles = createGlobalStyle`
         font-family: "Neue Haas";
         src: url("/fonts/Neue-Haas.ttf") format("truetype");
         font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
         font-family: "Neue Haas Bold";
         src: url("/fonts/Neue-Haas-Bold.ttf") format("truetype");
         font-style: normal;
+        font-display: swap;
     }
     @font-face {
         font-family: "Neue Haas Medium";
         src: url("/fonts/Neue-Haas-Medium.ttf") format("truetype");
         font-style: normal;
+        font-display: swap;
     }
     @font-face {
         font-family: "Neue Haas Black";
         src: url("/fonts/Neue-Haas-Black.ttf") format("truetype");
         font-style: normal;
+        font-display: swap;
     }
 
     body,
