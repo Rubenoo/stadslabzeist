@@ -10,7 +10,6 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 
 const DitZijnWij = () => {
   const [fullpageIndex, setFullpageIndex] = useState(0);
-  console.log("index scroll: ", fullpageIndex)
   return (
     <Container>
       <ScrollToTop show={fullpageIndex > 0}/>

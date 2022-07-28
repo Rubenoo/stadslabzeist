@@ -22,6 +22,7 @@ const Header = ({ t }: any) => {
 
   const onClose = () => {
     setVisibility(!visible);
+    window.fullpage_api.moveTo(1);
   };
 
   const MenuItem = () => {

@@ -23,7 +23,6 @@ export const useForm = (validate: any) => {
     setErrors(currentErrors);
 
     if (Object.keys(values).length === 4 && Object.keys(currentErrors).length === 0 ) {
-      console.log("hier hit")
       setShouldSubmit(true);
       emailjs.sendForm('service_cpgl62m', 'template_fz5iyg4', event.target, 'qvzcPVOT10aFtud3C')
       .then((result) => {
@@ -36,7 +35,6 @@ export const useForm = (validate: any) => {
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && shouldSubmit) {
-      console.log("hitttie");
       setValues({});
       openNotificationWithIcon();
     }
