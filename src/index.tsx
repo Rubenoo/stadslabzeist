@@ -5,6 +5,8 @@ import { ConfigProvider } from 'antd';
 import nlNL from 'antd/lib/locale/nl_NL';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+
 
 import Router from "./router";
 
@@ -17,5 +19,7 @@ const App = () => (
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+
+serviceWorkerRegistration.register();
 
 root.render(<App />);
