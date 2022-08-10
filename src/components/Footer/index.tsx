@@ -11,7 +11,7 @@ interface SocialLinkProps {
   src: string;
 }
 
-const Footer = ({ show, absolute }: any) => {
+const Footer = ({ show }: any) => {
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
@@ -30,7 +30,7 @@ const Footer = ({ show, absolute }: any) => {
 
   return (
     <>
-      <Extra absolute={absolute} show={show}>
+      <Extra show={show}>
         <Container border={true} >
           <div className="d-flex flex-row justify-content-between align-items-center py-2">
             <div className="w-100"/>

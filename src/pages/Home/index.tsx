@@ -21,6 +21,7 @@ const Home = () => {
       <ReactFullpage   
           licenseKey={'8N0K9-BXM78-CKADI-YNQJ9-VEXHK'}
           scrollingSpeed = {1000}
+          scrollOverflow={false}
           onLeave={(origin, destination, direction) => {
             setFullpageIndex(destination.index);
           }}
@@ -54,10 +55,10 @@ const Home = () => {
                   <WieZijnWij/>
                 </div>
                 <div className="section vh-100">
-                  <DoMiBo/>
-                  <Footer absulute={false} show={true}/>
-                </div>               
-              </div>
+                  <DoMiBo/>                  
+                  <Footer show={fullpageIndex === 5}/>
+                </div>                  
+               </div>
             </>
           );
         }}

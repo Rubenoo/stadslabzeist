@@ -1,5 +1,5 @@
 import { Row, Col } from "antd";
-import { Slide, Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
 import validate from "../../common/utils/validationRules";
@@ -26,57 +26,53 @@ const Contact = ({ title, content, id }: ContactProps) => {
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
         <Col lg={12} md={11} sm={24} xs={24}>
-          <Slide direction="left">
-            <Block title={title} content={content} />
-          </Slide>
+          <Block title={title} content={content} />
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
-          <Slide direction="right">
-            <FormGroup autoComplete="off" onSubmit={handleSubmit}>
-              <Col span={24}>
-                <Input
-                  type="text"
-                  name="naam"
-                  placeholder="NAAM"
-                  value={values.naam || ""}
-                  onChange={handleChange}
-                />
-                <ValidationType type="naam" />
-              </Col>
-              <Col span={24}>
-                <Input
-                  type="text"
-                  name="email"
-                  placeholder="EMAILADRES"
-                  value={values.email || ""}
-                  onChange={handleChange}
-                />
-                <ValidationType type="email" />
-              </Col>
-              <Col span={24}>
-                <Input
-                  type="text"
-                  name="onderwerp"
-                  placeholder="ONDERWERP"
-                  value={values.onderwerp || ""}
-                  onChange={handleChange}
-                />
-                <ValidationType type="onderwerp" />
-              </Col>
-              <Col span={24}>
-                <TextArea
-                  placeholder="BERICHT"
-                  value={values.bericht || ""}
-                  name="bericht"
-                  onChange={handleChange}
-                />
-                <ValidationType type="bericht" />
-              </Col>
-              <ButtonContainer>
-                <Button name="submit">{"VERSTUUR"}</Button>
-              </ButtonContainer>
-            </FormGroup>
-          </Slide>
+          <FormGroup autoComplete="off" onSubmit={handleSubmit}>
+            <Col span={24}>
+              <Input
+                type="text"
+                name="naam"
+                placeholder="NAAM"
+                value={values.naam || ""}
+                onChange={handleChange}
+              />
+              <ValidationType type="naam" />
+            </Col>
+            <Col span={24}>
+              <Input
+                type="text"
+                name="email"
+                placeholder="EMAILADRES"
+                value={values.email || ""}
+                onChange={handleChange}
+              />
+              <ValidationType type="email" />
+            </Col>
+            <Col span={24}>
+              <Input
+                type="text"
+                name="onderwerp"
+                placeholder="ONDERWERP"
+                value={values.onderwerp || ""}
+                onChange={handleChange}
+              />
+              <ValidationType type="onderwerp" />
+            </Col>
+            <Col span={24}>
+              <TextArea
+                placeholder="BERICHT"
+                value={values.bericht || ""}
+                name="bericht"
+                onChange={handleChange}
+              />
+              <ValidationType type="bericht" />
+            </Col>
+            <ButtonContainer>
+              <Button name="submit">{"VERSTUUR"}</Button>
+            </ButtonContainer>
+          </FormGroup>
         </Col>
       </Row>
     </ContactContainer>

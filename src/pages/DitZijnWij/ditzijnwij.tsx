@@ -22,7 +22,7 @@ const DitZijnWijBlock = () => {
             <H1 style={{fontSize: "55px"}}>WIJ</H1>
           </div>
           <Divider className={"my-lg-5 my-3"} style={{ borderTop: "1px solid #1B3888" }} />
-          <AnimatedContainer onClick={() => window.fullpage_api.moveTo(2, 0)} className="d-flex align-items-center justify-content-center">
+          <AnimatedContainer onClick={() => window.fullpage_api.moveSectionDown()} className="d-flex align-items-center justify-content-center">
             <SvgIcon src="scroll-down.svg" width="80px" height="80px" />
           </AnimatedContainer>
         </>
