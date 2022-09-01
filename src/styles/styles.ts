@@ -44,9 +44,6 @@ export const Styles = createGlobalStyle`
         overflow-x: hidden;
     }
 
-    a:hover {
-        color: #FFF;
-    }
 
     input,
     textarea {
@@ -102,16 +99,10 @@ export const Styles = createGlobalStyle`
     a {
         text-decoration: none;
         outline: none;
-        color: #2E186A;
 
-        :hover {
-            color: #2e186a;
-        }
     }
     
-    *:focus {
-        outline: none;
-    }
+ 
 
     .about-block-image svg {
         text-align: center;
@@ -122,7 +113,6 @@ export const Styles = createGlobalStyle`
         flex-direction: column;
         text-align: left;
         padding-top: 1.5rem;
-        background-color: #f1cfe5;
     }
 
     .ant-drawer-content-wrapper {

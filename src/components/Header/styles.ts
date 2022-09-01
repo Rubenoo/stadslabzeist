@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
-export const HeaderSection = styled("header")`
+export const HeaderSection = styled("header")<any>`
   padding: 1rem 2rem;
   position: fixed;
   width: 100%;
@@ -39,24 +39,25 @@ export const CustomNavLink = styled("div")`
   }
 `;
 
-export const Burger = styled("div")`
+export const Burger = styled("div")<any>`
   display: block;
 
   svg {
-    fill: #fff;
+    ${(p) => (p.color && "fill: " + p.color + ";")}
+
   }
 `;
 
-export const Menu = styled("h5")`
+export const Menu = styled("h5")<any>`
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  color: #FF0000;
+  ${(p) => (p.color && "color: " + p.color + ";")}
 `;
 
 export const CustomNavLinkSmall = styled(Link)`
   font-size: 1.2rem;
-  color: #FF0000;
+  ${(p) => (p.color && "color: " + p.color + ";")}
   transition: color 0.2s ease-in;
   margin: 0.5rem 2rem;
   font-family: Neue Haas Bold;
@@ -77,18 +78,19 @@ export const Label = styled("span")`
 
 export const Outline = styled(MenuOutlined)<any>`
   font-size: 22px;
-  color: #FF0000;
+  ${(p) => (p.color && "color: " + p.color + ";")}
 `;
 
 export const Span = styled("span")`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  ${(p) => (p.color && "color: " + p.color + ";")}
 
   &:hover,
   &:active,
   &:focus {
-    color: #DC143C;
+    filter: brightness(70%);
     text-underline-position: under;
-    text-decoration: #DC143C wavy underline;
+    text-decoration: wavy underline;
   }
 `;

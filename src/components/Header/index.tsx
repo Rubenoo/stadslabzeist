@@ -12,9 +12,16 @@ import {
   Outline,
   Span,
 } from "./styles";
+import { useLocation } from "react-router-dom";
 
-const Header = ({ t }: any) => {
+const Header = () => {
   const [visible, setVisibility] = useState(false);
+  const location                 = useLocation();
+  var colors                     = {textColor: "#FF0000", burgerColor: '#fff' , backgroundColor: "#f1cfe5", svg: "logowit.svg"}
+  
+  if(location.pathname === "/projecten"){
+    colors ={backgroundColor: "#fff", textColor: "#1B3888", svg: "logoblauw.svg", burgerColor: "#1B3888"};
+  }
 
   const showDrawer = () => {
     setVisibility(!visible);
@@ -29,14 +36,17 @@ const Header = ({ t }: any) => {
 
     return (
       <>
-        <CustomNavLinkSmall to="/" onClick={() => onClose()}>
-          <Span>HOME</Span>
+        <CustomNavLinkSmall color={colors.textColor} to="/" onClick={() => onClose()}>
+          <Span color={colors.textColor}>HOME</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall to="/ditzijnwij" onClick={() => onClose()}>
-          <Span>DIT ZIJN WIJ</Span>
+        <CustomNavLinkSmall color={colors.textColor} to="/ditzijnwij" onClick={() => onClose()}>
+          <Span color={colors.textColor}>DIT ZIJN WIJ</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall to="/zienwejedan" onClick={() => onClose()}>
-          <Span>ZIEN WE JE DAN</Span>
+        <CustomNavLinkSmall color={colors.textColor} to="/zienwejedan" onClick={() => onClose()}>
+          <Span color={colors.textColor}>ZIEN WE JE DAN</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall color={colors.textColor} to="/projecten" onClick={() => onClose()}>
+          <Span color={colors.textColor}>PROJECTEN</Span>
         </CustomNavLinkSmall>
       </>
     );
@@ -46,21 +56,21 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon className={"d-none d-lg-block"} src="logowit.svg" width="80px" height="80px" />
-            <SvgIcon className={"d-lg-none d-block"} src="logowit.svg" width="50px" height="50px" />
+            <SvgIcon className={"d-none d-lg-block"} src={colors.svg} width="80px" height="80px" />
+            <SvgIcon className={"d-lg-none d-block"} src={colors.svg} width="50px" height="50px" />
           </LogoContainer>
-          <Burger onClick={showDrawer}>
-            <Outline />
+          <Burger color={colors.burgerColor} onClick={showDrawer}>
+            <Outline color={colors.burgerColor}/>
           </Burger>
         </Row>
-        <Drawer closable={false} visible={visible} onClose={onClose}>
+        <Drawer bodyStyle={{backgroundColor: colors.backgroundColor}} closable={false} visible={visible} onClose={onClose}>
           <Col style={{ marginBottom: "2.5rem" }}>
             <Label className={"d-flex align-items-center justify-content-between"} onClick={onClose}>
               <Col  span={12}>
-                <Menu className="mb-0">Menu</Menu>
+                <Menu color={colors.textColor} className="mb-0">Menu</Menu>
               </Col>
               <Col span={12}>
-                <Outline />
+                <Outline color={colors.textColor}/>
               </Col>
             </Label>
           </Col>

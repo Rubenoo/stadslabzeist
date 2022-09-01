@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactContainer = styled("div")`
   padding: 5em 0 0 0;
-  height:100vh;
+  height:91vh;
   margin: 0em 1em 1em 1em;
   @media only screen and (max-width: 1200px) {
     height:100%;

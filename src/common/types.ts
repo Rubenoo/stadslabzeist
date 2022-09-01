@@ -1,7 +1,22 @@
 export interface ContainerProps {
   border?: boolean;
   backgroundSVG?: string;
+  backgroundColor?: string;
   children: React.ReactNode;
+}
+
+export interface Project {
+  title: string;
+  titleColor: string;
+  introText: string;
+  mainText: string;
+  images?: Array<ProjectImage>;
+  color: string;
+}
+
+export interface ProjectImage {
+  title: string;
+  src: string;
 }
 
 export interface ButtonProps {

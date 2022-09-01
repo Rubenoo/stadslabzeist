@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const FooterLink = styled("a")`
   font-family: "Neue Haas Bold";
+  color:#1B3888;
 `;
 export const Extra = styled("section")<any>`
   background: #E4E4E4;
   margin-right: auto;
   margin-left: auto;
-  position: absolute;
+  /*position: absolute;*/
   font-family: "Neue Haas Bold"!important;
   width: 100%;
   bottom: 0;
