@@ -22,6 +22,9 @@ const Header = () => {
   if(location.pathname === "/projecten"){
     colors ={backgroundColor: "#fff", textColor: "#1B3888", svg: "logoblauw.svg", burgerColor: "#1B3888"};
   }
+  if(location.pathname === "/zienwejedan"){
+    colors ={backgroundColor: "#5CC0E1", textColor: "#1C3887", svg: "logoblauw.svg", burgerColor: "#fff"};
+  }
 
   const showDrawer = () => {
     setVisibility(!visible);

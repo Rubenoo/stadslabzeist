@@ -16,7 +16,7 @@ const DoeJeMee = () => {
             <h1 style={{fontSize: "55px"}}>MEE</h1>
           </div>
           <div className={"d-flex justify-content-end mt-0 mt-lg-5 pt-0 pt-lg-5"}>
-            <Button backgroundColor={"#fff"} textColor={"#e30613"}>WE ZIEN JE GRAAG!</Button>
+            <Button backgroundColor={"#E4E4E4"} textColor={"#e30613"}>WE ZIEN JE GRAAG!</Button>
           </div>
         </>}
         id="doejemee"

@@ -10,7 +10,7 @@ const ProjectContent = (props: {project: Project}) => {
         <Carousel style={{marginBottom: '1em'}} autoplay>
             {props.project.images?.map((image, index) => 
             <div className={"d-flex justify-content-center align-items-center"} key={index}>
-                <img height={200}  src={image.src} alt={image.title} />  
+                <img height={300}  src={image.src} alt={image.title} />  
             </div>          
             )}
         </Carousel>
@@ -20,7 +20,7 @@ const ProjectContent = (props: {project: Project}) => {
                     <PI style={{color: props.project.titleColor,}}>
                         {props.project.introText}
                     </PI>
-                    <div>
+                    <div className='d-none d-lg-block'>
                         <Button textColor={props.project.color} backgroundColor={props.project.titleColor}>Lees meer</Button>
                     </div>
                 </div>
@@ -29,6 +29,9 @@ const ProjectContent = (props: {project: Project}) => {
                 <PM style={{color: props.project.titleColor}}>
                     {props.project.mainText}
                 </PM>
+                <div className='d-lg-none d-block'>
+                    <Button textColor={props.project.color} backgroundColor={props.project.titleColor}>Lees meer</Button>
+                </div>
             </Col>
         </Row>
     </div>

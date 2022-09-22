@@ -14,11 +14,11 @@ const ProjectTable = (props: {ProjectenArray: Array<Project>}) => {
         expandIconPosition='end'
         defaultActiveKey={0}
         bordered={false}
-        style={{borderRadius: "25px 25px 0 0"}}
-        expandIcon={({ isActive }) => <DownCircleOutlined style={{fontSize: "35px", color:"#fff", marginRight: "0.5em"}} rotate={isActive ? 0 : -90} />}
+        style={{borderRadius: "25px 25px 0 0",}}
+        expandIcon={({ isActive }) => <DownCircleOutlined style={{fontSize: "35px", color:"#fff", marginRight: "0.5em",}} rotate={isActive ? 0 : -90} />}
         >
           {props.ProjectenArray.map((project: Project, index) => 
-            <Panel header={<H2P style={{color: project.titleColor,}}>{project.title}</H2P>} key={index} style={{backgroundColor: project.color, borderRadius: index === 0 ? "25px 25px 0 0" : "0"}}>
+            <Panel header={<H2P style={{color: project.titleColor,}}>{project.title}</H2P>} key={index} style={{backgroundColor: project.color, padding: "1em", borderRadius: index === 0 ? "25px 25px 0 0" : "0"}}>
               <ProjectContent project={project}/>
             </Panel>
           )}

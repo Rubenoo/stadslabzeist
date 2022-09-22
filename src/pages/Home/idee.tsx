@@ -21,7 +21,7 @@ const Idee = () => {
                 </>}
         secondContent={
                         <SecondContentContainer top="25vh" className="d-flex justify-content-end align-items-end pt-sm-5 pt-0">
-                          <Button linkTo={"/zienwejedan"} backgroundColor={"#fff"} textColor={"#1B3888"}>JA IK HEB EEN IDEE!</Button>
+                          <Button linkTo={"/zienwejedan"} backgroundColor={"#E4E4E4"} textColor={"#1B3888"}>JA IK HEB EEN IDEE!</Button>
                         </SecondContentContainer>
                       }
         icon="Website-Achtergrond-blauw.svg"
