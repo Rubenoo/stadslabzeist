@@ -29,20 +29,11 @@ const DitZijnWij = () => {
                 <div className="section vh-100">
                   <PersonContainer 
                     type="right" 
-                    img="/img/saskia_portret.png" 
-                    name="Saskia"
-                    backgroundSVG="Website-Achtergrond-saskia-rood.svg"
-                    email="Saskia@stadslabzeist.nl" 
-                    info="Marloes van Haaren is
-                      project- en programmamanager
-                      voor het Stadslab. Marloes van
-                      Haaren is project- en
-                      programmamanager
-                      voor het Stadslab. Marloes van
-                      Haaren is project- en
-                      programmamanager
-                      voor het Stadslab. (Wordt
-                      aangevuld!)"
+                    img="/img/emma_portret.png" 
+                    name="Emma Fijma" 
+                    email="emma@stadslabzeist.nl" 
+                    backgroundSVG="Website-Achtergrond-emma-blauw.svg"
+                    info={"Creatief leider\nKunstenaar / Grafisch ontwerper / maker /\nSuper goed in creatieve denkprocessen, creatieve vertaling van projecten en opdrachten en structuur aanbrengen."}
                       textColor="#F0CFE5"
                     />
                 </div>
@@ -50,60 +41,32 @@ const DitZijnWij = () => {
                   <PersonContainer 
                     type="left" 
                     img="/img/merel_portret.png" 
-                    name="Merel" 
-                    email="Merel@stadslabzeist.nl"
+                    name="Merel de Jong" 
+                    email="merel@stadslabzeist.nl"
                     backgroundSVG="Website-Achtergrond-merel-blauw.svg"
-                    info="Marloes van Haaren is
-                      project- en programmamanager
-                      voor het Stadslab. Marloes van
-                      Haaren is project- en
-                      programmamanager
-                      voor het Stadslab. Marloes van
-                      Haaren is project- en
-                      programmamanager
-                      voor het Stadslab. (Wordt
-                      aangevuld!)"
+                    info={"Zakelijk leider\nMatchmaker / strateeg / social designer /\nSuper goed in plannetjes maken, kansen zien, mensen enthousiasmeren, praten en van niets iets maken."}
                     />
-                </div>
-                <div className="section vh-100">
-                  <PersonContainer 
-                    type="right" 
-                    img="/img/emma_portret.png" 
-                    name="Emma" 
-                    email="Emma@stadslabzeist.nl" 
-                    backgroundSVG="Website-Achtergrond-emma-blauw.svg"
-                    info="Marloes van Haaren is
-                      project- en programmamanager
-                      voor het Stadslab. Marloes van
-                      Haaren is project- en
-                      programmamanager
-                      voor het Stadslab. Marloes van
-                      Haaren is project- en
-                      programmamanager
-                      voor het Stadslab. (Wordt
-                      aangevuld!)"
-                      textColor="#F0CFE5"
-                    />
-                </div>
+                </div>                
                 <div className="section vh-100">
                   <PersonContainer 
                     type="left" 
                     img="/img/marloes_portret.png" 
-                    name="Marloes" 
+                    name="Marloes van Haaren" 
                     backgroundSVG="Website-Achtergrond-marloes-roze.svg"
-                    email="Marloes@stadslabzeist.nl" 
-                    info="Marloes van Haaren is
-                      project- en programmamanager
-                      voor het Stadslab. Marloes van
-                      Haaren is project- en
-                      programmamanager
-                      voor het Stadslab. Marloes van
-                      Haaren is project- en
-                      programmamanager
-                      voor het Stadslab. (Wordt
-                      aangevuld!)"
+                    email="marloes@stadslabzeist.nl" 
+                    info={"Projectmanager\nCoach / maker / structuurdokter /\nSuper goed in de juiste vragen stellen, rust creëren, bergen werk verzetten, plannen en creatief zijn."}
                     />
-                </div>                
+                </div>  
+                <div className="section vh-100">
+                  <PersonContainer 
+                    type="left" 
+                    img="/img/marloes_portret.png" 
+                    name="Ollie" 
+                    backgroundSVG="Website-Achtergrond-marloes-roze.svg"
+                    email="emma@stadslabzeist.nl" 
+                    info={"Kantoorhond\nKnuffelkont / grappenmaker /\nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."}
+                    />
+                </div>                  
                 <div className="section vh-100">
                   <DoeJeMee/>
                   <Footer show={fullpageIndex === 5}/>

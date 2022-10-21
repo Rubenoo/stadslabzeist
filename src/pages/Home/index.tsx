@@ -3,10 +3,10 @@ import Results from "../../components/results/results";
 import Samen from "./samen";
 import Idee from "./idee";
 import WieZijnWij from "./wiezijnwij";
-import DoMiBo from "./domibo";
 import ReactFullpage from '@fullpage/react-fullpage';
 import Footer from "../../components/Footer";
 import Youtube from "./youtube";
+import ZienWeJe from "./zienjewe";
 
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -55,7 +55,7 @@ const Home = () => {
                   <WieZijnWij/>
                 </div>
                 <div className="section vh-100">
-                  <DoMiBo/>                  
+                  <ZienWeJe/>                  
                   <Footer show={fullpageIndex === 5}/>
                 </div>                  
                </div>

@@ -13,9 +13,9 @@ const Results = () => {
     return (
         <VisibilitySensor partialVisibility onChange={onChange} offset={{ bottom: 100 }}>
             <div className='d-flex flex-column flex-md-row justify-content-around align-items-center pb-lg-5 pb-0'>               
-                <Col lg={4} md={6} sm={8} xs={10}> 
+                <Col lg={6} md={8} sm={10} xs={12}> 
                     <Row justify="space-around" align="middle">
-                        <Col className={"px-4"} span={24}> 
+                        <Col className={"px-3 px-md-4 px-lg-5"} span={24}> 
                             <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                         <Col span={24}>   
@@ -26,16 +26,16 @@ const Results = () => {
                             </H1>
                         </Col>
                         <Col span={24}>  
-                            <P>AFGERONDEN PROJECTEN</P>                      
+                            <P>EXPERIMENTEN</P>                      
                         </Col>
-                        <Col className={"px-4 d-md-flex d-none"} span={24}> 
+                        <Col className={"px-3 px-md-4 px-lg-5 d-md-flex d-none"} span={24}> 
                             <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={4} md={6} sm={8} xs={10}> 
+                <Col lg={6} md={8} sm={10} xs={12}> 
                     <Row justify="space-around" align="middle">
-                        <Col className={"px-4"} span={24}> 
+                        <Col className={"px-3 px-md-4 px-lg-5"} span={24}> 
                             <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                         <Col span={24}>   
@@ -46,16 +46,16 @@ const Results = () => {
                             </H1>
                         </Col>
                         <Col span={24}>  
-                            <P>NIEUWE VERBINDINGEN</P>                      
+                            <P>PARTNERS</P>                      
                         </Col>
-                        <Col className={"px-4 d-md-flex d-none"} span={24}> 
+                        <Col className={"px-5 px-md-4 px-lg-5 d-md-flex d-none"} span={24}> 
                             <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={4} md={6} sm={8} xs={10}> 
+                <Col lg={6} md={8} sm={10} xs={12}> 
                     <Row justify="space-around" align="middle">
-                        <Col className={"px-4"} span={24}> 
+                        <Col className={"px-3 px-md-4 px-lg-5"} span={24}> 
                             <Divider className={"my-lg-5 my-3"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                         <Col span={24}>   
@@ -66,9 +66,9 @@ const Results = () => {
                             </H1>
                         </Col>
                         <Col span={24}>  
-                            <P>VERBONDEN STADMAKERS</P>                      
+                            <P>NIEUWE STADMAKERS</P>                      
                         </Col>
-                        <Col className={"px-4"} span={24}> 
+                        <Col className={"px-3 px-md-4 px-lg-5"} span={24}> 
                             <Divider className={"my-lg-5 my-3 mb-4"} style={{ borderTop: "4px solid #1B3888" }} />
                         </Col>
                     </Row>

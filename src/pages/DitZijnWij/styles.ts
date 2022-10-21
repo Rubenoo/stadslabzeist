@@ -12,6 +12,7 @@ export const A = styled("a")<{ textColor?: string}>`
 `;
 export const P = styled("p")<{ textColor?: string}>`
   font-size: 15px;
+  white-space: pre-wrap;
   font-family: Neue Haas Medium;
   ${(props) => (props.textColor ? "color: " + props.textColor + ";" : "color: #1B3888;")}
 

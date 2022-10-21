@@ -23,7 +23,7 @@ const PersonContainer = ({type, img, name, email, info, backgroundSVG, textColor
                   <img loading='lazy' src={img} style={{ height: '100%', width: '100%', objectFit: 'cover',}} alt={name}></img>
                 }
         secondContent={<SecondContentContainer top={"0"} className="h-100 d-flex flex-column align-items-start align-items-lg-end">
-                        <A textColor={textColor} className="w-100" target="_blank" href={"mailto: " + img}>{email}</A>
+                        <A textColor={textColor} className="w-100" target="_blank" href={"mailto: " + email}>{name}</A>
                         <P textColor={textColor}> 
                           {info}
                         </P>

@@ -16,9 +16,9 @@ const ZienWeJeDan = () => {
     <div className="section h-100 overflow-auto" >
       <Container backgroundSVG={"Website-Achtergrond-blauw-contact.svg"}>
         <Contact 
-          title={"ZIEN WE JE DAN?"} 
+          title={"ZIN OM MEE TE DOEN?"} 
           content={
-          "Bij het Stadslab is iedereen welkom!\nHeb je een vraag? Een idee?\nOf kom je bij ons op de koffie?"} 
+          "Wij zijn altijd op zoek naar nieuwe stadmakers en creatieve geesten om ons netwerk te vergroten en ons team aan te vullen. Lijkt dat je leuk? Laten we elkaar ontmoeten!\nDan gaan we een keer koffiedrinken of een wandeling door Zeist maken met onze Ollie."} 
           id={"zienwejedan"}
           />
         <Footer show={true}/>

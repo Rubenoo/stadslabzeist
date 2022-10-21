@@ -1,11 +1,12 @@
 import { Carousel, Col, Row } from 'antd'
 import React from 'react'
-import { Button } from '../../common/Button'
 import { Project } from '../../common/types'
-import { PI, PM } from './styles'
+import { PI, PM, ProjectLink } from './styles'
 
 const ProjectContent = (props: {project: Project}) => {
-  return (
+
+    const links = props.project.links?.map((link, index) => <ProjectLink key={index} target="_blank" href={link.src} textColor={props.project.color} backgroundColor={props.project.titleColor}>{link.text}</ProjectLink>)
+    return (
     <div>
         <Carousel style={{marginBottom: '1em'}} autoplay>
             {props.project.images?.map((image, index) => 
@@ -20,8 +21,8 @@ const ProjectContent = (props: {project: Project}) => {
                     <PI style={{color: props.project.titleColor,}}>
                         {props.project.introText}
                     </PI>
-                    <div className='d-none d-lg-block'>
-                        <Button textColor={props.project.color} backgroundColor={props.project.titleColor}>Lees meer</Button>
+                    <div className='d-none d-lg-flex flex-column align-items-start'>
+                        {links}
                     </div>
                 </div>
             </Col>
@@ -29,8 +30,8 @@ const ProjectContent = (props: {project: Project}) => {
                 <PM style={{color: props.project.titleColor}}>
                     {props.project.mainText}
                 </PM>
-                <div className='d-lg-none d-block'>
-                    <Button textColor={props.project.color} backgroundColor={props.project.titleColor}>Lees meer</Button>
+                <div className='d-lg-none d-flex flex-column'>
+                   {links}
                 </div>
             </Col>
         </Row>
