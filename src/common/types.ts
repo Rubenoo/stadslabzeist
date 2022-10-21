@@ -11,12 +11,17 @@ export interface Project {
   introText: string;
   mainText: string;
   images?: Array<ProjectImage>;
+  links?: Array<ProjectLink>;
   color: string;
 }
 
 export interface ProjectImage {
   title: string;
   src: string;
+}
+export interface ProjectLink {
+  src: string;
+  text: string;
 }
 
 export interface ButtonProps {
