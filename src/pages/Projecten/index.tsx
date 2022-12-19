@@ -1,9 +1,9 @@
 import { Row, Col } from "antd";
 import { lazy } from "react";
-import Footer from "../../components/Footer";
 import ProjectTable from "./ProjectTable";
 import { H1P, ProjectContainer } from "./styles";
 import ProjectenArray from "../../content/Projecten.json"
+import Footer from "../../components/Footer";
 
 const Container = lazy(() => import("../../common/Container"));
 
@@ -18,9 +18,9 @@ const Projecten = () => {
           <Col span={24} lg={16}>
             <ProjectTable ProjectenArray={ProjectenArray}/>
           </Col>
-        </Row>     
+        </Row>    
       </ProjectContainer>
-      <Footer show/>
+      <Footer show/> 
     </Container>
   );
 };

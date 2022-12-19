@@ -43,7 +43,10 @@ export const Styles = createGlobalStyle`
         background: #f1cfe5;
         overflow-x: hidden;
     }
-
+    
+    .fp-watermark{
+        display:none!important;
+    }
 
     input,
     textarea {
@@ -75,7 +78,7 @@ export const Styles = createGlobalStyle`
         font-family: 'Neue Haas Bold', serif;
         color: #E4E4E4;
         font-size: 56px;
-        line-height: 1.18;
+        line-height: 1;
 
         @media only screen and (max-width: 890px) {
           font-size: 47px;

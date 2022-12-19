@@ -33,8 +33,8 @@ const Contact = ({ title, content, id }: ContactProps) => {
             <Col span={24}>
               <Input
                 type="text"
-                name="naam"
-                placeholder="NAAM"
+                name="NAAM"
+                placeholder=""
                 value={values.naam || ""}
                 onChange={handleChange}
               />
@@ -43,8 +43,8 @@ const Contact = ({ title, content, id }: ContactProps) => {
             <Col span={24}>
               <Input
                 type="text"
-                name="email"
-                placeholder="EMAILADRES"
+                name="EMAIL"
+                placeholder=""
                 value={values.email || ""}
                 onChange={handleChange}
               />
@@ -53,8 +53,8 @@ const Contact = ({ title, content, id }: ContactProps) => {
             <Col span={24}>
               <Input
                 type="text"
-                name="onderwerp"
-                placeholder="ONDERWERP"
+                name="ONDERWERP"
+                placeholder=""
                 value={values.onderwerp || ""}
                 onChange={handleChange}
               />
@@ -62,9 +62,9 @@ const Contact = ({ title, content, id }: ContactProps) => {
             </Col>
             <Col span={24}>
               <TextArea
-                placeholder="BERICHT"
+                placeholder=""
                 value={values.bericht || ""}
-                name="bericht"
+                name="BERICHT"
                 onChange={handleChange}
               />
               <ValidationType type="bericht" />

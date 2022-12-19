@@ -8,10 +8,10 @@ export const Extra = styled("section")<any>`
   background: #E4E4E4;
   margin-right: auto;
   margin-left: auto;
-  /*position: absolute;*/
   font-family: "Neue Haas Bold"!important;
   width: 100%;
   bottom: 0;
+  position: absolute;
   transition: all 0.3s ease-in-out;
   visibility: ${(p) => (p.show ? "visible" : "hidden")};
   opacity: ${(p) => (p.show ? "1" : "0")};

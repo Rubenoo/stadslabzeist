@@ -4,7 +4,7 @@ export const Content = styled("p")`
   margin-top: 1.5rem;
   white-space: pre-wrap;
   font-family: Neue Haas Medium;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
 
   @media screen and (min-width: 992px) {

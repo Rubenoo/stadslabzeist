@@ -15,7 +15,7 @@ import {
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [visible, setVisibility] = useState(false);
+  const [open, setVisibility] = useState(false);
   const location                 = useLocation();
   var colors                     = {textColor: "#FF0000", burgerColor: '#fff' , backgroundColor: "#f1cfe5", svg: "logowit.svg"}
   
@@ -27,11 +27,11 @@ const Header = () => {
   }
 
   const showDrawer = () => {
-    setVisibility(!visible);
+    setVisibility(!open);
   };
 
   const onClose = () => {
-    setVisibility(!visible);
+    setVisibility(!open);
     window.fullpage_api.moveTo(1);
   };
 
@@ -66,11 +66,11 @@ const Header = () => {
             <Outline color={colors.burgerColor}/>
           </Burger>
         </Row>
-        <Drawer bodyStyle={{backgroundColor: colors.backgroundColor}} closable={false} visible={visible} onClose={onClose}>
+        <Drawer bodyStyle={{backgroundColor: colors.backgroundColor}} closable={false} open={open} onClose={onClose}>
           <Col style={{ marginBottom: "2.5rem" }}>
             <Label className={"d-flex align-items-center justify-content-between"} onClick={onClose}>
               <Col  span={12}>
-                <Menu color={colors.textColor} className="mb-0">Menu</Menu>
+                <Menu color={colors.textColor} className="mb-0">MENU</Menu>
               </Col>
               <Col span={12}>
                 <Outline color={colors.textColor}/>

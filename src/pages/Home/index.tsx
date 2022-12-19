@@ -44,7 +44,7 @@ const Home = () => {
                     content={<>
                               <Results/>
                             </>}
-                    button={"ZIN OM MEE TE DOEN?"}
+                    button={""}
                     fullWidth={true}
                     fullHeight={true}
                     id="doen"

@@ -25,18 +25,7 @@ const DitZijnWij = () => {
               <div id="fullpage-wrapper">
                 <div className="section vh-100">
                   <DitZijnWijBlock/>
-                </div>   
-                <div className="section vh-100">
-                  <PersonContainer 
-                    type="right" 
-                    img="/img/emma_portret.png" 
-                    name="Emma Fijma" 
-                    email="emma@stadslabzeist.nl" 
-                    backgroundSVG="Website-Achtergrond-emma-blauw.svg"
-                    info={"Creatief leider\nKunstenaar / Grafisch ontwerper / maker /\nSuper goed in creatieve denkprocessen, creatieve vertaling van projecten en opdrachten en structuur aanbrengen."}
-                      textColor="#F0CFE5"
-                    />
-                </div>
+                </div>                   
                 <div className="section vh-100">
                   <PersonContainer 
                     type="left" 
@@ -44,7 +33,7 @@ const DitZijnWij = () => {
                     name="Merel de Jong" 
                     email="merel@stadslabzeist.nl"
                     backgroundSVG="Website-Achtergrond-merel-blauw.svg"
-                    info={"Zakelijk leider\nMatchmaker / strateeg / social designer /\nSuper goed in plannetjes maken, kansen zien, mensen enthousiasmeren, praten en van niets iets maken."}
+                    info={"Zakelijk leider\n\nMatchmaker / strateeg / social designer \nSuper goed in plannetjes maken, kansen zien, mensen enthousiasmeren, praten en van niets iets maken."}
                     />
                 </div>                
                 <div className="section vh-100">
@@ -54,7 +43,7 @@ const DitZijnWij = () => {
                     name="Marloes van Haaren" 
                     backgroundSVG="Website-Achtergrond-marloes-roze.svg"
                     email="marloes@stadslabzeist.nl" 
-                    info={"Projectmanager\nCoach / maker / structuurdokter /\nSuper goed in de juiste vragen stellen, rust creëren, bergen werk verzetten, plannen en creatief zijn."}
+                    info={"Projectmanager\n\nCoach / maker / structuurdokter \nSuper goed in de juiste vragen stellen, rust creëren, bergen werk verzetten, plannen en creatief zijn."}
                     />
                 </div>  
                 <div className="section vh-100">
@@ -64,9 +53,20 @@ const DitZijnWij = () => {
                     name="Ollie" 
                     backgroundSVG="Website-Achtergrond-marloes-roze.svg"
                     email="emma@stadslabzeist.nl" 
-                    info={"Kantoorhond\nKnuffelkont / grappenmaker /\nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."}
+                    info={"Kantoorhond\n\nKnuffelkont / grappenmaker \nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."}
                     />
-                </div>                  
+                </div>  
+                <div className="section vh-100">
+                  <PersonContainer 
+                    type="right" 
+                    img="/img/emma_portret.png" 
+                    name="Emma Fijma" 
+                    email="emma@stadslabzeist.nl" 
+                    backgroundSVG="Website-Achtergrond-emma-blauw.svg"
+                    info={"Creatief leider\n\nKunstenaar / Grafisch ontwerper / maker \nSuper goed in creatieve denkprocessen, creatieve vertaling van projecten en opdrachten en structuur aanbrengen."}
+                      textColor="#F0CFE5"
+                    />
+                </div>                
                 <div className="section vh-100">
                   <DoeJeMee/>
                   <Footer show={fullpageIndex === 5}/>

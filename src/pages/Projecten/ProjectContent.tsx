@@ -5,13 +5,13 @@ import { PI, PM, ProjectLink } from './styles'
 
 const ProjectContent = (props: {project: Project}) => {
 
-    const links = props.project.links?.map((link, index) => <ProjectLink key={index} target="_blank" href={link.src} textColor={props.project.color} backgroundColor={props.project.titleColor}>{link.text}</ProjectLink>)
+    const links = props.project.links?.map((link, index) => <ProjectLink key={index} target="_blank" href={link.src} textColor={props.project.titleColor} >{link.text}</ProjectLink>)
     return (
     <div>
         <Carousel style={{marginBottom: '1em'}} autoplay>
             {props.project.images?.map((image, index) => 
             <div className={"d-flex justify-content-center align-items-center"} key={index}>
-                <img height={300}  src={image.src} alt={image.title} />  
+                <img height={350}  src={image.src} alt={image.title} />  
             </div>          
             )}
         </Carousel>

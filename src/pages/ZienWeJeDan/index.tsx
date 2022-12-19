@@ -13,7 +13,7 @@ const ZienWeJeDan = () => {
     }
   });
   return (
-    <div className="section h-100 overflow-auto" >
+    <div className="section overflow-auto" >
       <Container backgroundSVG={"Website-Achtergrond-blauw-contact.svg"}>
         <Contact 
           title={"ZIN OM MEE TE DOEN?"} 

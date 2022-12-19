@@ -21,7 +21,7 @@ export const RightBlockContainer =  styled("section")<{ backgroundColor?: string
   }
 `;
 export const P = styled("p")`
-  font-size: 15px;
+  font-size: 16px;
   font-family: Neue Haas Medium;
 
   @media screen and (min-width: 992px) {
