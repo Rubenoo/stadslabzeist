@@ -21,7 +21,7 @@ const ZienWeJeDan = () => {
           "Wij zijn altijd op zoek naar nieuwe stadmakers en creatieve geesten om ons netwerk te vergroten en ons team aan te vullen. Lijkt dat je leuk? Laten we elkaar ontmoeten!\nDan gaan we een keer koffiedrinken of een wandeling door Zeist maken met onze Ollie."} 
           id={"zienwejedan"}
           />
-        <Footer show={true}/>
+        <Footer show={true} relative={true}/>
       </Container>
     </div>
   );

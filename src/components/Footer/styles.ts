@@ -16,7 +16,7 @@ export const Extra = styled("section")<any>`
   visibility: ${(p) => (p.show ? "visible" : "hidden")};
   opacity: ${(p) => (p.show ? "1" : "0")};
   @media only screen and (max-width: 1200px) {
-    position: relative;
+    ${(p) => (p.relative ? "position: relative;" : "")};
   }
 `;
 

@@ -81,7 +81,7 @@ const DitZijnWij = () => {
                             </div>
                             <div className="section vh-100">
                                 <DoeJeMee/>
-                                <Footer show={fullpageIndex === 5}/>
+                                <Footer show={fullpageIndex === 6}/>
                             </div>
                         </div>
                     );
