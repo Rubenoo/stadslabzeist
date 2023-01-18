@@ -51,6 +51,9 @@ const Header = () => {
         <CustomNavLinkSmall color={colors.textColor} to="/projecten" onClick={() => onClose()}>
           <Span color={colors.textColor}>PROJECTEN</Span>
         </CustomNavLinkSmall>
+        <CustomNavLinkSmall color={colors.textColor} to="/hoe" onClick={() => onClose()}>
+          <Span color={colors.textColor}>HOE</Span>
+        </CustomNavLinkSmall>
       </>
     );
   };
