@@ -19,6 +19,7 @@ const RightBlock = ({
   fadeRight,
   titleSize,
   person,
+  button,
 }: ContentBlockProps) => {
   return (
     <RightBlockContainer backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
@@ -35,6 +36,7 @@ const RightBlock = ({
           </Col>
         </Row>
       </Fade>
+      {button}
     </RightBlockContainer>
   );
 };
