@@ -10,7 +10,7 @@ export const H1P = styled("h1")`
   }
 `;
 export const H2P = styled("h2")`
-  font-size: 25px;
+  font-size: 22px;
   font-family: Neue Haas Bold;
   margin: 0;
   @media screen and (min-width: 992px) {
@@ -44,7 +44,7 @@ export const ProjectContainer = styled('div')`
   padding: 5em 1em 1em;
   background-color:#E4E4E4;
   @media screen and (min-width: 992px) {
-    padding: 8em 2em 1em;
+    padding: 8em 2em 6em;
   }
 `;
 

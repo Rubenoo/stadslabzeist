@@ -20,7 +20,7 @@ const Projecten = () => {
           </Col>
         </Row>    
       </ProjectContainer>
-      <Footer show/> 
+      <Footer show relative/>
     </Container>
   );
 };
