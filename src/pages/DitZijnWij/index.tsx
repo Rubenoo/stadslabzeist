@@ -72,10 +72,10 @@ const DitZijnWij = () => {
                                 <PersonContainer
                                     type="left"
                                     img="/img/marjolein_portret.png"
-                                    name="Marjolein"
+                                    name="Marjolein Brandenburg"
                                     email="marjolein@stadslabzeist.nl"
                                     backgroundSVG="Website-Achtergrond-merel-blauw.svg"
-                                    info={"Creatief leider\n\nKunstenaar / Grafisch ontwerper / maker \nSuper goed in creatieve denkprocessen, creatieve vertaling van projecten en opdrachten en structuur aanbrengen."}
+                                    info={"Projectmanager\n\nDuizendpoot / sporty spice / rust brenger \nSuper goed in overzicht creëren, keihard werken, mensen verbinden en oplossingen bedenken."}
                                     textColor="#1B3888"
                                 />
                             </div>
