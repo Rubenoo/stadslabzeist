@@ -1,7 +1,8 @@
 {
   "name": "stadslabzeist",
   "version": "0.1.2",
-  "private": true,
+  "homepage": "https://rubenoo.github.io/stadslabzeist",
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@emotion/react": "11.10.5",
@@ -45,6 +46,8 @@
     "workbox-sw": "^6.5.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
