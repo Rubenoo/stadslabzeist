@@ -16,7 +16,7 @@ const Home = () => {
         <Container>
             <ScrollToTop show={fullpageIndex > 0}/>
             <ReactFullpage
-                licenseKey={'8N0K9-BXM78-CKADI-YNQJ9-VEXHK'}
+                licenseKey={process.env.REACT_APP_FULLPAGE_KEY}
                 scrollingSpeed={1000}
                 scrollOverflow={false}
                 onLeave={(origin, destination) => {
