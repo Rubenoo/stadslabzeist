@@ -8,7 +8,7 @@ export const RightBlockContainer =  styled("section")<{ backgroundColor?: string
   height: 100%;
 
   ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
-  ${(props) => (props.backgroundSVG && "background-image: url(/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
+  ${(props) => (props.backgroundSVG && "background-image: url(/stadslabzeist/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
 
   @media only screen and (max-width: 1024px) {
     padding: 8rem 2rem 6rem;
