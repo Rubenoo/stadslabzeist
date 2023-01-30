@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/stadslabzeist/static/css/main.c2cab247.css",
-    "main.js": "/stadslabzeist/static/js/main.d3ca1088.js",
-    "static/js/343.8e8f4a51.chunk.js": "/stadslabzeist/static/js/343.8e8f4a51.chunk.js",
-    "static/js/717.111f6283.chunk.js": "/stadslabzeist/static/js/717.111f6283.chunk.js",
+    "main.js": "/stadslabzeist/static/js/main.411a1c1f.js",
+    "static/js/343.96a72e31.chunk.js": "/stadslabzeist/static/js/343.96a72e31.chunk.js",
+    "static/js/717.fe2ad2c1.chunk.js": "/stadslabzeist/static/js/717.fe2ad2c1.chunk.js",
     "static/js/934.cccf273d.chunk.js": "/stadslabzeist/static/js/934.cccf273d.chunk.js",
-    "static/js/81.e7300d28.chunk.js": "/stadslabzeist/static/js/81.e7300d28.chunk.js",
+    "static/js/81.00a0bf67.chunk.js": "/stadslabzeist/static/js/81.00a0bf67.chunk.js",
     "static/js/175.4cd7f6cc.chunk.js": "/stadslabzeist/static/js/175.4cd7f6cc.chunk.js",
     "static/js/283.f8790477.chunk.js": "/stadslabzeist/static/js/283.f8790477.chunk.js",
     "static/js/722.12e91f9e.chunk.js": "/stadslabzeist/static/js/722.12e91f9e.chunk.js",
@@ -20,11 +20,11 @@
     "service-worker.js": "/stadslabzeist/service-worker.js",
     "index.html": "/stadslabzeist/index.html",
     "main.c2cab247.css.map": "/stadslabzeist/static/css/main.c2cab247.css.map",
-    "main.d3ca1088.js.map": "/stadslabzeist/static/js/main.d3ca1088.js.map",
-    "343.8e8f4a51.chunk.js.map": "/stadslabzeist/static/js/343.8e8f4a51.chunk.js.map",
-    "717.111f6283.chunk.js.map": "/stadslabzeist/static/js/717.111f6283.chunk.js.map",
+    "main.411a1c1f.js.map": "/stadslabzeist/static/js/main.411a1c1f.js.map",
+    "343.96a72e31.chunk.js.map": "/stadslabzeist/static/js/343.96a72e31.chunk.js.map",
+    "717.fe2ad2c1.chunk.js.map": "/stadslabzeist/static/js/717.fe2ad2c1.chunk.js.map",
     "934.cccf273d.chunk.js.map": "/stadslabzeist/static/js/934.cccf273d.chunk.js.map",
-    "81.e7300d28.chunk.js.map": "/stadslabzeist/static/js/81.e7300d28.chunk.js.map",
+    "81.00a0bf67.chunk.js.map": "/stadslabzeist/static/js/81.00a0bf67.chunk.js.map",
     "175.4cd7f6cc.chunk.js.map": "/stadslabzeist/static/js/175.4cd7f6cc.chunk.js.map",
     "283.f8790477.chunk.js.map": "/stadslabzeist/static/js/283.f8790477.chunk.js.map",
     "722.12e91f9e.chunk.js.map": "/stadslabzeist/static/js/722.12e91f9e.chunk.js.map",
@@ -39,6 +39,6 @@
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.d3ca1088.js"
+    "static/js/main.411a1c1f.js"
   ]
 }
