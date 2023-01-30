@@ -11,7 +11,7 @@ const ProjectContent = (props: {project: Project}) => {
         <Carousel style={{marginBottom: '1em'}} autoplay>
             {props.project.images?.map((image, index) => 
             <div className={"d-flex justify-content-center align-items-center"} key={index}>
-                <img loading="lazy" height={350} src={image.src} alt={image.title} />
+                <img loading="lazy" height={350} src={"/stadslabzeist/" + image.src} alt={image.title} />
             </div>          
             )}
         </Carousel>

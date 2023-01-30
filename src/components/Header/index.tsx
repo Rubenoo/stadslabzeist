@@ -19,10 +19,10 @@ const Header = () => {
   const location                 = useLocation();
   var colors                     = {textColor: "#FF0000", burgerColor: '#fff' , backgroundColor: "#f1cfe5", svg: "logowit.svg"}
   
-  if(location.pathname === "/projecten"){
+  if(location.pathname === "/stadslabzeist/projecten"){
     colors ={backgroundColor: "#fff", textColor: "#1B3888", svg: "logoblauw.svg", burgerColor: "#1B3888"};
   }
-  if(location.pathname === "/zienwejedan"){
+  if(location.pathname === "/stadslabzeist/zienwejedan"){
     colors ={backgroundColor: "#5CC0E1", textColor: "#1C3887", svg: "logoblauw.svg", burgerColor: "#fff"};
   }
 
@@ -39,19 +39,19 @@ const Header = () => {
 
     return (
       <>
-        <CustomNavLinkSmall color={colors.textColor} to="/" onClick={() => onClose()}>
+        <CustomNavLinkSmall color={colors.textColor} to="/stadslabzeist/" onClick={() => onClose()}>
           <Span color={colors.textColor}>HOME</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall color={colors.textColor} to="/ditzijnwij" onClick={() => onClose()}>
+        <CustomNavLinkSmall color={colors.textColor} to="/stadslabzeist/ditzijnwij" onClick={() => onClose()}>
           <Span color={colors.textColor}>DIT ZIJN WIJ</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall color={colors.textColor} to="/zienwejedan" onClick={() => onClose()}>
+        <CustomNavLinkSmall color={colors.textColor} to="/stadslabzeist/zienwejedan" onClick={() => onClose()}>
           <Span color={colors.textColor}>ZIEN WE JE DAN</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall color={colors.textColor} to="/projecten" onClick={() => onClose()}>
+        <CustomNavLinkSmall color={colors.textColor} to="/stadslabzeist/projecten" onClick={() => onClose()}>
           <Span color={colors.textColor}>PROJECTEN</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall color={colors.textColor} to="/hoe" onClick={() => onClose()}>
+        <CustomNavLinkSmall color={colors.textColor} to="/stadslabzeist/hoe" onClick={() => onClose()}>
           <Span color={colors.textColor}>HOE</Span>
         </CustomNavLinkSmall>
       </>
