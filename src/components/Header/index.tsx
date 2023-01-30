@@ -61,7 +61,7 @@ const Header = () => {
     <HeaderSection>
       <Container>
         <Row justify="space-between">
-          <LogoContainer to="/" aria-label="homepage">
+          <LogoContainer to="/stadslabzeist/" aria-label="homepage">
             <SvgIcon className={"d-none d-lg-block"} src={colors.svg} width="80px" height="80px" />
             <SvgIcon className={"d-lg-none d-block"} src={colors.svg} width="50px" height="50px" />
           </LogoContainer>
