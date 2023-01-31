@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/stadslabzeist/static/css/main.c2cab247.css",
-    "main.js": "/stadslabzeist/static/js/main.6207fcd5.js",
-    "static/js/553.d36374f9.chunk.js": "/stadslabzeist/static/js/553.d36374f9.chunk.js",
+    "main.js": "/stadslabzeist/static/js/main.a8d7742d.js",
+    "static/js/553.4c18a774.chunk.js": "/stadslabzeist/static/js/553.4c18a774.chunk.js",
     "static/js/717.41744434.chunk.js": "/stadslabzeist/static/js/717.41744434.chunk.js",
     "static/js/934.cccf273d.chunk.js": "/stadslabzeist/static/js/934.cccf273d.chunk.js",
     "static/js/81.00a0bf67.chunk.js": "/stadslabzeist/static/js/81.00a0bf67.chunk.js",
@@ -19,8 +19,8 @@
     "service-worker.js": "/stadslabzeist/service-worker.js",
     "index.html": "/stadslabzeist/index.html",
     "main.c2cab247.css.map": "/stadslabzeist/static/css/main.c2cab247.css.map",
-    "main.6207fcd5.js.map": "/stadslabzeist/static/js/main.6207fcd5.js.map",
-    "553.d36374f9.chunk.js.map": "/stadslabzeist/static/js/553.d36374f9.chunk.js.map",
+    "main.a8d7742d.js.map": "/stadslabzeist/static/js/main.a8d7742d.js.map",
+    "553.4c18a774.chunk.js.map": "/stadslabzeist/static/js/553.4c18a774.chunk.js.map",
     "717.41744434.chunk.js.map": "/stadslabzeist/static/js/717.41744434.chunk.js.map",
     "934.cccf273d.chunk.js.map": "/stadslabzeist/static/js/934.cccf273d.chunk.js.map",
     "81.00a0bf67.chunk.js.map": "/stadslabzeist/static/js/81.00a0bf67.chunk.js.map",
@@ -37,6 +37,6 @@
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.6207fcd5.js"
+    "static/js/main.a8d7742d.js"
   ]
 }
