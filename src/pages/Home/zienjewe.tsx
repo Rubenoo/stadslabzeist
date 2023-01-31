@@ -1,5 +1,6 @@
 import { lazy } from "react";
 import { Button } from "../../common/Button";
+import {H} from "./styles";
 
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 
@@ -8,17 +9,9 @@ const ZienWeJe = () => {
       <MiddleBlock
         title={""}
         content={<>
-          <div className={"d-none d-lg-block text-start"}>
-            <h1 style={{fontSize: "110px"}}>ZIEN WE JE </h1>
-            <h1 style={{fontSize: "110px"}}>BIJ DE KOFFIE</h1>
-            <h1 style={{fontSize: "110px"}}>MET STADMAKERS?</h1>
-
-          </div>
-          <div className={"d-lg-none d-block text-start"}>
-            <h1 style={{fontSize: "55px",}}>ZIEN WE JE </h1>
-            <h1 style={{fontSize: "55px"}}>BIJ DE KOFFIE</h1>
-            <h1 style={{fontSize: "55px",}}>MET STADMAKERS?</h1>
-          </div>
+            <H>ZIEN WE JE</H>
+            <H>BIJ DE KOFFIE</H>
+            <H>MET STADMAKERS?</H>
           <div className={"d-flex justify-content-end mt-0 mt-lg-5 pt-0 pt-lg-5"}>
             <Button backgroundColor={"#E4E4E4"} textColor={"#e30613"}>JA</Button>
           </div>

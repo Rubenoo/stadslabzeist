@@ -31,7 +31,7 @@ const Toolbox = () => {
             icon="Website-Achtergrond-blauw-wit.svg"
             id="idee"
             backgroundColor="#5dc0e1"
-            backgroundSVG="Website-Achtergrond-merel-blauw.svg"
+            backgroundSVG="Website-Achtergrond-blauw-wit.svg"
             fadeRight={true}
         />
     );
