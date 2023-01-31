@@ -13,7 +13,7 @@ const ZienWeJe = () => {
             <H>BIJ DE KOFFIE</H>
             <H>MET STADMAKERS?</H>
           <div className={"d-flex justify-content-end mt-0 mt-lg-5 pt-0 pt-lg-5"}>
-            <Button backgroundColor={"#E4E4E4"} textColor={"#e30613"}>JA</Button>
+            <Button linkTo="/stadslabzeist/zienwejedan" backgroundColor={"#E4E4E4"} textColor={"#e30613"}>JA</Button>
           </div>
         </>}
         id="domibo"

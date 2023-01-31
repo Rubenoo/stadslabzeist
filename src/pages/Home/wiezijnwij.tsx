@@ -6,7 +6,7 @@ const WieZijnWij = () => {
   return (
     <div className="text-center">
       <img loading='lazy' src="/stadslabzeist/img/wiezijnwij.png" style={{ height: '100vh', width: '100%', objectFit: 'cover',}} alt="wiezijnwij"></img>
-      <Link onClick={() => window.fullpage_api.moveTo(1)} to="/ditzijnwij" className={"d-flex flex-column align-items-start"} style={{ position: 'absolute' , top: '50%' , left: '50%', transform: 'translate(-50%, -50%)'}} >
+      <Link onClick={() => window.fullpage_api.moveTo(1)} to="/stadslabzeist/ditzijnwij" className={"d-flex flex-column align-items-start"} style={{ position: 'absolute' , top: '50%' , left: '50%', transform: 'translate(-50%, -50%)'}} >
         <H1WZW>WIE</H1WZW>
         <H1WZW>ZIJN</H1WZW>
         <H1WZW>WIJ</H1WZW>
