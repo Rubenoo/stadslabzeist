@@ -5,7 +5,7 @@ export const P = styled("p")`
   white-space: pre-wrap;
   font-family: Neue Haas Bold;
   color: #E4E4E4;
-  max-height: 350px;
+  max-height: 400px;
   overflow-y: scroll;
   @media screen and (min-width: 992px) {
     font-size: 20px;
