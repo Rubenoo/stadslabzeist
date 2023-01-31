@@ -12,7 +12,6 @@ const ProjectTable = (props: {ProjectenArray: Array<Project>}) => {
     <Collapse 
         accordion
         expandIconPosition='end'
-        defaultActiveKey={0}
         bordered={false}
         style={{borderRadius: "25px 25px 0 0",}}
         expandIcon={({ isActive }) => <DownCircleOutlined style={{fontSize: "35px", color:"#fff", marginRight: "0.5em",}} rotate={isActive ? 0 : -90} />}

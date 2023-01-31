@@ -15,7 +15,7 @@ const VoorWie = () => {
                 </>
             }
             secondContent={
-                <P>
+                <P className="scrollable">
                     Wij zijn een beweging van stadmakers. Een stadmaker is iemand die zich inzet om de stad nóg mooier
                     te maken. En een stadmaker doet dat op geheel eigen wijze. Zo ontstaat creativiteit,
                     nieuwsgierigheid en ruimte voor het experiment. Als je met ons een project doet krijg je

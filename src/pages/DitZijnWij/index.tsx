@@ -48,17 +48,6 @@ const DitZijnWij = () => {
                             </div>
                             <div className="section vh-100">
                                 <PersonContainer
-                                    type="left"
-                                    img="/img/ollie_portret.png"
-                                    name="Ollie"
-                                    backgroundSVG="Website-Achtergrond-rood.svg"
-                                    email="emma@stadslabzeist.nl"
-                                    textColor="#F0CFE5"
-                                    info={"Kantoorhond\n\nKnuffelkont / grappenmaker \nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."}
-                                />
-                            </div>
-                            <div className="section vh-100">
-                                <PersonContainer
                                     type="right"
                                     img="/img/emma_portret.png"
                                     name="Emma Fijma"
@@ -77,6 +66,17 @@ const DitZijnWij = () => {
                                     backgroundSVG="Website-Achtergrond-merel-blauw.svg"
                                     info={"Projectmanager\n\nDuizendpoot / sporty spice / rust brenger \nSuper goed in overzicht creëren, keihard werken, mensen verbinden en oplossingen bedenken."}
                                     textColor="#1B3888"
+                                />
+                            </div>
+                            <div className="section vh-100">
+                                <PersonContainer
+                                    type="left"
+                                    img="/img/ollie_portret.png"
+                                    name="Ollie"
+                                    backgroundSVG="Website-Achtergrond-rood.svg"
+                                    email="emma@stadslabzeist.nl"
+                                    textColor="#F0CFE5"
+                                    info={"Kantoorhond\n\nKnuffelkont / grappenmaker \nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."}
                                 />
                             </div>
                             <div className="section vh-100">

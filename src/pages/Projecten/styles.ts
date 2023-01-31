@@ -14,7 +14,7 @@ export const H2P = styled("h2")`
   font-family: Neue Haas Bold;
   margin: 0;
   @media screen and (min-width: 992px) {
-    font-size: 50px;
+    font-size: 42px;
   }
 `;
 
