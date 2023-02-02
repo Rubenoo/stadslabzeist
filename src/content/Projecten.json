@@ -80,7 +80,7 @@
             {"title": "Lespakket", "src": "img//projecten/ONBEPERKT/2.png"},
             {"title": "ONBEPERKT foto 2", "src": "img//projecten/ONBEPERKT/3.jpeg"}
         ],
-        "color": "#5DC0E1",
+        "color": "#F8D13E",
         "links": [
             {
                 "src": "https://www.zeist.nl/zorg-onderwijs-en-inkomen/meedoen-in-zeist/onbeperkt",
@@ -97,12 +97,12 @@
         {"title": "hart", "src": "img//projecten/hartvoorzeist/hart.png"},
         {"title": "foto2", "src": "img//projecten/hartvoorzeist/hart2.png"}
         ],
-        "color": "#5DC0E1",
+        "color": "#F0CFE5",
         "links": []
     },
     {
         "title": "IDEEËNBUSHALTE", 
-        "titleColor": "#1B3888",
+        "titleColor": "#fff",
         "introText": "Er zijn heel veel inwoners met hele goede ideeën, alleen weten zij soms niet waar ze met dat idee terecht kunnen. Wij zijn op zoek naar inwoners met creatieve slagkracht die hun idee waar willen maken.",
         "mainText": "Daarom ontwikkelden wij de ideeënbushalte. Een installatie die wij op allerlei plekken in Zeist neer kunnen zetten en waarmee wij inwoners uitnodigen om hun idee voor Zeist met ons te delen. De bushalte is een gespreksstarter. Je kunt er even stil staan bij jouw dromen en plannen en we kunnen met elkaar bespreken wat jouw eerste stap zou kunnen zijn. Stadslab Zeist helpt je door jouw aanjager te zijn, en kennis en netwerk te delen. Ook kunnen wij helpen bij het vinden van een geschikte financieringsmix.\n\nMaar soms willen wij gewoon jouw stem horen over een bepaald onderwerp of vraagstuk. Dat delen wij met inwoners en de beleidsmakers. Zo wordt Zeist democratischer.\n\nBetrokken stadmakers: 5\n\nPartners: Samen Duurzaam Zeist, Launch your Future en Christelijk Lyceum Zeist.",
         "images": [
@@ -110,25 +110,12 @@
             {"title": "Show 1", "src": "img//projecten/LHBTIQ/LHBTIQ+ Zeist-35-klein.jpg"},
             {"title": "Show 2", "src": "img//projecten/LHBTIQ/LHBTIQ+-Zeist-13-klein.jpg"}
         ],
-        "color": "#5DC0E1",
+        "color": "#1B3888",
         "links": [
             {
                 "src": "https://www.instagram.com/p/CbUWG86KtM6/",
                 "text": "Klik hier voor de resultaten!"
             }   
-        ]
-    },
-    {
-        "title": "CIPU X SALT Methode Community Building", 
-        "titleColor": "#1B3888",
-        "introText": "JONGEREN IN ZEIST AAN ZET!",
-        "mainText": "WIP",
-        "images": [
-        {"title": "hart", "src": "img//projecten/hartvoorzeist/hart.png"},
-        {"title": "foto2", "src": "img//projecten/hartvoorzeist/hart2.png"}
-        ],
-        "color": "#5DC0E1",
-        "links": [
         ]
     }
 ]

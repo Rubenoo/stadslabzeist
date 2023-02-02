@@ -18,7 +18,7 @@ export const H6 = styled("h6")`
   color: #fff;
 
   @media screen and (min-width: 992px) {
-    font-size: 121px;
+    font-size: 100px;
   }
 `;
 

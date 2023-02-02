@@ -9,23 +9,26 @@ const VoorWie = () => {
             type="right"
             title={""}
             content={
-                <>
-                    <H>VOOR</H>
-                    <H>WIE?</H>
-                </>
+                <H>VOOR<br/>WIE?</H>
             }
             secondContent={
                 <P className="scrollable">
-                    Wij zijn een beweging van stadmakers. Een stadmaker is iemand die zich inzet om de stad nóg mooier
-                    te maken. En een stadmaker doet dat op geheel eigen wijze. Zo ontstaat creativiteit,
-                    nieuwsgierigheid en ruimte voor het experiment. Als je met ons een project doet krijg je
-                    dit:<br/><br/>
+                    <strong>Inwoners</strong> kunnen bij ons terecht met al hun ideeën. Wij hebben het netwerk om je
+                    verder te helpen, maar we weten ook hoe je jouw idee kunt financieren.<br/><br/>
 
-                    Alles wat we doen is duurzaam<br/>
-                    Alles doen we vanuit verbinding<br/>
-                    Wij maken onze projecten inclusief & toegankelijk<br/>
-                    We zetten altijd onze creativiteit in<br/>
-                    Wij maken zichtbaar<br/>
+                    <strong>Maatschappelijke/sociale/culturele organisaties</strong> kunnen bij ons terecht met vragen
+                    over community building en hoe je nu ècht boven tafel krijgt wat er speelt.<br/><br/>
+
+                    <strong>Bedrijven</strong> kunnen bij ons terecht als zij meer willen doen met Maatschappelijk
+                    Verantwoord Ondernemen, duurzaam ondernemen en Social Return.<br/><br/>
+
+                    <strong>Kennisinstellingen</strong> kunnen bij ons terecht voor innovatieve onderwijsconcepten, om
+                    bepaalde data boven water te krijgen in ons ‘living lab gemeente Zeist’, om samen te werken aan
+                    grote maatschappelijke thema’s en vraagstukken.<br/><br/>
+
+                    <strong>Overheidsinstellingen</strong> kunnen bij ons terecht om voorbij de ‘usual suspects’ te
+                    komen. De groepen die de weg naar de gemeente goed kennen. De grootste groep inwoners die je niet
+                    kent en hoort, die wil je leren kennen! Dat is pas echt democratisch.
                 </P>
             }
             icon="Website-Achtergrond-blauw.svg"

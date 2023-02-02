@@ -24,7 +24,7 @@ const RightBlock = ({
   return (
     <RightBlockContainer backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
       <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
-        <Row justify={person ? "space-around": "space-between"} align="middle" id={id}>
+        <Row justify={person ? "space-around": "space-between"} align="top" id={id}>
           <Col className={person ? "d-flex align-items-center justify-content-center" : ""} lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
                 <h6 style={titleSize ? {fontSize: titleSize}: {}}>{title}</h6>

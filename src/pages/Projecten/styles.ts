@@ -10,11 +10,11 @@ export const H1P = styled("h1")`
   }
 `;
 export const H2P = styled("h2")`
-  font-size: 22px;
+  font-size: 20px;
   font-family: Neue Haas Bold;
   margin: 0;
   @media screen and (min-width: 992px) {
-    font-size: 42px;
+    font-size: 38px;
   }
 `;
 

@@ -9,13 +9,10 @@ const OnzePartners = () => {
             type="right"
             title={""}
             content={
-                <>
-                    <H>ONZE</H>
-                    <H>PARTNERS</H>
-                </>
+                <H>ONZE<br/>PARTNERS</H>
             }
             secondContent={
-               <></>
+                <></>
             }
             icon="Website-Achtergrond-blauw.svg"
             id="idee"

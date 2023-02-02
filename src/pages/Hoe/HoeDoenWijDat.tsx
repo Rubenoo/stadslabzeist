@@ -11,10 +11,7 @@ const HoeDoenWijDat = () => {
             type="right"
             title={""}
             content={
-                <>
-                    <H>HOE DOEN</H>
-                    <H>WIJ DAT</H>
-                </>
+                <H>HOE DOEN<br/>WIJ DAT</H>
             }
             secondContent={
                 <P className="scrollable">
@@ -23,11 +20,11 @@ const HoeDoenWijDat = () => {
                     nieuwsgierigheid en ruimte voor het experiment. Als je met ons een project doet krijg je
                     dit:<br/><br/>
 
-                    Alles wat we doen is duurzaam<br/>
-                    Alles doen we vanuit verbinding<br/>
-                    Wij maken onze projecten inclusief & toegankelijk<br/>
-                    We zetten altijd onze creativiteit in<br/>
-                    Wij maken zichtbaar<br/>
+                    Alles wat we doen is <strong>duurzaam</strong><br/>
+                    Alles doen we vanuit <strong>verbinding</strong><br/>
+                    Wij maken onze projecten <strong>inclusief & toegankelijk</strong><br/>
+                    We zetten altijd onze <strong>creativiteit</strong> in<br/>
+                    Wij maken <strong>zichtbaar</strong><br/>
                 </P>
             }
             backgroundSVG="Website-Achtergrond-geel-wit.svg"
@@ -36,8 +33,9 @@ const HoeDoenWijDat = () => {
             fadeRight={true}
             backgroundColor="#F8D13E"
             button={
-                <AnimatedContainer style={{zIndex:0}} onClick={() => window.fullpage_api.moveSectionDown()} className="d-flex align-items-center justify-content-center">
-                    <SvgIcon src="scroll-down-white.svg" width="80px" height="80px" />
+                <AnimatedContainer style={{zIndex: 0}} onClick={() => window.fullpage_api.moveSectionDown()}
+                                   className="d-flex align-items-center justify-content-center">
+                    <SvgIcon src="scroll-down-white.svg" width="80px" height="80px"/>
                 </AnimatedContainer>
             }
         />

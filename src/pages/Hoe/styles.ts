@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const P = styled("p")`
   font-size: 18px;
   white-space: pre-wrap;
-  font-family: Neue Haas Bold;
+  font-family: Neue Haas Medium;
   color: #1B3888;
   max-height: 350px;
   overflow-y: scroll;

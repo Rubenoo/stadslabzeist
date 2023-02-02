@@ -9,23 +9,28 @@ const Toolbox = () => {
             type="right"
             title={""}
             content={
-                <>
-                    <H>ONZE</H>
-                    <H>TOOLBOX</H>
-                </>
+                <H>ONZE<br/>TOOLBOX</H>
             }
             secondContent={
                 <P className="scrollable">
-                    Wij zijn een beweging van stadmakers. Een stadmaker is iemand die zich inzet om de stad nóg mooier
-                    te maken. En een stadmaker doet dat op geheel eigen wijze. Zo ontstaat creativiteit,
-                    nieuwsgierigheid en ruimte voor het experiment. Als je met ons een project doet krijg je
-                    dit:<br/><br/>
+                    <strong>Co-creatie</strong><br/>
+                    Alles doen we vanuit verbinding, samen met anderen. Vanuit de behoefte en wens die er is.<br/><br/>
 
-                    Alles wat we doen is duurzaam<br/>
-                    Alles doen we vanuit verbinding<br/>
-                    Wij maken onze projecten inclusief & toegankelijk<br/>
-                    We zetten altijd onze creativiteit in<br/>
-                    Wij maken zichtbaar<br/>
+                    <strong>Experiment</strong><br/>
+                    We leren dus door samen te experimenteren. Soms moet je eerst iets proberen, voordat je weet dat het eigenlijk anders moet.<br/><br/>
+
+                    <strong>Broedplaats</strong><br/>
+                    Wij zijn een broedplaats en daarom op zoek naar plek voor makers. Want zet een groep creatieven op 1 plek en er gebeurt iets! Met de mensen onderling, de plek en de omgeving van de plek.<br/><br/>
+
+                    <strong>Ontmoeting</strong><br/>
+                    Wij doen nooit iets zelf, maar altijd samen. Zo krijg je draagvlak en leren we samen.<br/>
+                    Per project bekijken wij welke partners we kunnen betrekken. Partners die elkaar vaak nog niet kennen, maar na 1 keer samen iets gedaan te hebben, gebeurt dat vaker!<br/><br/>
+
+                    <strong>Slagkracht</strong><br/>
+                    Met elkaar sta je sterker, met elkaar ben je creatiever, met elkaar ben je sneller, met elkaar kun je … alles!<br/><br/>
+
+                    <strong>Duurzaam</strong><br/>
+                    Alles wat wij doen is goed voor mens en aarde. En wij proberen met wat wij doen impact te maken, waardoor er een blijvende verandering optreedt in mensen, systemen, oplossingen. Ook dat is duurzaam!<br/><br/>
                 </P>
             }
             icon="Website-Achtergrond-blauw-wit.svg"
