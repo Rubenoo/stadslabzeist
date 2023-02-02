@@ -29,7 +29,7 @@ const DitZijnWij = () => {
                             <div className="section vh-100">
                                 <PersonContainer
                                     type="left"
-                                    img="/img/merel_portret.png"
+                                    img="/img/merel_portret.jpg"
                                     name="Merel de Jong"
                                     email="merel@stadslabzeist.nl"
                                     backgroundSVG="Website-Achtergrond-merel-blauw.svg"
@@ -39,7 +39,7 @@ const DitZijnWij = () => {
                             <div className="section vh-100">
                                 <PersonContainer
                                     type="right"
-                                    img="/img/marloes_portret.png"
+                                    img="/img/marloes_portret.jpg"
                                     name="Marloes van Haaren"
                                     backgroundSVG="Website-Achtergrond-marloes-roze.svg"
                                     email="marloes@stadslabzeist.nl"
@@ -49,7 +49,7 @@ const DitZijnWij = () => {
                             <div className="section vh-100">
                                 <PersonContainer
                                     type="right"
-                                    img="/img/emma_portret.png"
+                                    img="/img/emma_portret.jpg"
                                     name="Emma Fijma"
                                     email="emma@stadslabzeist.nl"
                                     backgroundSVG="Website-Achtergrond-emma-blauw.svg"
@@ -60,7 +60,7 @@ const DitZijnWij = () => {
                             <div className="section vh-100">
                                 <PersonContainer
                                     type="left"
-                                    img="/img/marjolein_portret.png"
+                                    img="/img/marjolein_portret.jpg"
                                     name="Marjolein Brandenburg"
                                     email="marjolein@stadslabzeist.nl"
                                     backgroundSVG="Website-Achtergrond-merel-blauw.svg"
@@ -71,7 +71,7 @@ const DitZijnWij = () => {
                             <div className="section vh-100">
                                 <PersonContainer
                                     type="left"
-                                    img="/img/ollie_portret.png"
+                                    img="/img/ollie_portret.jpg"
                                     name="Ollie"
                                     backgroundSVG="Website-Achtergrond-rood.svg"
                                     email="emma@stadslabzeist.nl"

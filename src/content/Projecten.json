@@ -48,8 +48,8 @@
         {"title": "5K PITCH finale 1", "src": "img//projecten/5k pitch/5k pitch finale 1.jpg"},
         {"title": "5K PITCH finale 2", "src": "img//projecten/5k pitch/5k pitch finale 2.jpg"},
         {"title": "5K PITCH banner", "src": "img//projecten/5k pitch/5k pitch banner.jpg"},
-        {"title": "Den Dolder voor het leven", "src": "img//projecten/5k pitch/den dolder voor het leven.jpeg"},
-        {"title": "SUSTAINABLE STYLE FESTIVAL 2021", "src": "img//projecten/5k pitch/SUSTAINABLE STYLE FESTIVAL 2021.jpeg"}
+        {"title": "Den Dolder voor het leven", "src": "img//projecten/5k pitch/den dolder voor het leven.jpg"},
+        {"title": "SUSTAINABLE STYLE FESTIVAL 2021", "src": "img//projecten/5k pitch/SUSTAINABLE STYLE FESTIVAL 2021.jpg"}
         ],
         "color": "#1B3888",
         "links": [
@@ -94,8 +94,9 @@
         "introText": "ELKAAR ONTMOETEN\nDe Gemeente Zeist wil  de LHBTIQ+ gemeenschap meer in zijn kracht zetten en verbinden. Onderling, maar ook met de overige inwoners in de gemeente Zeist. Wij stelden ons daarbij een avond voor, met ontmoeting en een goed gesprek.",
         "mainText": "Daarom organiseerden wij samen met COC Midden Nederland de LHBTIQ+ Movie Night in het Slottuintheater van Slot Zeist. Rondom de short movie Ruben en documentaire De Roze Revolutie - Lettersoep ging het publiek het gesprek aan met een panel van vertegenwoordigers uit de Jongerenraad Zeist, Art.1 Midden Nederland en Zeist Inclusief. Ook filmproducer Hans van der Hulst was van de partij.\n\nNiet alleen het gesprek met de panelleden, maar ook de reacties uit het publiek waren inspirerend, leerzaam, eerlijk en vanuit het hart. Met meer dan 70 inwoners, jong en oud, was deze avond een groot succes!\n\nBetrokken stadmakers: 8\n\nPartners: Gemeente Zeist, Slot Zeist, Stichting Slottuintheater, COC Midden Nederland, Jongerenraad Zeist, Art. 1 Midden Nederland en Zeist Inclusief.",
         "images": [
-        {"title": "hart", "src": "img//projecten/hartvoorzeist/hart.png"},
-        {"title": "foto2", "src": "img//projecten/hartvoorzeist/hart2.png"}
+            {"title": "Koffie", "src": "img//projecten/LHBTIQ/LHBTIQ+ Zeist-1-min.jpg"},
+            {"title": "Show 1", "src": "img//projecten/LHBTIQ/LHBTIQ+ Zeist-35-klein.jpg"},
+            {"title": "Show 2", "src": "img//projecten/LHBTIQ/LHBTIQ+-Zeist-13-klein.jpg"}
         ],
         "color": "#F0CFE5",
         "links": []
@@ -106,9 +107,7 @@
         "introText": "Er zijn heel veel inwoners met hele goede ideeën, alleen weten zij soms niet waar ze met dat idee terecht kunnen. Wij zijn op zoek naar inwoners met creatieve slagkracht die hun idee waar willen maken.",
         "mainText": "Daarom ontwikkelden wij de ideeënbushalte. Een installatie die wij op allerlei plekken in Zeist neer kunnen zetten en waarmee wij inwoners uitnodigen om hun idee voor Zeist met ons te delen. De bushalte is een gespreksstarter. Je kunt er even stil staan bij jouw dromen en plannen en we kunnen met elkaar bespreken wat jouw eerste stap zou kunnen zijn. Stadslab Zeist helpt je door jouw aanjager te zijn, en kennis en netwerk te delen. Ook kunnen wij helpen bij het vinden van een geschikte financieringsmix.\n\nMaar soms willen wij gewoon jouw stem horen over een bepaald onderwerp of vraagstuk. Dat delen wij met inwoners en de beleidsmakers. Zo wordt Zeist democratischer.\n\nBetrokken stadmakers: 5\n\nPartners: Samen Duurzaam Zeist, Launch your Future en Christelijk Lyceum Zeist.",
         "images": [
-            {"title": "Koffie", "src": "img//projecten/LHBTIQ/LHBTIQ+ Zeist-1-min.jpg"},
-            {"title": "Show 1", "src": "img//projecten/LHBTIQ/LHBTIQ+ Zeist-35-klein.jpg"},
-            {"title": "Show 2", "src": "img//projecten/LHBTIQ/LHBTIQ+-Zeist-13-klein.jpg"}
+            {"title": "bushalte", "src": "img//projecten/ideeenbushalte/bushalte.jpg"}
         ],
         "color": "#1B3888",
         "links": [
