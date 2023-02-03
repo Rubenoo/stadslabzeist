@@ -27,7 +27,7 @@ const LeftContentBlock = ({
   return (
     <LeftContentSection backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
       <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
-        <Row justify={person ? "space-around": "space-between"} align="top" id={id}>
+        <Row justify={person ? "space-around": "space-between"} align={person ? "middle": "top"} id={id}>
           <Col lg={{span: 11, order: 0}} md={{span: 11, order: 0}} sm={{span: 12, order: 0}} xs={{span: 24, order: 1}}>
             {secondContent ? secondContent : <SvgIcon src={icon} width="100%" height="100%" />}
           </Col>

@@ -73,7 +73,7 @@ const DitZijnWij = () => {
                                     type="left"
                                     img="/img/ollie_portret.jpg"
                                     name="Ollie"
-                                    backgroundSVG="Website-Achtergrond-rood.svg"
+                                    backgroundSVG="Website-Achtergrond-olie-rood.svg"
                                     email="emma@stadslabzeist.nl"
                                     textColor="#F0CFE5"
                                     info={"Kantoorhond\n\nKnuffelkont / grappenmaker \nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."}
