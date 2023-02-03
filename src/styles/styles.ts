@@ -4,26 +4,26 @@ export const Styles = createGlobalStyle`
 
     @font-face {
         font-family: "Neue Haas";
-        src: url("/stadslabzeist/fonts/Neue-Haas.ttf") format("truetype");
+        src: url("/fonts/Neue-Haas.ttf") format("truetype");
         font-style: normal;
         font-display: swap;
     }
 
     @font-face {
         font-family: "Neue Haas Bold";
-        src: url("/stadslabzeist/fonts/Neue-Haas-Bold.ttf") format("truetype");
+        src: url("/fonts/Neue-Haas-Bold.ttf") format("truetype");
         font-style: normal;
         font-display: swap;
     }
     @font-face {
         font-family: "Neue Haas Medium";
-        src: url("/stadslabzeist/fonts/Neue-Haas-Medium.ttf") format("truetype");
+        src: url("/fonts/Neue-Haas-Medium.ttf") format("truetype");
         font-style: normal;
         font-display: swap;
     }
     @font-face {
         font-family: "Neue Haas Black";
-        src: url("/stadslabzeist/fonts/Neue-Haas-Black.ttf") format("truetype");
+        src: url("/fonts/Neue-Haas-Black.ttf") format("truetype");
         font-style: normal;
         font-display: swap;
     }

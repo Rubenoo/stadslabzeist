@@ -13,7 +13,7 @@ const Results = () => {
     }
     return (
         <VisibilitySensor partialVisibility onChange={onChange} offset={{ bottom: 100 }}>
-            <Link to="/stadslabzeist/projecten" className='d-flex flex-column flex-md-row justify-content-around align-items-center pb-lg-5 pb-0'>
+            <Link to="/projecten" className='d-flex flex-column flex-md-row justify-content-around align-items-center pb-lg-5 pb-0'>
                 <Col lg={6} md={8} sm={10} xs={12}> 
                     <Row justify="space-around" align="middle">
                         <Col className={"px-3 px-md-4 px-lg-5"} span={24}> 

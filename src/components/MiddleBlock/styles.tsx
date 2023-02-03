@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MiddleBlockSection = styled("section")<{ backgroundColor?: string, backgroundSVG?: string, fullBackground?: boolean}>`
   position: relative;
   ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
-  ${(props) => (props.backgroundSVG && "background-image: url(/stadslabzeist/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
+  ${(props) => (props.backgroundSVG && "background-image: url(/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
 
   padding: 7.5rem 0 0rem;
   text-align: center;

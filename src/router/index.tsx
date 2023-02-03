@@ -21,11 +21,11 @@ const Router = () => {
       <Styles />
       <Header />
       <Routes>
-        <Route path="/stadslabzeist/" element={<Home/>} />
-        <Route path="/stadslabzeist/ditzijnwij" element={<DitZijnWij/>} />
-        <Route path="/stadslabzeist/zienwejedan" element={<ZienWeJeDan/>} />
-        <Route path="/stadslabzeist/projecten" element={<Projecten/>} />
-        <Route path="/stadslabzeist/hoe" element={<Hoe/>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/ditzijnwij" element={<DitZijnWij/>} />
+        <Route path="/zienwejedan" element={<ZienWeJeDan/>} />
+        <Route path="/projecten" element={<Projecten/>} />
+        <Route path="/hoe" element={<Hoe/>} />
       </Routes>
     </Suspense>
   );

@@ -18,8 +18,8 @@ const DitZijnWij = () => {
                 scrollingSpeed={1000}
                 scrollOverflow={false}
                 onLeave={(origin, destination) => {
-                    setFullpageIndex(destination.index);
-                }}
+                            setFullpageIndex(destination.index);
+                        }}
                 render={() => {
                     return (
                         <div id="fullpage-wrapper">
@@ -48,7 +48,7 @@ const DitZijnWij = () => {
                             </div>
                             <div className="section vh-100">
                                 <PersonContainer
-                                    type="right"
+                                    type="left"
                                     img="/img/emma_portret.jpg"
                                     name="Emma Fijma"
                                     email="emma@stadslabzeist.nl"
@@ -59,7 +59,7 @@ const DitZijnWij = () => {
                             </div>
                             <div className="section vh-100">
                                 <PersonContainer
-                                    type="left"
+                                    type="right"
                                     img="/img/marjolein_portret.jpg"
                                     name="Marjolein Brandenburg"
                                     email="marjolein@stadslabzeist.nl"

@@ -1,7 +1,7 @@
 {
   "name": "stadslabzeist",
-  "version": "0.1.2",
-  "homepage": "https://rubenoo.github.io/stadslabzeist/",
+  "version": "0.1.3",
+  "homepage": "ruben-test.massop.dev",
   "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",

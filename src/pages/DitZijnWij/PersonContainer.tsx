@@ -20,7 +20,7 @@ const PersonContainer = ({type, img, name, email, info, backgroundSVG, textColor
         type={type}
         title={""}
         content={
-                  <img loading='eager' src={"/stadslabzeist" + img} style={{ height: '100%', width: '100%', objectFit: 'cover',}} alt={name}></img>
+                  <img loading='eager' src={"/" + img} style={{ height: '100%', width: '100%', objectFit: 'cover',}} alt={name}></img>
                 }
         secondContent={<SecondContentContainer top={"0"} className="h-100 d-flex flex-column align-items-start">
                         <A textColor={textColor} className="w-100" target="_blank" href={"mailto: " + email}>{name}</A>
