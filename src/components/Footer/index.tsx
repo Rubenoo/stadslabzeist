@@ -37,7 +37,7 @@ const Footer = ({ show, relative }: any) => {
             <div className="w-100 text-nowrap text-center d-lg-flex flex-column align-items-center justify-content-center d-none">
               <div className={"d-none d-lg-block"}>
                 <div>
-                  <FooterLink className="w-100" style={{fontSize: "19px"}} target="_blank" href="http://maps.google.nl/?q=EMMAPLEIN 206, 3701 DH ZEIST">EMMAPLEIN 206, 3701 DH ZEIST</FooterLink>
+                  <FooterLink className="w-100" style={{fontSize: "19px"}} target="_blank" href="http://maps.google.nl/?q=Oranje Nassaulaan 35, 3708 GA Zeist">THOMASKERK, ORANJE NASSAULAAN 35 ZEIST</FooterLink>
                 </div>
                 <div>
                   <FooterLink className="w-100" style={{fontSize: "19px"}} target="_blank" href="mailto: WIJZIJN@STADSLABZEIST.NL">WIJZIJN@STADSLABZEIST.NL</FooterLink>
@@ -58,7 +58,7 @@ const Footer = ({ show, relative }: any) => {
           </div>
           <div className={"d-lg-none d-block text-center pb-2"}>
                 <div>
-                  <FooterLink style={{fontSize: "13px"}} className="w-100" target="_blank" href="http://maps.google.nl/?q=EMMAPLEIN 206, 3701 DH ZEIST">EMMAPLEIN 206, 3701 DH ZEIST</FooterLink>
+                  <FooterLink style={{fontSize: "13px"}} className="w-100" target="_blank" href="http://maps.google.nl/?q=Oranje Nassaulaan 35, 3708 GA Zeist">THOMASKERK, ORANJE NASSAULAAN 35 ZEIST</FooterLink>
                 </div>
                 <div>
                   <FooterLink style={{fontSize: "13px"}} className="w-100" target="_blank" href="mailto: WIJZIJN@STADSLABZEIST.NL">WIJZIJN@STADSLABZEIST.NL</FooterLink>

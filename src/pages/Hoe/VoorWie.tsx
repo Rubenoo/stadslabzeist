@@ -8,6 +8,7 @@ const VoorWie = () => {
         <ContentBlock
             type="right"
             title={""}
+            person
             content={
                 <H>VOOR<br/>WIE?</H>
             }

@@ -10,6 +10,7 @@ const HoeDoenWijDat = () => {
         <ContentBlock
             type="right"
             title={""}
+
             content={
                 <H>HOE DOEN<br/>WIJ DAT</H>
             }

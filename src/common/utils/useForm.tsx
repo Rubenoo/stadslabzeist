@@ -4,7 +4,6 @@ import emailjs from '@emailjs/browser';
 
 export const useForm = (validate: any) => {
   const [values, setValues] = useState({});
-
   const [errors, setErrors] = useState({});
   const [shouldSubmit, setShouldSubmit] = useState(false);
 
@@ -42,6 +41,7 @@ export const useForm = (validate: any) => {
 
 
   const handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("event", event.target.value)
     event.persist();
     setValues((values) => ({
       ...values,

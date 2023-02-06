@@ -1,24 +1,24 @@
 import {lazy} from "react";
 import {H} from "./styles";
+import partners from "../../content/Partners.json"
+import PartnersCarousel from "../Hoe/PartnersCarousel";
 
-const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 
 const OnzePartners = () => {
     return (
-        <ContentBlock
-            type="right"
+        <MiddleBlock
             title={""}
             content={
-                <H>ONZE<br/>PARTNERS</H>
+                <>
+                    <H>ONZE<br/>PARTNERS</H>
+                    <PartnersCarousel partners={partners}/>
+                </>
             }
-            secondContent={
-                <></>
-            }
-            icon="Website-Achtergrond-blauw.svg"
+
             id="idee"
             backgroundSVG="Website-Achtergrond-roze-wit.svg"
-            fadeRight={false}
-        />
+            button={""}/>
     );
 };
 

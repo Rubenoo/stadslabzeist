@@ -1,0 +1,147 @@
+[
+  {
+    "title": "Gemeente Zeist",
+    "backgroundSVG": "Website-Achtergrond-roze-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "De Peppel",
+    "backgroundSVG": "Website-Achtergrond-roze.svg",
+    "backgroundColor": "#e30613"
+  },
+  {
+    "title": "KunsthuisIdea",
+    "backgroundSVG": "Website-Achtergrond-rood.svg",
+    "backgroundColor": "#f0cfe5"
+  },
+  {
+    "title": "Samen Duurzaam Zeist",
+    "backgroundSVG": "Website-Achtergrond-merel-blauw.svg",
+    "backgroundColor": "#1C3887"
+  },
+  {
+    "title": "Vrije Stijl",
+    "backgroundSVG": "Website-Achtergrond-marloes-roze.svg",
+    "backgroundColor": "#364B9B"
+  },
+  {
+    "title": "Biga Groep",
+    "backgroundSVG": "Website-Achtergrond-geel-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "Kringloop Zeist",
+    "backgroundSVG": "Website-Achtergrond-emma-blauw.svg",
+    "backgroundColor": "#364B9B"
+  },
+  {
+    "title": "Vrijwilligers Centrale",
+    "backgroundSVG": "Website-Achtergrond-blauw-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "Centrum Zeist",
+    "backgroundSVG": "Website-Achtergrond-roze-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "MeanderOmnium",
+    "backgroundSVG": "Website-Achtergrond-roze.svg",
+    "backgroundColor": "#e30613"
+  },
+  {
+    "title": "Stimuleringsfonds Creatieve Industrie",
+    "backgroundSVG": "Website-Achtergrond-rood.svg",
+    "backgroundColor": "#f0cfe5"
+  },
+  {
+    "title": "VSB Fonds",
+    "backgroundSVG": "Website-Achtergrond-merel-blauw.svg",
+    "backgroundColor": "#1C3887"
+  },
+  {
+    "title": "Cultuur Innovatiefonds Provincie Utrecht",
+    "backgroundSVG": "Website-Achtergrond-marloes-roze.svg",
+    "backgroundColor": "#364B9B"
+  },
+  {
+    "title": "Van Tellingen Pul Stichting",
+    "backgroundSVG": "Website-Achtergrond-geel-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "Uit in Zeist",
+    "backgroundSVG": "Website-Achtergrond-emma-blauw.svg",
+    "backgroundColor": "#364B9B"
+  },
+  {
+    "title": "Groene Makelaar",
+    "backgroundSVG": "Website-Achtergrond-blauw-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "Hogeschool Utrecht",
+    "backgroundSVG": "Website-Achtergrond-roze-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "Jongerenraad Zeist",
+    "backgroundSVG": "Website-Achtergrond-roze.svg",
+    "backgroundColor": "#e30613"
+  },
+  {
+    "title": "Slotstad RTV",
+    "backgroundSVG": "Website-Achtergrond-rood.svg",
+    "backgroundColor": "#f0cfe5"
+  },
+  {
+    "title": "Kaka Lee King",
+    "backgroundSVG": "Website-Achtergrond-merel-blauw.svg",
+    "backgroundColor": "#1C3887"
+  },
+  {
+    "title": "Bartimeus",
+    "backgroundSVG": "Website-Achtergrond-marloes-roze.svg",
+    "backgroundColor": "#364B9B"
+  },
+  {
+    "title": "Accessibility",
+    "backgroundSVG": "Website-Achtergrond-geel-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "De Reuringdienst",
+    "backgroundSVG": "Website-Achtergrond-emma-blauw.svg",
+    "backgroundColor": "#364B9B"
+  },
+  {
+    "title": "Vrije Hogeschool",
+    "backgroundSVG": "Website-Achtergrond-blauw-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "ZSC Patria",
+    "backgroundSVG": "Website-Achtergrond-roze-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  },
+  {
+    "title": "Sportief Zeist",
+    "backgroundSVG": "Website-Achtergrond-roze.svg",
+    "backgroundColor": "#e30613"
+  },
+  {
+    "title": "Goedemorgen Zeist",
+    "backgroundSVG": "Website-Achtergrond-rood.svg",
+    "backgroundColor": "#f0cfe5"
+  },
+  {
+    "title": "Zaak van Gedrag",
+    "backgroundSVG": "Website-Achtergrond-merel-blauw.svg",
+    "backgroundColor": "#1C3887"
+  },
+  {
+    "title": "Studio Anne-Marij",
+    "backgroundSVG": "Website-Achtergrond-geel-wit.svg",
+    "backgroundColor": "#E4E4E4"
+  }
+]

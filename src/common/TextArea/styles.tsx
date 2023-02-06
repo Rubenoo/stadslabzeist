@@ -36,5 +36,6 @@ export const Label = styled("label")`
   padding-bottom: 10px;
   text-transform: capitalize;
   font-family: Neue Haas Medium;
+  text-transform: uppercase;
   color: #fff;
 `;

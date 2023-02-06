@@ -8,6 +8,7 @@ const Toolbox = () => {
         <ContentBlock
             type="right"
             title={""}
+            person
             content={
                 <H>ONZE<br/>TOOLBOX</H>
             }
