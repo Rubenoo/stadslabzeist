@@ -19,10 +19,12 @@ const Home = () => {
                 licenseKey={process.env.REACT_APP_FULLPAGE_KEY}
                 scrollingSpeed={1000}
                 scrollOverflow={false}
+                scrollBar={false}
                 normalScrollElements=".scrollable"
                 onLeave={(origin, destination) => {
                     setFullpageIndex(destination.index);
                 }}
+                credits={{enabled: false}}
                 render={() => {
                     return (
                         <>

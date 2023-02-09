@@ -20,6 +20,7 @@ const DitZijnWij = () => {
                 onLeave={(origin, destination) => {
                             setFullpageIndex(destination.index);
                         }}
+                credits={{enabled: false}}
                 render={() => {
                     return (
                         <div id="fullpage-wrapper">
@@ -73,9 +74,8 @@ const DitZijnWij = () => {
                                     type="left"
                                     img="/img/ollie_portret.jpg"
                                     name="Ollie"
-                                    backgroundSVG="Website-Achtergrond-olie-rood.svg"
+                                    backgroundSVG="Website-Achtergrond-marloes-roze.svg"
                                     email="emma@stadslabzeist.nl"
-                                    textColor="#F0CFE5"
                                     info={"Kantoorhond\n\nKnuffelkont / grappenmaker \nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."}
                                 />
                             </div>

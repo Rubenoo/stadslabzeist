@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import {SvgIcon} from "../../common/SvgIcon";
 import {H1WZW} from "../../components/results/styles";
+import {AttentionSeeker} from "react-awesome-reveal";
 
 const WieZijnWij = () => {
     return (
@@ -15,8 +16,10 @@ const WieZijnWij = () => {
                 <H1WZW>WIE</H1WZW>
                 <H1WZW>ZIJN</H1WZW>
                 <H1WZW>WIJ</H1WZW>
-                <SvgIcon className={"d-flex align-self-center pt-2 pt-lg-1"} src="wiezijnwij.svg" width="100%"
+                <AttentionSeeker delay={500} triggerOnce={false} effect={"bounce"} className={"d-flex align-self-center pt-2 pt-lg-1 w-100 h-100"}>
+                <SvgIcon src="wiezijnwij.svg" width="100%"
                          height="100%"/>
+                </AttentionSeeker>
             </Link>
         </div>
     );

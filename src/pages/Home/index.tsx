@@ -11,6 +11,7 @@ import ZienWeJe from "./zienjewe";
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
+const ScrollToBottom = lazy(() => import("../../common/ScrollToBottom"));
 
 const Home = () => {
   const [fullpageIndex, setFullpageIndex] = useState(0);
@@ -18,7 +19,9 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop show={fullpageIndex > 0}/>
-      <ReactFullpage   
+      <ScrollToBottom show={fullpageIndex === 0}/>
+
+        <ReactFullpage
           licenseKey={process.env.REACT_APP_FULLPAGE_KEY}
           scrollingSpeed = {1000}
           scrollOverflow={false}
@@ -26,6 +29,7 @@ const Home = () => {
           onLeave={(origin, destination, direction) => {
             setFullpageIndex(destination.index);
           }}
+          credits={{enabled: false}}
           render={({ state, fullpageApi }) => {
             return (
             <>
