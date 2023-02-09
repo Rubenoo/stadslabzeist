@@ -46,7 +46,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "echo ruben-test.massop.dev > ./build/CNAME && gh-pages -d build -b gh-pages",
+    "deploy": "echo stadslabzeist.nl > ./build/CNAME && gh-pages -d build -b gh-pages",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
