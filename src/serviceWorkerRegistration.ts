@@ -47,7 +47,7 @@ export function register(config?: Config) {
         // service worker/PWA documentation.
         navigator.serviceWorker.ready.then(() => {
           console.log(
-            "This web app is being served cache-first by a service " + "worker"
+            "This web app is being served cache-first by a service worker"
           );
         });
       } else {
