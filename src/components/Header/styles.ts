@@ -43,8 +43,7 @@ export const Burger = styled("div")<any>`
   display: block;
 
   svg {
-    ${(p) => (p.color && "fill: " + p.color + ";")}
-
+    ${(p) => p.color && "fill: " + p.color + ";"}
   }
 `;
 
@@ -52,12 +51,12 @@ export const Menu = styled("h5")<any>`
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  ${(p) => (p.color && "color: " + p.color + ";")}
+  ${(p) => p.color && "color: " + p.color + ";"}
 `;
 
 export const CustomNavLinkSmall = styled(Link)`
   font-size: 1.2rem;
-  ${(p) => (p.color && "color: " + p.color + ";")}
+  ${(p) => p.color && "color: " + p.color + ";"}
   transition: color 0.2s ease-in;
   margin: 0.5rem 2rem;
   font-family: Neue Haas Bold;
@@ -78,13 +77,13 @@ export const Label = styled("span")`
 
 export const Outline = styled(MenuOutlined)<any>`
   font-size: 22px;
-  ${(p) => (p.color && "color: " + p.color + ";")}
+  ${(p) => p.color && "color: " + p.color + ";"}
 `;
 
 export const Span = styled("span")`
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  ${(p) => (p.color && "color: " + p.color + ";")}
+  ${(p) => p.color && "color: " + p.color + ";"}
 
   &:hover,
   &:active,

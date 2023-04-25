@@ -62,5 +62,5 @@ export interface validateProps {
   naam: string;
   bericht: string;
   onderwerp: string;
-  email: string
+  email: string;
 }

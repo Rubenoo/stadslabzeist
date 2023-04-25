@@ -3,7 +3,7 @@ import Results from "../../components/results/results";
 import Samen from "./samen";
 import Idee from "./idee";
 import WieZijnWij from "./wiezijnwij";
-import ReactFullpage from '@fullpage/react-fullpage';
+import ReactFullpage from "@fullpage/react-fullpage";
 import Footer from "../../components/Footer";
 import Youtube from "./youtube";
 import ZienWeJe from "./zienjewe";
@@ -18,37 +18,39 @@ const Home = () => {
 
   return (
     <Container>
-      <ScrollToTop show={fullpageIndex > 0}/>
-      <ScrollToBottom show={fullpageIndex === 0}/>
+      <ScrollToTop show={fullpageIndex > 0} />
+      <ScrollToBottom show={fullpageIndex === 0} />
 
-        <ReactFullpage
-          licenseKey={process.env.REACT_APP_FULLPAGE_KEY}
-          scrollingSpeed = {1000}
-          scrollOverflow={false}
-          normalScrollElements=".scrollable"
-          onLeave={(origin, destination, direction) => {
-            setFullpageIndex(destination.index);
-          }}
-          credits={{enabled: false}}
-          render={({ state, fullpageApi }) => {
-            return (
+      <ReactFullpage
+        licenseKey={process.env.REACT_APP_FULLPAGE_KEY}
+        scrollingSpeed={1000}
+        scrollOverflow={false}
+        normalScrollElements=".scrollable"
+        onLeave={(origin, destination, direction) => {
+          setFullpageIndex(destination.index);
+        }}
+        credits={{ enabled: false }}
+        render={({ state, fullpageApi }) => {
+          return (
             <>
-              <div id="fullpage-wrapper">             
-                <div className="section vh-100" >
-                  <Youtube/>
+              <div id="fullpage-wrapper">
+                <div className="section vh-100">
+                  <Youtube />
                 </div>
                 <div className="section vh-100">
-                  <Samen/>
+                  <Samen />
                 </div>
                 <div className="section vh-100">
-                  <Idee/>
+                  <Idee />
                 </div>
                 <div className="section vh-100">
                   <MiddleBlock
                     title={""}
-                    content={<>
-                              <Results/>
-                            </>}
+                    content={
+                      <>
+                        <Results />
+                      </>
+                    }
                     button={""}
                     fullWidth={true}
                     fullHeight={true}
@@ -57,18 +59,18 @@ const Home = () => {
                   />
                 </div>
                 <div className="section vh-100">
-                  <WieZijnWij/>
+                  <WieZijnWij />
                 </div>
                 <div className="section vh-100">
-                  <ZienWeJe/>                  
-                  <Footer show={fullpageIndex === 5}/>
-                </div>                  
-               </div>
+                  <ZienWeJe />
+                  <Footer show={fullpageIndex === 5} />
+                </div>
+              </div>
             </>
           );
         }}
       />
-    </Container>    
+    </Container>
   );
 };
 

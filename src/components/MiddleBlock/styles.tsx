@@ -1,9 +1,18 @@
 import styled from "styled-components";
 
-export const MiddleBlockSection = styled("section")<{ backgroundColor?: string, backgroundSVG?: string, fullBackground?: boolean}>`
+export const MiddleBlockSection = styled("section")<{
+  backgroundColor?: string;
+  backgroundSVG?: string;
+  fullBackground?: boolean;
+}>`
   position: relative;
-  ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
-  ${(props) => (props.backgroundSVG && "background-image: url(/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
+  ${(props) =>
+    props.backgroundColor && "background-color: " + props.backgroundColor + ";"}
+  ${(props) =>
+    props.backgroundSVG &&
+    "background-image: url(/img/svg/" +
+      props.backgroundSVG +
+      "); background-size: cover;"}
 
   padding: 7.5rem 0 0rem;
   text-align: center;
@@ -42,15 +51,18 @@ export const AnimatedContainer = styled("div")`
   }
 `;
 
-export const SecondContentContainer = styled("div")<{ top: string,}>`
+export const SecondContentContainer = styled("div")<{ top: string }>`
   position: relative;
   top: 0;
   @media screen and (min-width: 992px) {
-    ${(props) => (props.top && "top: " + props.top + ";")}
+    ${(props) => props.top && "top: " + props.top + ";"}
   }
 `;
 
-export const ContentWrapper = styled("div")<{ fullWidth?: boolean, fullHeight?: boolean}>`
+export const ContentWrapper = styled("div")<{
+  fullWidth?: boolean;
+  fullHeight?: boolean;
+}>`
   max-width: ${(props) => (props.fullWidth ? "100%" : "570px")};
   max-height: ${(props) => (props.fullHeight ? "100%" : "570px")};
 

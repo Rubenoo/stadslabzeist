@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const FooterLink = styled("a")`
   font-family: "Neue Haas Bold";
-  color:#1B3888;
+  color: #1b3888;
 `;
 export const Extra = styled("section")<any>`
-  background: #E4E4E4;
+  background: #e4e4e4;
   margin-right: auto;
   margin-left: auto;
-  font-family: "Neue Haas Bold"!important;
+  font-family: "Neue Haas Bold" !important;
   width: 100%;
   bottom: 0;
   position: absolute;
@@ -19,7 +19,6 @@ export const Extra = styled("section")<any>`
     ${(p) => (p.relative ? "position: relative;" : "")};
   }
 `;
-
 
 export const FooterContainer = styled("div")`
   width: 100%;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const H1P = styled("h1")`
   font-size: 29px;
   font-family: Neue Haas Black;
-  color: #1B3888;
+  color: #1b3888;
   margin-bottom: 0.5em;
   @media screen and (min-width: 992px) {
     font-size: 80px;
@@ -40,22 +40,22 @@ export const PM = styled("p")`
   }
 `;
 
-export const ProjectContainer = styled('div')`
+export const ProjectContainer = styled("div")`
   padding: 5em 1em 1em;
-  background-color:#E4E4E4;
+  background-color: #e4e4e4;
   @media screen and (min-width: 992px) {
     padding: 8em 2em 6em;
   }
 `;
 
-export const ProjectLink = styled('a')<any>`
-  color: ${(p) => (p.textColor || "#E4E4E4")};
+export const ProjectLink = styled("a")<any>`
+  color: ${(p) => p.textColor || "#E4E4E4"};
   font-weight: 700;
   margin-bottom: 0.5em;
   font-size: 18px;
   text-decoration: underline;
   &:hover {
     filter: brightness(80%);
-    color: ${(p) => (p.textColor || "#E4E4E4")};
+    color: ${(p) => p.textColor || "#E4E4E4"};
   }
 `;

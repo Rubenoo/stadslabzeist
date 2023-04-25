@@ -1,14 +1,22 @@
 import styled from "styled-components";
 
-export const LeftContentSection = styled("section")<{ backgroundColor?: string, backgroundSVG?: string}>`
+export const LeftContentSection = styled("section")<{
+  backgroundColor?: string;
+  backgroundSVG?: string;
+}>`
   position: relative;
   padding: 10rem 8rem 10rem;
   display: flex;
   align-items: center;
   height: 100%;
 
-  ${(props) => (props.backgroundColor && "background-color: " + props.backgroundColor + ";")}
-  ${(props) => (props.backgroundSVG && "background-image: url(/img/svg/" + props.backgroundSVG + "); background-size: cover;")}
+  ${(props) =>
+    props.backgroundColor && "background-color: " + props.backgroundColor + ";"}
+  ${(props) =>
+    props.backgroundSVG &&
+    "background-image: url(/img/svg/" +
+      props.backgroundSVG +
+      "); background-size: cover;"}
   
   @media only screen and (max-width: 1024px) {
     padding: 8rem 2rem 6rem;

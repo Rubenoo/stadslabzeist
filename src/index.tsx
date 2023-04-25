@@ -1,10 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom/client";
-import { ConfigProvider } from 'antd';
-import nlNL from 'antd/lib/locale/nl_NL';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { ConfigProvider } from "antd";
+import nlNL from "antd/lib/locale/nl_NL";
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 import Router from "./router";
 
@@ -16,7 +16,9 @@ const App = () => (
   </ConfigProvider>
 );
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 
 serviceWorkerRegistration.register();
 

@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 import { lazy } from "react";
 import ProjectTable from "./ProjectTable";
 import { H1P, ProjectContainer } from "./styles";
-import ProjectenArray from "../../content/Projecten.json"
+import ProjectenArray from "../../content/Projecten.json";
 import Footer from "../../components/Footer";
 
 const Container = lazy(() => import("../../common/Container"));
@@ -16,11 +16,11 @@ const Projecten = () => {
             <H1P>PROJECTEN</H1P>
           </Col>
           <Col span={24} lg={16}>
-            <ProjectTable ProjectenArray={ProjectenArray}/>
+            <ProjectTable ProjectenArray={ProjectenArray} />
           </Col>
-        </Row>    
+        </Row>
       </ProjectContainer>
-      <Footer show relative/>
+      <Footer show relative />
     </Container>
   );
 };

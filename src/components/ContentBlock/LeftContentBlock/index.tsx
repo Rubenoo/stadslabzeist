@@ -23,17 +23,40 @@ const LeftContentBlock = ({
   fadeRight,
   person,
 }: ContentBlockProps) => {
- 
   return (
-    <LeftContentSection backgroundSVG={backgroundSVG} backgroundColor={backgroundColor}>
+    <LeftContentSection
+      backgroundSVG={backgroundSVG}
+      backgroundColor={backgroundColor}
+    >
       <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
-        <Row justify={person ? "space-around": "space-between"} align={person ? "middle": "top"} id={id}>
-          <Col lg={{span: 11, order: 0}} md={{span: 11, order: 0}} sm={{span: 12, order: 0}} xs={{span: 24, order: 1}}>
-            {secondContent ? secondContent : <SvgIcon src={icon} width="100%" height="100%" />}
+        <Row
+          justify={person ? "space-around" : "space-between"}
+          align={person ? "middle" : "top"}
+          id={id}
+        >
+          <Col
+            lg={{ span: 11, order: 0 }}
+            md={{ span: 11, order: 0 }}
+            sm={{ span: 12, order: 0 }}
+            xs={{ span: 24, order: 1 }}
+          >
+            {secondContent ? (
+              secondContent
+            ) : (
+              <SvgIcon src={icon} width="100%" height="100%" />
+            )}
           </Col>
-          <Col className={person ? "d-flex align-items-center justify-content-center" : ""} lg={{span: 11, order: 1}} md={{span: 11, order: 1}} sm={{span: 11, order: 1}} xs={{span: 24, order: 0}}>
+          <Col
+            className={
+              person ? "d-flex align-items-center justify-content-center" : ""
+            }
+            lg={{ span: 11, order: 1 }}
+            md={{ span: 11, order: 1 }}
+            sm={{ span: 11, order: 1 }}
+            xs={{ span: 24, order: 0 }}
+          >
             <ContentWrapper>
-                <h6 style={titleSize ? {fontSize: titleSize}: {}}>{title}</h6>
+              <h6 style={titleSize ? { fontSize: titleSize } : {}}>{title}</h6>
               <Content>{content}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&
@@ -42,7 +65,7 @@ const LeftContentBlock = ({
                       <Button
                         key={id}
                         backgroundColor={item.color}
-                        fixedWidth={true}                        
+                        fixedWidth={true}
                       >
                         {item.title}
                       </Button>

@@ -10,17 +10,27 @@ export const Button = ({
   onClick,
   linkTo,
 }: ButtonProps) => {
-  if(linkTo) return (
-    <Link to={linkTo}>
-      <StyledButton backgroundColor={backgroundColor} textColor={textColor} fixedWidth={fixedWidth} onClick={onClick}>
-        {children}
-      </StyledButton>
-    </Link>
-  )
+  if (linkTo)
+    return (
+      <Link to={linkTo}>
+        <StyledButton
+          backgroundColor={backgroundColor}
+          textColor={textColor}
+          fixedWidth={fixedWidth}
+          onClick={onClick}
+        >
+          {children}
+        </StyledButton>
+      </Link>
+    );
   return (
-    <StyledButton backgroundColor={backgroundColor} textColor={textColor} fixedWidth={fixedWidth} onClick={onClick}>
-    {children}
+    <StyledButton
+      backgroundColor={backgroundColor}
+      textColor={textColor}
+      fixedWidth={fixedWidth}
+      onClick={onClick}
+    >
+      {children}
     </StyledButton>
-  )
-  }
-;
+  );
+};
