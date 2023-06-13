@@ -21,7 +21,6 @@ const PersonContainer = ({
   email,
   info,
   backgroundSVG,
-  textColor,
 }: PersonContainerProps) => {
   return (
     <ContentBlock
@@ -40,15 +39,10 @@ const PersonContainer = ({
           top={"0"}
           className="h-100 d-flex flex-column align-items-start"
         >
-          <A
-            textColor={textColor}
-            className="w-100"
-            target="_blank"
-            href={"mailto: " + email}
-          >
+          <A className="w-100" target="_blank" href={"mailto: " + email}>
             {name}
           </A>
-          <P textColor={textColor}>{info}</P>
+          <P>{info}</P>
         </SecondContentContainer>
       }
       icon="product-launch.svg"

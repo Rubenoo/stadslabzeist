@@ -44,7 +44,7 @@ const DitZijnWij = () => {
                   type="right"
                   img="/img/marloes_portret.jpg"
                   name="Marloes van Haaren"
-                  backgroundSVG="Website-Achtergrond-marloes-roze.svg"
+                  backgroundSVG="Website-Achtergrond-rood.svg"
                   email="marloes@stadslabzeist.nl"
                   info={
                     "Projectmanager\n\nCoach / maker / structuurdokter \nSuper goed in de juiste vragen stellen, rust creëren, bergen werk verzetten, plannen en creatief zijn."
@@ -61,7 +61,6 @@ const DitZijnWij = () => {
                   info={
                     "Creatief leider\n\nKunstenaar / Grafisch ontwerper / maker \nSuper goed in creatieve denkprocessen, creatieve vertaling van projecten en opdrachten en structuur aanbrengen."
                   }
-                  textColor="#F0CFE5"
                 />
               </div>
               <div className="section vh-100">
@@ -74,7 +73,6 @@ const DitZijnWij = () => {
                   info={
                     "Projectmanager\n\nDuizendpoot / sporty spice / rust brenger \nSuper goed in overzicht creëren, keihard werken, mensen verbinden en oplossingen bedenken."
                   }
-                  textColor="#1B3888"
                 />
               </div>
               <div className="section vh-100">
@@ -82,7 +80,7 @@ const DitZijnWij = () => {
                   type="left"
                   img="/img/ollie_portret.jpg"
                   name="Ollie"
-                  backgroundSVG="Website-Achtergrond-marloes-roze.svg"
+                  backgroundSVG="Website-Achtergrond-blauw.svg"
                   email="emma@stadslabzeist.nl"
                   info={
                     "Kantoorhond\n\nKnuffelkont / grappenmaker \nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."
