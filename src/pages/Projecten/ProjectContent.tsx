@@ -24,7 +24,7 @@ const ProjectContent = (props: { project: Project }) => {
           >
             <img
               loading="lazy"
-              height={350}
+              style={{ maxHeight: "350px", maxWidth: "100%" }}
               src={"/" + image.src}
               alt={image.title}
             />

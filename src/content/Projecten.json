@@ -7,19 +7,19 @@
     "images": [
       {
         "title": "hartvoorzeist 1",
-        "src": "img//projecten/hartvoorzeist/hartvoorzeist 1.jpg"
+        "src": "img//projecten/hartvoorzeist/hartvoorzeist_1.jpg"
       },
       {
         "title": "hartvoorzeist 2",
-        "src": "img//projecten/hartvoorzeist/hartvoorzeist 2.jpg"
+        "src": "img//projecten/hartvoorzeist/hartvoorzeist_2.jpg"
       },
       {
         "title": "hartvoorzeist 3",
-        "src": "img//projecten/hartvoorzeist/hartvoorzeist 3.jpg"
+        "src": "img//projecten/hartvoorzeist/hartvoorzeist_3.jpg"
       },
       {
         "title": "hartvoorzeist poster",
-        "src": "img//projecten/hartvoorzeist/hartvoorzeist poster.jpg"
+        "src": "img//projecten/hartvoorzeist/hartvoorzeist_4.jpg"
       }
     ],
     "color": "#F8D13E",
@@ -46,15 +46,15 @@
     "images": [
       {
         "title": "vergeet me nietje",
-        "src": "img//projecten/vergeetmenietje/vergeet me nietje 1.jpg"
-      },
-      {
-        "title": "vergeet me nietje lente",
-        "src": "img//projecten/vergeetmenietje/vergeet me nietje lente.jpg"
+        "src": "img//projecten/vergeetmenietje/Vergeetmenietje_1.jpg"
       },
       {
         "title": "vergeet me nietje postzakjes",
-        "src": "img//projecten/vergeetmenietje/vergeet me nietje postzakjes.jpg"
+        "src": "img//projecten/vergeetmenietje/Vergeetmenietje_2.jpg"
+      },
+      {
+        "title": "vergeet me nietje",
+        "src": "img//projecten/vergeetmenietje/Vergeetmenietje_3.jpg"
       }
     ],
     "color": "#F0CFE5",
@@ -68,23 +68,23 @@
     "images": [
       {
         "title": "5K PITCH finale 1",
-        "src": "img//projecten/5k pitch/5k pitch finale 1.jpg"
+        "src": "img//projecten/5k pitch/5KPitch_1.jpg"
       },
       {
         "title": "5K PITCH finale 2",
-        "src": "img//projecten/5k pitch/5k pitch finale 2.jpg"
+        "src": "img//projecten/5k pitch/5KPitch_2.jpg"
       },
       {
         "title": "5K PITCH banner",
-        "src": "img//projecten/5k pitch/5k pitch banner.jpg"
+        "src": "img//projecten/5k pitch/5KPitch_3.jpg"
       },
       {
         "title": "Den Dolder voor het leven",
-        "src": "img//projecten/5k pitch/den dolder voor het leven.jpg"
+        "src": "img//projecten/5k pitch/5KPitch_4.jpg"
       },
       {
         "title": "SUSTAINABLE STYLE FESTIVAL 2021",
-        "src": "img//projecten/5k pitch/SUSTAINABLE STYLE FESTIVAL 2021.jpg"
+        "src": "img//projecten/5k pitch/5KPitch_5.jpg"
       }
     ],
     "color": "#1B3888",
@@ -112,9 +112,9 @@
     "introText": "HOE LEEFT EEN BEPERKING?\n\nDe gemeente Zeist wilde in verband met de uitvoering van de inclusie-agenda meer bewustwording over, acceptatie en emancipatie van mensen met een beperking in de gemeente Zeist creëren. Wij wilden voor dit project specifiek jongeren bereiken. Zij zijn de toekomst! Daarom hebben wij het gratis lespakket ONBEPERKT! ontwikkeld.",
     "mainText": "Onderdeel van de les is de film ONBEPERKT! met 3 portretten van jongeren met een beperking uit de gemeente Zeist. De film gaat over wat het voor een jongere betekent om met een beperking te leven. Na de film gaan leerlingen aan de slag met de onderwerpen toegankelijkheid, beperking en inclusiviteit.\n\nLeerlingen worden met opdrachten uitgedaagd om deze thema’s te onderzoeken en met elkaar het gesprek aan te gaan. De komende vijf jaar is het lespakket door alle scholen in Zeist gratis te bereiken.\n\nBetrokken stadmakers: 8\n\nPartners: Gemeente Zeist, onderwijsdeskundige Karin van Zwetselaar, Deltafilm, Slotstad RTV, Project Icarus, Accessibility, VSO Heuvelrugcollege en het Christelijk College Zeist.",
     "images": [
-      { "title": "Onbeperkt foto 1", "src": "img//projecten/ONBEPERKT/1.jpeg" },
-      { "title": "Lespakket", "src": "img//projecten/ONBEPERKT/2.png" },
-      { "title": "ONBEPERKT foto 2", "src": "img//projecten/ONBEPERKT/3.jpeg" }
+      { "title": "Onbeperkt foto 1", "src": "img//projecten/ONBEPERKT/Onbeperkt_1.jpg" },
+      { "title": "Lespakket", "src": "img//projecten/ONBEPERKT/Onbeperkt_2.jpg" },
+      { "title": "ONBEPERKT foto 2", "src": "img//projecten/ONBEPERKT/Onbeperkt_3.jpg" }
     ],
     "color": "#F8D13E",
     "links": [
@@ -132,15 +132,15 @@
     "images": [
       {
         "title": "Koffie",
-        "src": "img//projecten/LHBTIQ/LHBTIQ+ Zeist-1-min.jpg"
+        "src": "img//projecten/LHBTIQ/LHBTIQ_2.jpg"
       },
       {
         "title": "Show 1",
-        "src": "img//projecten/LHBTIQ/LHBTIQ+ Zeist-35-klein.jpg"
+        "src": "img//projecten/LHBTIQ/LHBTIQ_3.jpg"
       },
       {
         "title": "Show 2",
-        "src": "img//projecten/LHBTIQ/LHBTIQ+-Zeist-13-klein.jpg"
+        "src": "img//projecten/LHBTIQ/LHBTIQ_4.jpg"
       }
     ],
     "color": "#F0CFE5",
@@ -154,7 +154,7 @@
     "images": [
       {
         "title": "bushalte",
-        "src": "img//projecten/ideeenbushalte/bushalte.jpg"
+        "src": "img//projecten/ideeenbushalte/ideenbushalte.jpg"
       }
     ],
     "color": "#1B3888",
