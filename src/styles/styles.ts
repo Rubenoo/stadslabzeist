@@ -121,4 +121,28 @@ export const Styles = createGlobalStyle`
     .ant-drawer-content-wrapper {
         width: 300px !important;
     }
+
+    .ant-carousel .slick-prev,
+    .ant-carousel .slick-next,
+    .ant-carousel .slick-prev:hover,
+    .ant-carousel .slick-next:hover {
+      font-size: inherit;
+      color: currentColor;
+    }
+
+    .ant-carousel .slick-prev,
+    .ant-carousel .slick-prev:hover {
+      left: 10px;
+      z-index: 3;
+      color: white;
+    }
+
+    .ant-carousel .slick-next,
+    .ant-carousel .slick-next:hover {
+      right: 10px;
+      z-index: 3;
+      color: white;
+    }
+
+
 `;

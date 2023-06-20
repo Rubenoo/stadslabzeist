@@ -2,6 +2,7 @@ import { Carousel, Col, Row } from "antd";
 import React from "react";
 import { Project } from "../../common/types";
 import { PI, PM, ProjectLink } from "./styles";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 const ProjectContent = (props: { project: Project }) => {
   const links = props.project.links?.map((link, index) => (
@@ -14,9 +15,16 @@ const ProjectContent = (props: { project: Project }) => {
       {link.text}
     </ProjectLink>
   ));
+  // @ts-ignore
   return (
     <div>
-      <Carousel style={{ marginBottom: "1em" }} autoplay>
+      <Carousel
+        style={{ marginBottom: "1em" }}
+        autoplay
+        arrows
+        prevArrow={<LeftOutlined />}
+        nextArrow={<RightOutlined />}
+      >
         {props.project.images?.map((image, index) => (
           <div
             className={"d-flex justify-content-center align-items-center"}
