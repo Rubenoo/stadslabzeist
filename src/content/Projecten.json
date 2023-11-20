@@ -12,10 +12,12 @@
       {
         "title": "2",
         "src": "img//projecten/frissepitch/2.jpg"
-      }, {
+      },
+      {
         "title": "3",
         "src": "img//projecten/frissepitch/3.jpg"
-      }, {
+      },
+      {
         "title": "4",
         "src": "img//projecten/frissepitch/4.jpg"
       },
@@ -25,14 +27,16 @@
       }
     ],
     "color": "#5DC0E1",
-    "links": [ {
-      "src": "https://zeisterkrant.nl/nieuws/frisse-pitch-samen-duurzaam-zeist/",
-      "text": "Zeisterkrant artiekel"
-    },
+    "links": [
+      {
+        "src": "https://zeisterkrant.nl/nieuws/frisse-pitch-samen-duurzaam-zeist/",
+        "text": "Artikel Zeister Krant"
+      },
       {
         "src": "https://www.denieuwsbode.nl/lokaal/maatschappelijk/969979/geld-voor-vijf-frisse-ideeen",
-        "text": "De nieuwsbode artiekel"
-      }]
+        "text": "Artikel Nieuwsbode"
+      }
+    ]
   },
   {
     "title": "Toegankelijkheid",
@@ -47,10 +51,12 @@
       {
         "title": "2",
         "src": "img//projecten/toegankelijkheid/2.jpg"
-      }, {
+      },
+      {
         "title": "3",
         "src": "img//projecten/toegankelijkheid/3.jpg"
-      }, {
+      },
+      {
         "title": "4",
         "src": "img//projecten/toegankelijkheid/4.jpg"
       }
@@ -58,12 +64,8 @@
     "color": "#F8D13E",
     "links": [
       {
-        "src": "https://drive.google.com/drive/folders/13deCb4xGzhpXKgW8byMLsmVQUkq9jSra",
-        "text": "Bekijk de fotos"
-      },
-      {
         "src": "https://issuu.com/stadslabzeist/docs/rapport-def-teamtoegankelijkheid ",
-        "text": "ISUU"
+        "text": "Rapport Team toegankelijkheid"
       }
     ]
   },
@@ -80,7 +82,8 @@
       {
         "title": "2",
         "src": "img//projecten/lablou/2.jpg"
-      }, {
+      },
+      {
         "title": "3",
         "src": "img//projecten/lablou/3.jpg"
       }
@@ -101,30 +104,25 @@
       {
         "title": "2",
         "src": "img//projecten/stadslabopwielen/2.jpg"
-      }, {
+      },
+      {
         "title": "3",
         "src": "img//projecten/stadslabopwielen/3.jpg"
-      }, {
+      },
+      {
         "title": "4",
         "src": "img//projecten/stadslabopwielen/4.jpg"
       }
     ],
     "color": "#1B3888",
-    "links": [
-      {
-        "src": "https://www.instagram.com/p/CbUWG86KtM6/",
-        "text": "Klik hier voor de resultaten!"
-      }
-    ]
+    "links": []
   },
   {
     "title": "Bestuur",
     "titleColor": "#1B3888",
     "introText": "In mei 2023 is Stadslab Zeist een stichting geworden. De dagelijkse leiding van Stichting Stadslab Zeist wordt uitgevoerd door de directeur, Merel de Jong. Het bestuur houdt toezicht op de uitvoer van de taken van de directeur en of de doelstellingen van de stichting gerealiseerd worden. De samenstelling van het bestuur wordt geregeld in de statuten. Momenteel hebben in het bestuur van Stichting Stadslab Zeist zitting: Yno Hoekstra (voorzitter), Merel Schrijvers (penningmeester) en Ebs Koek (secretaris).",
     "mainText": "",
-    "images": [
-
-    ],
+    "images": [],
     "color": "#5DC0E1",
     "links": []
   },
@@ -241,9 +239,18 @@
     "introText": "HOE LEEFT EEN BEPERKING?\n\nDe gemeente Zeist wilde in verband met de uitvoering van de inclusie-agenda meer bewustwording over, acceptatie en emancipatie van mensen met een beperking in de gemeente Zeist creëren. Wij wilden voor dit project specifiek jongeren bereiken. Zij zijn de toekomst! Daarom hebben wij het gratis lespakket ONBEPERKT! ontwikkeld.",
     "mainText": "Onderdeel van de les is de film ONBEPERKT! met 3 portretten van jongeren met een beperking uit de gemeente Zeist. De film gaat over wat het voor een jongere betekent om met een beperking te leven. Na de film gaan leerlingen aan de slag met de onderwerpen toegankelijkheid, beperking en inclusiviteit.\n\nLeerlingen worden met opdrachten uitgedaagd om deze thema’s te onderzoeken en met elkaar het gesprek aan te gaan. De komende vijf jaar is het lespakket door alle scholen in Zeist gratis te bereiken.\n\nBetrokken stadmakers: 8\n\nPartners: Gemeente Zeist, onderwijsdeskundige Karin van Zwetselaar, Deltafilm, Slotstad RTV, Project Icarus, Accessibility, VSO Heuvelrugcollege en het Christelijk College Zeist.",
     "images": [
-      { "title": "Onbeperkt foto 1", "src": "img//projecten/ONBEPERKT/Onbeperkt_1.jpg" },
-      { "title": "Lespakket", "src": "img//projecten/ONBEPERKT/Onbeperkt_2.jpg" },
-      { "title": "ONBEPERKT foto 2", "src": "img//projecten/ONBEPERKT/Onbeperkt_3.jpg" }
+      {
+        "title": "Onbeperkt foto 1",
+        "src": "img//projecten/ONBEPERKT/Onbeperkt_1.jpg"
+      },
+      {
+        "title": "Lespakket",
+        "src": "img//projecten/ONBEPERKT/Onbeperkt_2.jpg"
+      },
+      {
+        "title": "ONBEPERKT foto 2",
+        "src": "img//projecten/ONBEPERKT/Onbeperkt_3.jpg"
+      }
     ],
     "color": "#F8D13E",
     "links": [
@@ -294,5 +301,4 @@
       }
     ]
   }
-
 ]
