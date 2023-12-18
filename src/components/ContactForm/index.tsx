@@ -11,7 +11,7 @@ import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
 const Contact = ({ title, content, id }: ContactProps) => {
   const { values, errors, handleChange, handleSubmit } = useForm(
-    validate
+    validate,
   ) as any;
 
   const ValidationType = ({ type }: ValidationTypeProps) => {

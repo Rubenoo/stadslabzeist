@@ -4,7 +4,7 @@ export function isWindow(obj: any) {
 
 export const getScroll = (
   target: HTMLElement | Window | Document | null,
-  top: boolean
+  top: boolean,
 ): number => {
   if (typeof window === "undefined") {
     return 0;

@@ -51,7 +51,7 @@ registerRoute(
     // Return true to signal that we want to use the handler.
     return true;
   },
-  createHandlerBoundToURL(process.env.PUBLIC_URL + "/index.html")
+  createHandlerBoundToURL(process.env.PUBLIC_URL + "/index.html"),
 );
 
 // An example runtime caching route for requests that aren't handled by the
@@ -72,11 +72,11 @@ registerRoute(
       // least-recently used images are removed.
       new ExpirationPlugin({ maxEntries: 50 }),
     ],
-  })
+  }),
 );
 registerRoute(
   ({ request }) => request.destination === "style",
-  new CacheFirst()
+  new CacheFirst(),
 );
 registerRoute(
   // Add in any other file extensions or routing criteria as needed.
@@ -86,7 +86,7 @@ registerRoute(
   //Hier word de staleWhileRevalidate strategie toegepast op de afbeeldingen
   new CacheFirst({
     cacheName: "fonts",
-  })
+  }),
 );
 
 // This allows the web app to trigger skipWaiting via

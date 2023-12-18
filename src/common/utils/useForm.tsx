@@ -32,7 +32,7 @@ export const useForm = (validate: any) => {
             "service_cpgl62m",
             "template_fz5iyg4",
             event.target,
-            "qvzcPVOT10aFtud3C"
+            "qvzcPVOT10aFtud3C",
           )
           .then(
             (result) => {
@@ -40,11 +40,11 @@ export const useForm = (validate: any) => {
             },
             (error) => {
               console.log(error.text);
-            }
+            },
           );
       }
     },
-    [values, validate]
+    [values, validate],
   );
 
   useEffect(() => {
@@ -64,12 +64,12 @@ export const useForm = (validate: any) => {
       }));
       setErrors((errors) => ({ ...errors, [event.target.name]: "" }));
     },
-    []
+    [],
   );
 
   const returnValues = useMemo(
     () => ({ handleChange, handleSubmit, values, errors }),
-    [handleChange, handleSubmit, values, errors]
+    [handleChange, handleSubmit, values, errors],
   );
 
   return returnValues;
