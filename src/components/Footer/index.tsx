@@ -36,9 +36,9 @@ const Footer = ({ show, relative }: any) => {
                     className="w-100"
                     style={{ fontSize: "19px" }}
                     target="_blank"
-                    href="http://maps.google.nl/?q=Oranje Nassaulaan 35, 3708 GA Zeist"
+                    href="http://maps.google.nl/?q=Weteringlaan+1,+3732+HZ+De+Bilt"
                   >
-                    THOMASKERK, ORANJE NASSAULAAN 35 ZEIST
+                    WETERINGLAAN 1, 3732 HZ DE BILT
                   </FooterLink>
                 </div>
                 <div>
@@ -70,9 +70,9 @@ const Footer = ({ show, relative }: any) => {
                 style={{ fontSize: "13px" }}
                 className="w-100"
                 target="_blank"
-                href="http://maps.google.nl/?q=Oranje Nassaulaan 35, 3708 GA Zeist"
+                href="http://maps.google.nl/?q=Weteringlaan+1,+3732+HZ+De+Bilt"
               >
-                THOMASKERK, ORANJE NASSAULAAN 35 ZEIST
+                WETERINGLAAN 1, 3732 HZ DE BILT
               </FooterLink>
             </div>
             <div>
