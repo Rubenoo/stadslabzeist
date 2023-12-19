@@ -12,6 +12,8 @@ export interface Project {
   mainText: string;
   images?: Array<ProjectImage>;
   links?: Array<ProjectLink>;
+  logo?: string;
+  logoText?: string;
   color: string;
 }
 

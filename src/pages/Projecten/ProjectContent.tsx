@@ -46,6 +46,23 @@ const ProjectContent = (props: { project: Project }) => {
               {props.project.introText}
             </PI>
             <div className="d-none d-lg-flex flex-column align-items-start">
+              {props.project.logo && (
+                <img
+                  loading="lazy"
+                  style={{
+                    maxHeight: "100%",
+                    maxWidth: "90%",
+                    marginBlock: "1rem",
+                  }}
+                  src={"/" + props.project.logo}
+                  alt={"logo"}
+                />
+              )}
+              {props.project.logoText && (
+                <PM style={{ color: props.project.titleColor }}>
+                  {props.project.logoText}
+                </PM>
+              )}
               {links}
             </div>
           </div>
