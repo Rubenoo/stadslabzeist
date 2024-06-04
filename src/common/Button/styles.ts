@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const StyledButton = styled("button")<any>`
-  background: ${(p) => p.backgroundColor || "#1B3888"};
-  color: ${(p) => p.textColor || "#E4E4E4"};
+  background: ${(p) => p.backgroundcolor || "#1B3888"};
+  color: ${(p) => p.textcolor || "#E4E4E4"};
   font-weight: 700;
-  border: ${(p) => p.backgroundColor || "#1B3888"};
+  border: ${(p) => p.backgroundcolor || "#1B3888"};
   border-radius: 30px;
   padding: 13px 1rem;
   cursor: pointer;

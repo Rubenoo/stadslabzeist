@@ -47,8 +47,8 @@ const VoorWie = () => {
       }
       icon="Website-Achtergrond-blauw.svg"
       id="idee"
-      backgroundColor="#F0CFE5"
-      backgroundSVG="Website-Achtergrond-roze-wit.svg"
+      backgroundcolor="#F0CFE5"
+      backgroundsvg="Website-Achtergrond-roze-wit.svg"
       fadeRight={false}
     />
   );

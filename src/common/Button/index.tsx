@@ -3,8 +3,8 @@ import { ButtonProps } from "../types";
 import { Link } from "react-router-dom";
 
 export const Button = ({
-  backgroundColor,
-  textColor,
+  backgroundcolor,
+  textcolor,
   fixedWidth,
   children,
   onClick,
@@ -14,8 +14,8 @@ export const Button = ({
     return (
       <Link to={linkTo}>
         <StyledButton
-          backgroundColor={backgroundColor}
-          textColor={textColor}
+          backgroundcolor={backgroundcolor}
+          textcolor={textcolor}
           fixedWidth={fixedWidth}
           onClick={onClick}
         >
@@ -25,8 +25,8 @@ export const Button = ({
     );
   return (
     <StyledButton
-      backgroundColor={backgroundColor}
-      textColor={textColor}
+      backgroundcolor={backgroundcolor}
+      textcolor={textcolor}
       fixedWidth={fixedWidth}
       onClick={onClick}
     >

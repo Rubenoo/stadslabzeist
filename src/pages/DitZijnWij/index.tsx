@@ -14,10 +14,10 @@ const DitZijnWij = () => {
     <Container>
       <ScrollToTop show={fullpageIndex > 0} />
       <ReactFullpage
-        licenseKey={process.env.REACT_APP_FULLPAGE_KEY}
+        licenseKey={import.meta.env.VITE_APP_FULLPAGE_KEY}
         scrollingSpeed={1000}
         scrollOverflow={false}
-        onLeave={(origin, destination) => {
+        onLeave={(destination) => {
           setFullpageIndex(destination.index);
         }}
         credits={{ enabled: false }}
@@ -33,7 +33,7 @@ const DitZijnWij = () => {
                   img="/img/merel_portret.jpg"
                   name="Merel de Jong"
                   email="merel@stadslabzeist.nl"
-                  backgroundSVG="Website-Achtergrond-merel-blauw.svg"
+                  backgroundsvg="Website-Achtergrond-merel-blauw.svg"
                   info={
                     "Zakelijk leider\n\nMatchmaker / strateeg / social designer \nSuper goed in plannetjes maken, kansen zien, mensen enthousiasmeren, praten en van niets iets maken."
                   }
@@ -44,7 +44,7 @@ const DitZijnWij = () => {
                   type="right"
                   img="/img/marloes_portret.jpg"
                   name="Marloes van Haaren"
-                  backgroundSVG="Website-Achtergrond-rood.svg"
+                  backgroundsvg="Website-Achtergrond-rood.svg"
                   email="marloes@stadslabzeist.nl"
                   info={
                     "Projectmanager\n\nCoach / maker / structuurdokter \nSuper goed in de juiste vragen stellen, rust creëren, bergen werk verzetten, plannen en creatief zijn."
@@ -57,7 +57,7 @@ const DitZijnWij = () => {
                   img="/img/emma_portret.jpg"
                   name="Emma Fijma"
                   email="emma@stadslabzeist.nl"
-                  backgroundSVG="Website-Achtergrond-emma-blauw.svg"
+                  backgroundsvg="Website-Achtergrond-emma-blauw.svg"
                   info={
                     "Creatief leider\n\nKunstenaar / Grafisch ontwerper / maker \nSuper goed in creatieve denkprocessen, creatieve vertaling van projecten en opdrachten en structuur aanbrengen."
                   }
@@ -69,7 +69,7 @@ const DitZijnWij = () => {
                   img="/img/marjolein_portret.jpg"
                   name="Marjolein Brandenburg"
                   email="marjolein@stadslabzeist.nl"
-                  backgroundSVG="Website-Achtergrond-merel-blauw.svg"
+                  backgroundsvg="Website-Achtergrond-merel-blauw.svg"
                   info={
                     "Projectmanager\n\nDuizendpoot / sporty spice / rust brenger \nSuper goed in overzicht creëren, keihard werken, mensen verbinden en oplossingen bedenken."
                   }
@@ -80,7 +80,7 @@ const DitZijnWij = () => {
                   type="left"
                   img="/img/ollie_portret.jpg"
                   name="Ollie"
-                  backgroundSVG="Website-Achtergrond-blauw.svg"
+                  backgroundsvg="Website-Achtergrond-blauw.svg"
                   email="emma@stadslabzeist.nl"
                   info={
                     "Kantoorhond\n\nKnuffelkont / grappenmaker \nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."

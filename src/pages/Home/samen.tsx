@@ -39,8 +39,8 @@ const Samen = () => {
           <div className="d-flex justify-content-end">
             <Button
               linkTo="/hoe"
-              backgroundColor={"#1B3888"}
-              textColor={"#F8D13E"}
+              backgroundcolor={"#1B3888"}
+              textcolor={"#F8D13E"}
             >
               HOE
             </Button>
@@ -49,7 +49,7 @@ const Samen = () => {
       }
       icon="product-launch.svg"
       id="samen"
-      backgroundColor="#F8D13E"
+      backgroundcolor="#F8D13E"
     />
   );
 };

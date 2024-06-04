@@ -36,8 +36,8 @@ const Idee = () => {
         >
           <Button
             linkTo={"/zienwejedan"}
-            backgroundColor={"#E4E4E4"}
-            textColor={"#1B3888"}
+            backgroundcolor={"#E4E4E4"}
+            textcolor={"#1B3888"}
           >
             JA IK HEB EEN IDEE!
           </Button>
@@ -45,7 +45,7 @@ const Idee = () => {
       }
       icon="Website-Achtergrond-blauw.svg"
       id="idee"
-      backgroundSVG="Website-Achtergrond-blauw.svg"
+      backgroundsvg="Website-Achtergrond-blauw.svg"
       fadeRight={true}
     />
   );

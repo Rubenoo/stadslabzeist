@@ -38,11 +38,11 @@ const HoeDoenWijDat = () => {
           <br />
         </P>
       }
-      backgroundSVG="Website-Achtergrond-geel-wit.svg"
+      backgroundsvg="Website-Achtergrond-geel-wit.svg"
       icon="Website-Achtergrond-geel-wit.svg"
       id="idee"
       fadeRight={true}
-      backgroundColor="#F8D13E"
+      backgroundcolor="#F8D13E"
       button={
         <AnimatedContainer
           style={{ zIndex: 0 }}

@@ -16,12 +16,12 @@ const Home = () => {
     <Container>
       <ScrollToTop show={fullpageIndex > 0} />
       <ReactFullpage
-        licenseKey={process.env.REACT_APP_FULLPAGE_KEY}
+        licenseKey={import.meta.env.VITE_APP_FULLPAGE_KEY}
         scrollingSpeed={1000}
         scrollOverflow={false}
         scrollBar={false}
         normalScrollElements=".scrollable"
-        onLeave={(origin, destination) => {
+        onLeave={(destination) => {
           setFullpageIndex(destination.index);
         }}
         credits={{ enabled: false }}

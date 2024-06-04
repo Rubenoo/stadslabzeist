@@ -1,4 +1,3 @@
-import React from "react";
 import { SvgIcon } from "../../common/SvgIcon";
 import { AnimatedContainer } from "../../components/MiddleBlock/styles";
 

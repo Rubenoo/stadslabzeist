@@ -49,13 +49,13 @@ export const ProjectContainer = styled("div")`
 `;
 
 export const ProjectLink = styled("a")<any>`
-  color: ${(p) => p.textColor || "#E4E4E4"};
+  color: ${(p) => p.textcolor || "#E4E4E4"};
   font-weight: 700;
   margin-bottom: 0.5em;
   font-size: 18px;
   text-decoration: underline;
   &:hover {
     filter: brightness(80%);
-    color: ${(p) => p.textColor || "#E4E4E4"};
+    color: ${(p) => p.textcolor || "#E4E4E4"};
   }
 `;

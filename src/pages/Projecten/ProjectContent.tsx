@@ -1,5 +1,4 @@
 import { Carousel, Col, Row } from "antd";
-import React from "react";
 import { Project } from "../../common/types";
 import { PI, PM, ProjectLink } from "./styles";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
@@ -10,7 +9,7 @@ const ProjectContent = (props: { project: Project }) => {
       key={index}
       target="_blank"
       href={link.src}
-      textColor={props.project.titleColor}
+      textcolor={props.project.titleColor}
     >
       {link.text}
     </ProjectLink>

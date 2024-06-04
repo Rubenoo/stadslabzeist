@@ -10,8 +10,8 @@ interface PersonContainerProps {
   name: string;
   email: string;
   info: string;
-  backgroundSVG: string;
-  textColor?: string;
+  backgroundsvg: string;
+  textcolor?: string;
 }
 
 const PersonContainer = ({
@@ -20,7 +20,7 @@ const PersonContainer = ({
   name,
   email,
   info,
-  backgroundSVG,
+  backgroundsvg,
 }: PersonContainerProps) => {
   return (
     <ContentBlock
@@ -47,8 +47,8 @@ const PersonContainer = ({
       }
       icon="product-launch.svg"
       id="samen"
-      backgroundColor=""
-      backgroundSVG={backgroundSVG}
+      backgroundcolor=""
+      backgroundsvg={backgroundsvg}
       fadeRight={type === "right"}
       person={true}
     />

@@ -22,15 +22,15 @@ const Home = () => {
       <ScrollToBottom show={fullpageIndex === 0} />
 
       <ReactFullpage
-        licenseKey={process.env.REACT_APP_FULLPAGE_KEY}
+        licenseKey={import.meta.env.VITE_APP_FULLPAGE_KEY}
         scrollingSpeed={1000}
         scrollOverflow={false}
         normalScrollElements=".scrollable"
-        onLeave={(origin, destination, direction) => {
+        onLeave={(destination) => {
           setFullpageIndex(destination.index);
         }}
         credits={{ enabled: false }}
-        render={({ state, fullpageApi }) => {
+        render={() => {
           return (
             <>
               <div id="fullpage-wrapper">
@@ -52,10 +52,10 @@ const Home = () => {
                       </>
                     }
                     button={""}
-                    fullWidth={true}
+                    fullwidth={true}
                     fullHeight={true}
                     id="doen"
-                    backgroundColor="#5DC0E1"
+                    backgroundcolor="#5DC0E1"
                   />
                 </div>
                 <div className="section vh-100">

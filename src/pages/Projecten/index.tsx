@@ -9,7 +9,7 @@ const Container = lazy(() => import("../../common/Container"));
 
 const Projecten = () => {
   return (
-    <Container backgroundColor="#E4E4E4">
+    <Container backgroundcolor="#E4E4E4">
       <ProjectContainer>
         <Row>
           <Col span={24} lg={8}>

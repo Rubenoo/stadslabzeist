@@ -1,7 +1,7 @@
 export interface ContainerProps {
   border?: boolean;
-  backgroundSVG?: string;
-  backgroundColor?: string;
+  backgroundsvg?: string;
+  backgroundcolor?: string;
   children: React.ReactNode;
 }
 
@@ -27,8 +27,8 @@ export interface ProjectLink {
 }
 
 export interface ButtonProps {
-  backgroundColor?: string;
-  textColor?: string;
+  backgroundcolor?: string;
+  textcolor?: string;
   fixedWidth?: boolean;
   name?: string;
   children: React.ReactNode;

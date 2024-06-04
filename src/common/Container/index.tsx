@@ -4,12 +4,12 @@ import { ContainerProps } from "../types";
 const Container = ({
   border,
   children,
-  backgroundSVG,
-  backgroundColor,
+  backgroundsvg,
+  backgroundcolor,
 }: ContainerProps) => (
   <StyledContainer
-    backgroundColor={backgroundColor}
-    backgroundSVG={backgroundSVG}
+    backgroundcolor={backgroundcolor}
+    backgroundsvg={backgroundsvg}
     border={border}
   >
     {children}

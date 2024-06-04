@@ -27,8 +27,8 @@ export const H = styled("h1")`
 `;
 
 export const Card = styled("div")<{
-  backgroundSVG?: string;
-  backgroundColor?: string;
+  backgroundsvg?: string;
+  backgroundcolor?: string;
 }>`
   display: flex;
   align-items: center;
@@ -38,24 +38,24 @@ export const Card = styled("div")<{
   aspect-ratio: 1/1;
 
   ${(props) =>
-    props.backgroundColor &&
-    "box-shadow: " + props.backgroundColor + " 0px 5px 15px;"}
+    props.backgroundcolor &&
+    "box-shadow: " + props.backgroundcolor + " 0px 5px 15px;"}
 
   ${(props) =>
-    props.backgroundColor && "border: 1px " + props.backgroundColor + ";"}
+    props.backgroundcolor && "border: 1px " + props.backgroundcolor + ";"}
 
   ${(props) =>
-    props.backgroundSVG &&
+    props.backgroundsvg &&
     "background-image: url(/img/svg/" +
-      props.backgroundSVG +
+      props.backgroundsvg +
       "); background-size: cover;"}
 `;
 
-export const H3 = styled("h3")<{ textColor?: string }>`
+export const H3 = styled("h3")<{ textcolor?: string }>`
   font-size: 30px;
   text-align: center;
   ${(props) =>
-    props.textColor ? "color: " + props.textColor + ";" : "color: #E4E4E4;"}
+    props.textcolor ? "color: " + props.textcolor + ";" : "color: #E4E4E4;"}
   @media screen and (min-width: 992px) {
     font-size: 40px;
   }
