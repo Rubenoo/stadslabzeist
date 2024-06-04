@@ -1,12 +1,11 @@
 import { Carousel } from "antd";
-import React from "react";
 import PartnerCard from "./PartnerCard";
 
 export type Partner = {
   title: string;
-  backgroundSVG: string;
-  backgroundColor: string;
-  textColor?: string;
+  backgroundsvg: string;
+  backgroundcolor: string;
+  textcolor?: string;
 };
 const PartnersCarousel = (props: { partners: Array<Partner> }) => {
   return (

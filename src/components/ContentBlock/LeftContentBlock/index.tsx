@@ -17,16 +17,16 @@ const LeftContentBlock = ({
   button,
   secondContent,
   id,
-  backgroundColor,
-  backgroundSVG,
+  backgroundcolor,
+  backgroundsvg,
   titleSize,
   fadeRight,
   person,
 }: ContentBlockProps) => {
   return (
     <LeftContentSection
-      backgroundSVG={backgroundSVG}
-      backgroundColor={backgroundColor}
+      backgroundsvg={backgroundsvg}
+      backgroundcolor={backgroundcolor}
     >
       <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
         <Row
@@ -64,7 +64,7 @@ const LeftContentBlock = ({
                     return (
                       <Button
                         key={id}
-                        backgroundColor={item.color}
+                        backgroundcolor={item.color}
                         fixedWidth={true}
                       >
                         {item.title}

@@ -21,8 +21,8 @@ const DoeJeMee = () => {
           >
             <Button
               linkTo="/zienwejedan"
-              backgroundColor={"#E4E4E4"}
-              textColor={"#e30613"}
+              backgroundcolor={"#E4E4E4"}
+              textcolor={"#e30613"}
             >
               WE ZIEN JE GRAAG!
             </Button>
@@ -30,8 +30,8 @@ const DoeJeMee = () => {
         </>
       }
       id="doejemee"
-      backgroundSVG="Website-Achtergrond-rood.svg"
-      fullWidth={true}
+      backgroundsvg="Website-Achtergrond-rood.svg"
+      fullwidth={true}
       fullHeight={true}
       button={""}
     />

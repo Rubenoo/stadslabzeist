@@ -10,8 +10,8 @@ const RightBlock = ({
   icon,
   secondContent,
   id,
-  backgroundColor,
-  backgroundSVG,
+  backgroundcolor,
+  backgroundsvg,
   fadeRight,
   titleSize,
   person,
@@ -19,8 +19,8 @@ const RightBlock = ({
 }: ContentBlockProps) => {
   return (
     <RightBlockContainer
-      backgroundSVG={backgroundSVG}
-      backgroundColor={backgroundColor}
+      backgroundsvg={backgroundsvg}
+      backgroundcolor={backgroundcolor}
     >
       <Fade className="w-100" direction={fadeRight ? "right" : "left"}>
         <Row

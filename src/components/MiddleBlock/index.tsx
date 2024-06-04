@@ -8,11 +8,11 @@ interface MiddleBlockProps {
   content: any;
   button: string;
   id: string;
-  backgroundColor?: string;
-  fullWidth?: boolean;
+  backgroundcolor?: string;
+  fullwidth?: boolean;
   fullHeight?: boolean;
   fullBackground?: boolean;
-  backgroundSVG?: string;
+  backgroundsvg?: string;
 }
 
 const MiddleBlock = ({
@@ -20,17 +20,17 @@ const MiddleBlock = ({
   content,
   button,
   id,
-  fullWidth,
+  fullwidth,
   fullHeight,
-  backgroundColor,
+  backgroundcolor,
   fullBackground,
-  backgroundSVG,
+  backgroundsvg,
 }: MiddleBlockProps) => {
   return (
     <MiddleBlockSection
       fullBackground={fullBackground}
-      backgroundSVG={backgroundSVG}
-      backgroundColor={backgroundColor}
+      backgroundsvg={backgroundsvg}
+      backgroundcolor={backgroundcolor}
     >
       <Slide
         triggerOnce
@@ -41,7 +41,7 @@ const MiddleBlock = ({
         <Row justify="center" align="middle" id={id}>
           <ContentWrapper
             fullHeight={fullHeight}
-            fullWidth={fullWidth}
+            fullwidth={fullwidth}
             style={{ width: "100%", height: "100%" }}
           >
             <Col lg={24} md={24} sm={24} xs={24}>

@@ -20,7 +20,7 @@ const OnzePartners = () => {
         </>
       }
       id="idee"
-      backgroundSVG="Website-Achtergrond-roze-wit.svg"
+      backgroundsvg="Website-Achtergrond-roze-wit.svg"
       button={""}
     />
   );

@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const MiddleBlockSection = styled("section")<{
-  backgroundColor?: string;
-  backgroundSVG?: string;
+  backgroundcolor?: string;
+  backgroundsvg?: string;
   fullBackground?: boolean;
 }>`
   position: relative;
   ${(props) =>
-    props.backgroundColor && "background-color: " + props.backgroundColor + ";"}
+    props.backgroundcolor && "background-color: " + props.backgroundcolor + ";"}
   ${(props) =>
-    props.backgroundSVG &&
+    props.backgroundsvg &&
     "background-image: url(/img/svg/" +
-      props.backgroundSVG +
+      props.backgroundsvg +
       "); background-size: cover;"}
 
   padding: 7.5rem 0 0rem;
@@ -60,10 +60,10 @@ export const SecondContentContainer = styled("div")<{ top: string }>`
 `;
 
 export const ContentWrapper = styled("div")<{
-  fullWidth?: boolean;
+  fullwidth?: boolean;
   fullHeight?: boolean;
 }>`
-  max-width: ${(props) => (props.fullWidth ? "100%" : "570px")};
+  max-width: ${(props) => (props.fullwidth ? "100%" : "570px")};
   max-height: ${(props) => (props.fullHeight ? "100%" : "570px")};
 
   @media only screen and (max-width: 768px) {

@@ -17,25 +17,25 @@ import { useLocation } from "react-router-dom";
 const Header = () => {
   const [open, setVisibility] = useState(false);
   const location = useLocation();
-  var colors = {
-    textColor: "#FF0000",
+  let colors = {
+    textcolor: "#FF0000",
     burgerColor: "#fff",
-    backgroundColor: "#f1cfe5",
+    backgroundcolor: "#f1cfe5",
     svg: "logowit.svg",
   };
 
   if (location.pathname === "/projecten") {
     colors = {
-      backgroundColor: "#fff",
-      textColor: "#1B3888",
+      backgroundcolor: "#fff",
+      textcolor: "#1B3888",
       svg: "logoblauw.svg",
       burgerColor: "#1B3888",
     };
   }
   if (location.pathname === "/zienwejedan") {
     colors = {
-      backgroundColor: "#5CC0E1",
-      textColor: "#1C3887",
+      backgroundcolor: "#5CC0E1",
+      textcolor: "#1C3887",
       svg: "logoblauw.svg",
       burgerColor: "#fff",
     };
@@ -54,39 +54,39 @@ const Header = () => {
     return (
       <>
         <CustomNavLinkSmall
-          color={colors.textColor}
+          color={colors.textcolor}
           to="/"
           onClick={() => onClose()}
         >
-          <Span color={colors.textColor}>HOME</Span>
+          <Span color={colors.textcolor}>HOME</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
-          color={colors.textColor}
+          color={colors.textcolor}
           to="/ditzijnwij"
           onClick={() => onClose()}
         >
-          <Span color={colors.textColor}>DIT ZIJN WIJ</Span>
+          <Span color={colors.textcolor}>DIT ZIJN WIJ</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
-          color={colors.textColor}
+          color={colors.textcolor}
           to="/zienwejedan"
           onClick={() => onClose()}
         >
-          <Span color={colors.textColor}>ZIEN WE JE DAN</Span>
+          <Span color={colors.textcolor}>ZIEN WE JE DAN</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
-          color={colors.textColor}
+          color={colors.textcolor}
           to="/projecten"
           onClick={() => onClose()}
         >
-          <Span color={colors.textColor}>PROJECTEN</Span>
+          <Span color={colors.textcolor}>PROJECTEN</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
-          color={colors.textColor}
+          color={colors.textcolor}
           to="/hoe"
           onClick={() => onClose()}
         >
-          <Span color={colors.textColor}>HOE</Span>
+          <Span color={colors.textcolor}>HOE</Span>
         </CustomNavLinkSmall>
       </>
     );
@@ -114,7 +114,7 @@ const Header = () => {
           </Burger>
         </Row>
         <Drawer
-          bodyStyle={{ backgroundColor: colors.backgroundColor }}
+          styles={{ body: { backgroundColor: colors.backgroundcolor } }}
           closable={false}
           open={open}
           onClose={onClose}
@@ -125,12 +125,12 @@ const Header = () => {
               onClick={onClose}
             >
               <Col span={12}>
-                <Menu color={colors.textColor} className="mb-0">
+                <Menu color={colors.textcolor} className="mb-0">
                   MENU
                 </Menu>
               </Col>
               <Col span={12}>
-                <Outline color={colors.textColor} />
+                <Outline color={colors.textcolor} />
               </Col>
             </Label>
           </Col>

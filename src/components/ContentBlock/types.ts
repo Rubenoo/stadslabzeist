@@ -8,8 +8,8 @@ export interface ContentBlockProps {
   button?: any;
   id: string;
   type?: string;
-  backgroundColor?: string;
-  backgroundSVG?: string;
+  backgroundcolor?: string;
+  backgroundsvg?: string;
   fadeRight?: boolean;
   person?: boolean;
 }

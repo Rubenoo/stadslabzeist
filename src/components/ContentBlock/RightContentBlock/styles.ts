@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const RightBlockContainer = styled("section")<{
-  backgroundColor?: string;
-  backgroundSVG?: string;
+  backgroundcolor?: string;
+  backgroundsvg?: string;
 }>`
   position: relative;
   padding: 10rem 8rem 10rem;
@@ -11,11 +11,11 @@ export const RightBlockContainer = styled("section")<{
   height: 100%;
 
   ${(props) =>
-    props.backgroundColor && "background-color: " + props.backgroundColor + ";"}
+    props.backgroundcolor && "background-color: " + props.backgroundcolor + ";"}
   ${(props) =>
-    props.backgroundSVG &&
+    props.backgroundsvg &&
     "background-image: url(/img/svg/" +
-      props.backgroundSVG +
+      props.backgroundsvg +
       "); background-size: cover;"}
 
   @media only screen and (max-width: 1024px) {

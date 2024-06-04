@@ -18,8 +18,8 @@ const ZienWeJe = () => {
           >
             <Button
               linkTo="/zienwejedan"
-              backgroundColor={"#E4E4E4"}
-              textColor={"#e30613"}
+              backgroundcolor={"#E4E4E4"}
+              textcolor={"#e30613"}
             >
               JA
             </Button>
@@ -27,8 +27,8 @@ const ZienWeJe = () => {
         </>
       }
       id="domibo"
-      backgroundSVG="Website-Achtergrond-rood.svg"
-      fullWidth={true}
+      backgroundsvg="Website-Achtergrond-rood.svg"
+      fullwidth={true}
       fullHeight={true}
       button={""}
     />

@@ -1,5 +1,4 @@
 import { Collapse } from "antd";
-import React from "react";
 import { Project } from "../../common/types";
 import ProjectContent from "./ProjectContent";
 import { H2P } from "./styles";
