@@ -2,6 +2,7 @@ export interface ContainerProps {
   border?: boolean;
   backgroundsvg?: string;
   backgroundcolor?: string;
+  className?: string;
   children: React.ReactNode;
 }
 

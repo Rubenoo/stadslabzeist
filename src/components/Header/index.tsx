@@ -32,7 +32,10 @@ const Header = () => {
       burgerColor: "#1B3888",
     };
   }
-  if (location.pathname === "/zienwejedan") {
+  if (
+    location.pathname === "/zienwejedan" ||
+    location.pathname === "/organisatie"
+  ) {
     colors = {
       backgroundcolor: "#5CC0E1",
       textcolor: "#1C3887",
@@ -87,6 +90,13 @@ const Header = () => {
           onClick={() => onClose()}
         >
           <Span color={colors.textcolor}>HOE</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall
+          color={colors.textcolor}
+          to="/organisatie"
+          onClick={() => onClose()}
+        >
+          <Span color={colors.textcolor}>ORGANISATIE</Span>
         </CustomNavLinkSmall>
       </>
     );
