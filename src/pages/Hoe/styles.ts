@@ -44,7 +44,6 @@ export const Card = styled("div")<{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3em;
   aspect-ratio: 1/1;
 
   ${(props) =>

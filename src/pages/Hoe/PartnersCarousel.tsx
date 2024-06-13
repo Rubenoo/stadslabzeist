@@ -33,7 +33,7 @@ const PartnersCarousel = (props: { partners: Array<Partner> }) => {
       renderDotsOutside
       autoPlaySpeed={5000}
       arrows
-      itemClass={"px-3"}
+      itemClass={"p-3"}
     >
       {props.partners.map((partner, index) => (
         <PartnerCard key={index} partner={partner} />
