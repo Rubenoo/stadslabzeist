@@ -1,4 +1,4 @@
-import{p as t}from"./index-CStlUwG6.js";const o=t("p")`
+import{p as t}from"./index-BYC6e_sh.js";const o=t("p")`
   font-size: 18px;
   white-space: pre-wrap;
   font-family: Neue Haas Medium;
@@ -34,7 +34,6 @@ import{p as t}from"./index-CStlUwG6.js";const o=t("p")`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3em;
   aspect-ratio: 1/1;
 
   ${e=>e.backgroundcolor&&"box-shadow: "+e.backgroundcolor+" 0px 5px 15px;"}
