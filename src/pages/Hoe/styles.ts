@@ -25,6 +25,17 @@ export const H = styled("h1")`
     text-align: start;
   }
 `;
+export const HPartner = styled("h1")`
+  font-size: 58px;
+  white-space: nowrap;
+  color: #1b3888;
+  text-align: center;
+  padding-block: 1em;
+  @media screen and (min-width: 992px) {
+    font-size: 100px;
+    text-align: center;
+  }
+`;
 
 export const Card = styled("div")<{
   backgroundsvg?: string;
@@ -34,7 +45,6 @@ export const Card = styled("div")<{
   align-items: center;
   justify-content: center;
   padding: 3em;
-  margin: 1em;
   aspect-ratio: 1/1;
 
   ${(props) =>
@@ -52,11 +62,22 @@ export const Card = styled("div")<{
 `;
 
 export const H3 = styled("h3")<{ textcolor?: string }>`
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
   ${(props) =>
     props.textcolor ? "color: " + props.textcolor + ";" : "color: #E4E4E4;"}
   @media screen and (min-width: 992px) {
-    font-size: 40px;
+    font-size: 35px;
   }
+`;
+
+export const PartnerContainer = styled("section")`
+  background-image: url(/img/svg/Website-Achtergrond-roze-wit.svg);
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 `;

@@ -1,28 +1,13 @@
-import { lazy } from "react";
-import { H } from "./styles";
+import { HPartner, PartnerContainer } from "./styles";
 import partners from "../../content/Partners.json";
-import PartnersCarousel from "../Hoe/PartnersCarousel";
-
-const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
+import PartnersCarousel from "./PartnersCarousel.tsx";
 
 const OnzePartners = () => {
   return (
-    <MiddleBlock
-      title={""}
-      content={
-        <>
-          <H>
-            ONZE
-            <br />
-            PARTNERS
-          </H>
-          <PartnersCarousel partners={partners} />
-        </>
-      }
-      id="idee"
-      backgroundsvg="Website-Achtergrond-roze-wit.svg"
-      button={""}
-    />
+    <PartnerContainer>
+      <HPartner>ONZE PARTNERS</HPartner>
+      <PartnersCarousel partners={partners} />
+    </PartnerContainer>
   );
 };
 

@@ -1,5 +1,21 @@
-import { Carousel } from "antd";
 import PartnerCard from "./PartnerCard";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 export type Partner = {
   title: string;
@@ -9,8 +25,17 @@ export type Partner = {
 };
 const PartnersCarousel = (props: { partners: Array<Partner> }) => {
   return (
-    <Carousel style={{ padding: "0em 3em 0 3em", height: "100%" }} autoplay>
-      {props.partners?.map((partner, index) => (
+    <Carousel
+      infinite
+      responsive={responsive}
+      autoPlay
+      centerMode
+      renderDotsOutside
+      autoPlaySpeed={5000}
+      arrows
+      itemClass={"px-3"}
+    >
+      {props.partners.map((partner, index) => (
         <PartnerCard key={index} partner={partner} />
       ))}
     </Carousel>

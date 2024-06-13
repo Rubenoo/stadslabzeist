@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
                 <div className="section vh-100">
                   <OnzePartners />
-                  <Footer show={fullpageIndex === 3} />
+                  <Footer show={fullpageIndex === 2} />
                 </div>
               </div>
             </>
