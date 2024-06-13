@@ -1,4 +1,4 @@
-import{p as e}from"./index-gA1qqV8N.js";const o=e("h1")`
+import{p as e}from"./index-CStlUwG6.js";const o=e("h1")`
   font-size: 80px;
   font-family: Neue Haas Black;
   color: #1b3888 !important;

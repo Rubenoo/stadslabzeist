@@ -1,4 +1,4 @@
-import{p as r,j as i,S as t}from"./index-gA1qqV8N.js";const e=r("div")`
+import{p as r,j as i,S as t}from"./index-CStlUwG6.js";const e=r("div")`
   padding: 10px;
   position: fixed;
   right: 30px;
