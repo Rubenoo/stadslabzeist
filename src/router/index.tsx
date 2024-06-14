@@ -10,6 +10,7 @@ const DitZijnWij = React.lazy(() => import("../pages/DitZijnWij/"));
 const ZienWeJeDan = React.lazy(() => import("../pages/ZienWeJeDan/"));
 const Projecten = React.lazy(() => import("../pages/Projecten/"));
 const Hoe = React.lazy(() => import("../pages/Hoe/"));
+const Organisatie = React.lazy(() => import("../pages/Organisatie/"));
 
 const Router = () => {
   return (
@@ -28,6 +29,7 @@ const Router = () => {
         <Route path="/zienwejedan" element={<ZienWeJeDan />} />
         <Route path="/projecten" element={<Projecten />} />
         <Route path="/hoe" element={<Hoe />} />
+        <Route path="/organisatie" element={<Organisatie />} />
       </Routes>
     </Suspense>
   );

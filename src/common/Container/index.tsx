@@ -6,11 +6,13 @@ const Container = ({
   children,
   backgroundsvg,
   backgroundcolor,
+  className,
 }: ContainerProps) => (
   <StyledContainer
     backgroundcolor={backgroundcolor}
     backgroundsvg={backgroundsvg}
     border={border}
+    className={className}
   >
     {children}
   </StyledContainer>

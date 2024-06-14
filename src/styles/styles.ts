@@ -66,9 +66,12 @@ export const Styles = createGlobalStyle`
     h1 {
         font-family: 'Neue Haas Black', serif;
         color: #E4E4E4;
-        font-size: 56px;
+        font-size: 5rem;
         line-height: 1;
         margin-bottom: 0;
+        @media only screen and (max-width: 890px) {
+            font-size: 2.5rem;
+        }
     }
     h2,
     h3,
@@ -93,6 +96,9 @@ export const Styles = createGlobalStyle`
         color: #E4E4E4;
         font-size: 21px;        
         line-height: 1.50;
+        @media only screen and (max-width: 890px) {
+            font-size: 1.1rem;
+        }
     }
 
     h1 {
@@ -143,6 +149,22 @@ export const Styles = createGlobalStyle`
       z-index: 3;
       color: white;
     }
+    
+    .organisatie {
+        padding: 8rem 2rem 4rem 2rem;
+        height: 100vh;
+        @media only screen and (max-width: 890px) {
+            padding: 5rem 1rem 0 1rem;        height: 100%;
 
+        }
+        p{
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            @media only screen and (max-width: 890px) {
+                margin-bottom: 1rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
 
 `;
