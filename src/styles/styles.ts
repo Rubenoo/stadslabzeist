@@ -151,11 +151,13 @@ export const Styles = createGlobalStyle`
     }
     
     .organisatie {
-        padding: 8rem 2rem 4rem 2rem;
+        background-image: url(/img/svg/Website-Achtergrond-blauw-contact.svg);
         height: 100vh;
-        @media only screen and (max-width: 890px) {
-            padding: 5rem 1rem 0 1rem;        height: 100%;
-
+        background-position: center; background-size: cover; background-attachment: scroll; background-repeat: no-repeat;
+        padding: 8rem 2rem 4rem 2rem;
+        @media only screen and (max-width: 1024px) {
+            padding: 5rem 1rem 0 1rem;
+            height: 100%;
         }
         p{
             font-size: 1.5rem;
