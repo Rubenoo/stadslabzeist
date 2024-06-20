@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import { ConfigProvider } from "antd";
 import nlNL from "antd/lib/locale/nl_NL";
@@ -10,9 +10,9 @@ import Router from "./router";
 
 const App = () => (
   <ConfigProvider locale={nlNL}>
-    <BrowserRouter>
+    <HashRouter>
       <Router />
-    </BrowserRouter>
+    </HashRouter>
   </ConfigProvider>
 );
 
