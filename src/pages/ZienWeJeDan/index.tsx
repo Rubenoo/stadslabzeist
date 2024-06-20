@@ -20,7 +20,7 @@ const ZienWeJeDan = () => {
           }
           id={"zienwejedan"}
         />
-        <Footer show={true} relative={true} />
+        <Footer show />
       </Container>
     </div>
   );

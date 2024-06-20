@@ -150,14 +150,19 @@ export const Styles = createGlobalStyle`
       color: white;
     }
     
+    .footer-padding{
+        @media only screen and (max-width: 1024px) {
+            padding-bottom: 150px;
+        }
+    }
+    
     .organisatie {
         background-image: url(/img/svg/Website-Achtergrond-blauw-contact.svg);
-        height: 100vh;
+        min-height: 100vh;
         background-position: center; background-size: cover; background-attachment: scroll; background-repeat: no-repeat;
-        padding: 8rem 2rem 4rem 2rem;
+        padding: 8rem 2rem 100px 2rem;
         @media only screen and (max-width: 1024px) {
-            padding: 5rem 1rem 0 1rem;
-            height: 100%;
+            padding: 5rem 1rem 150px 1rem;
         }
         p{
             font-size: 1.5rem;

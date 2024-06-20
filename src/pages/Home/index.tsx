@@ -17,60 +17,63 @@ const Home = () => {
   const [fullpageIndex, setFullpageIndex] = useState(0);
 
   return (
-    <Container>
-      <ScrollToTop show={fullpageIndex > 0} />
-      <ScrollToBottom show={fullpageIndex === 0} />
+    <>
+      <Container>
+        <ScrollToTop show={fullpageIndex > 0} />
+        <ScrollToBottom show={fullpageIndex === 0} />
 
-      <ReactFullpage
-        licenseKey={import.meta.env.VITE_APP_FULLPAGE_KEY}
-        scrollingSpeed={1000}
-        scrollOverflow={false}
-        normalScrollElements=".scrollable"
-        onLeave={(destination) => {
-          setFullpageIndex(destination.index);
-        }}
-        credits={{ enabled: false }}
-        render={() => {
-          return (
-            <>
-              <div id="fullpage-wrapper">
-                <div className="section vh-100">
-                  <Youtube />
+        <ReactFullpage
+          licenseKey={import.meta.env.VITE_APP_FULLPAGE_KEY}
+          scrollingSpeed={1000}
+          scrollOverflow={false}
+          normalScrollElements=".scrollable"
+          // @ts-ignore
+          onLeave={(origin, destination) => {
+            setFullpageIndex(destination.index);
+          }}
+          credits={{ enabled: false }}
+          render={() => {
+            return (
+              <>
+                <div id="fullpage-wrapper">
+                  <div className="section vh-100">
+                    <Youtube />
+                  </div>
+                  <div className="section vh-100">
+                    <Samen />
+                  </div>
+                  <div className="section vh-100">
+                    <Idee />
+                  </div>
+                  <div className="section vh-100">
+                    <MiddleBlock
+                      title={""}
+                      content={
+                        <>
+                          <Results />
+                        </>
+                      }
+                      button={""}
+                      fullwidth={true}
+                      fullHeight={true}
+                      id="doen"
+                      backgroundcolor="#5DC0E1"
+                    />
+                  </div>
+                  <div className="section vh-100">
+                    <WieZijnWij />
+                  </div>
+                  <div className="section vh-100">
+                    <ZienWeJe />
+                  </div>
                 </div>
-                <div className="section vh-100">
-                  <Samen />
-                </div>
-                <div className="section vh-100">
-                  <Idee />
-                </div>
-                <div className="section vh-100">
-                  <MiddleBlock
-                    title={""}
-                    content={
-                      <>
-                        <Results />
-                      </>
-                    }
-                    button={""}
-                    fullwidth={true}
-                    fullHeight={true}
-                    id="doen"
-                    backgroundcolor="#5DC0E1"
-                  />
-                </div>
-                <div className="section vh-100">
-                  <WieZijnWij />
-                </div>
-                <div className="section vh-100">
-                  <ZienWeJe />
-                  <Footer show={fullpageIndex === 5} />
-                </div>
-              </div>
-            </>
-          );
-        }}
-      />
-    </Container>
+              </>
+            );
+          }}
+        />
+      </Container>
+      <Footer show={fullpageIndex === 5} />
+    </>
   );
 };
 

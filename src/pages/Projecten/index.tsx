@@ -9,19 +9,21 @@ const Container = lazy(() => import("../../common/Container"));
 
 const Projecten = () => {
   return (
-    <Container backgroundcolor="#E4E4E4">
-      <ProjectContainer>
-        <Row>
-          <Col span={24} lg={8}>
-            <H1P>PROJECTEN</H1P>
-          </Col>
-          <Col span={24} lg={16}>
-            <ProjectTable ProjectenArray={ProjectenArray} />
-          </Col>
-        </Row>
-      </ProjectContainer>
-      <Footer show relative />
-    </Container>
+    <>
+      <Container backgroundcolor="#E4E4E4" className={"footer-padding"}>
+        <ProjectContainer>
+          <Row>
+            <Col span={24} lg={8}>
+              <H1P>PROJECTEN</H1P>
+            </Col>
+            <Col span={24} lg={16}>
+              <ProjectTable ProjectenArray={ProjectenArray} />
+            </Col>
+          </Row>
+        </ProjectContainer>
+      </Container>
+      <Footer show />
+    </>
   );
 };
 

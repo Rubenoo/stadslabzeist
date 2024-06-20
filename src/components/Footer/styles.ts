@@ -4,20 +4,17 @@ export const FooterLink = styled("a")`
   font-family: "Neue Haas Bold";
   color: #1b3888;
 `;
-export const Extra = styled("section")<any>`
+export const Extra = styled("footer")<any>`
   background: #e4e4e4;
   margin-right: auto;
   margin-left: auto;
   font-family: "Neue Haas Bold" !important;
   width: 100%;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   transition: all 0.3s ease-in-out;
   visibility: ${(p) => (p.show ? "visible" : "hidden")};
   opacity: ${(p) => (p.show ? "1" : "0")};
-  @media only screen and (max-width: 1200px) {
-    ${(p) => (p.relative ? "position: relative;" : "")};
-  }
 `;
 
 export const FooterContainer = styled("div")`

@@ -67,7 +67,7 @@ const Organisatie = () => {
           </Col>
         </Row>
       </div>
-      <Footer show={true} relative={true} />
+      <Footer show />
     </>
   );
 };
