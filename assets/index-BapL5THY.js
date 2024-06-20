@@ -1,4 +1,4 @@
-import{p as i,j as e,R as p,h as o,S as u}from"./index-DkH261LZ.js";import{F as f}from"./index-BzNySFv0.js";import{B as w}from"./index-D5cJCHLC.js";const b=i("section")`
+import{p as i,j as e,R as p,h as o,S as u}from"./index-DQQ1dhiX.js";import{F as f}from"./index-BIzgRylf.js";import{B as w}from"./index-HmObqZAE.js";const b=i("section")`
   position: relative;
   padding: 10rem 8rem 10rem;
   display: flex;
