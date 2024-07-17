@@ -30,14 +30,26 @@ const Organisatie = () => {
             </p>
 
             <p>
-              <b>Beleidsplan 2024-2026</b>
+              <b>Jaarverslag 2023</b>
               <br />
               <a
-                href={"/documenten/Beleidsplan.pdf"}
+                href={"/documenten/Jaarverslag-2023-Stadslab-Zeist.pdf"}
                 className={"text-decoration-underline"}
                 download
               >
-                Bekijk beleidsplan
+                Bekijk het jaarverslag
+              </a>
+            </p>
+
+            <p>
+              <b>Beleidsplan 2024-2026</b>
+              <br />
+              <a
+                href={"/documenten/Beleidsplan-Stadslab-Zeist.pdf"}
+                className={"text-decoration-underline"}
+                download
+              >
+                Bekijk het beleidsplan
               </a>
             </p>
             <p>
