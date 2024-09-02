@@ -1,4 +1,4 @@
-import{p as t}from"./index-ACZDTmo_.js";const o=t("p")`
+import{p as t}from"./index-B2QrwdKY.js";const o=t("p")`
   font-size: 18px;
   white-space: pre-wrap;
   font-family: Neue Haas Medium;
