@@ -67,18 +67,6 @@ const DitZijnWij = () => {
                 </div>
                 <div className="section vh-100">
                   <PersonContainer
-                    type="right"
-                    img="/img/marjolein_portret.jpg"
-                    name="Marjolein Brandenburg"
-                    email="marjolein@stadslabzeist.nl"
-                    backgroundsvg="Website-Achtergrond-merel-blauw.svg"
-                    info={
-                      "Projectmanager\n\nDuizendpoot / sporty spice / rust brenger \nSuper goed in overzicht creëren, keihard werken, mensen verbinden en oplossingen bedenken."
-                    }
-                  />
-                </div>
-                <div className="section vh-100">
-                  <PersonContainer
                     type="left"
                     img="/img/ollie_portret.jpg"
                     name="Ollie"
