@@ -32,7 +32,7 @@ const DitZijnWij = () => {
                 <div className="section vh-100">
                   <PersonContainer
                     type="left"
-                    img="/img/merel_portret.jpg"
+                    img="/img/merel_portret.jpeg"
                     name="Merel de Jong"
                     email="merel@stadslabzeist.nl"
                     backgroundsvg="Website-Achtergrond-merel-blauw.svg"
@@ -44,36 +44,61 @@ const DitZijnWij = () => {
                 <div className="section vh-100">
                   <PersonContainer
                     type="right"
-                    img="/img/marloes_portret.jpg"
-                    name="Marloes van Haaren"
-                    backgroundsvg="Website-Achtergrond-rood.svg"
-                    email="marloes@stadslabzeist.nl"
-                    info={
-                      "Projectmanager\n\nCoach / maker / structuurdokter \nSuper goed in de juiste vragen stellen, rust creëren, bergen werk verzetten, plannen en creatief zijn."
-                    }
-                  />
-                </div>
-                <div className="section vh-100">
-                  <PersonContainer
-                    type="left"
-                    img="/img/emma_portret.jpg"
+                    img="/img/emma_portret.jpeg"
                     name="Emma Fijma"
                     email="emma@stadslabzeist.nl"
                     backgroundsvg="Website-Achtergrond-emma-blauw.svg"
                     info={
-                      "Creatief leider\n\nKunstenaar / Grafisch ontwerper / maker \nSuper goed in creatieve denkprocessen, creatieve vertaling van projecten en opdrachten en structuur aanbrengen."
+                      "Creatief leider\n\nKunstenaar / grafisch ontwerper / maker \nSuper goed in creatieve denkprocessen, creatieve vertaling van projecten en opdrachten en structuur aanbrengen."
+                    }
+                  />
+                </div>
+
+                <div className="section vh-100">
+                  <PersonContainer
+                    type="left"
+                    img="/img/may_portret.jpeg"
+                    name="May van Loenen"
+                    email="may@stadslabzeist.nl"
+                    backgroundsvg="Website-Achtergrond-rood.svg"
+                    info={
+                      "Kunstenaar / organisator / verbinder\n\nSuper goed in mensen samen brengen, de queer gemeenschap versterken, dialogen stimuleren, actie voeren en impact creëren."
+                    }
+                  />
+                </div>
+                <div className="section vh-100">
+                  <PersonContainer
+                    type="right"
+                    img="/img/xander_portret.jpeg"
+                    name="Xander Lenders"
+                    email="xander@stadslabzeist.nl"
+                    backgroundsvg="Website-Achtergrond-blauw-contact.svg"
+                    info={
+                      "Programmamaker\n\nKunstenaar / jongerenbegeleider / conceptontwikkelaar\nSuper goed in creatieve concepten ontwikkelen, processen begeleiden, kritisch bevragen, verbinden en luisteren."
                     }
                   />
                 </div>
                 <div className="section vh-100">
                   <PersonContainer
                     type="left"
+                    img="/img/ellen_portret.jpeg"
+                    name="Ellen van Roij"
+                    email="ellen@stadslabzeist.nl"
+                    backgroundsvg="Website-Achtergrond-emma-blauw.svg"
+                    info={
+                      "Gedragsveranderaar / strateeg / communicatiemaker\n\nGoed in het omzetten van idee naar plan, wil weten wat menselijk gedrag drijft en kan dit omzetten naar positieve, creatieve acties die de wereld een beetje beter maken."
+                    }
+                  />
+                </div>
+                <div className="section vh-100">
+                  <PersonContainer
+                    type="right"
                     img="/img/ollie_portret.jpg"
                     name="Ollie"
                     backgroundsvg="Website-Achtergrond-blauw.svg"
                     email="emma@stadslabzeist.nl"
                     info={
-                      "Kantoorhond\n\nKnuffelkont / grappenmaker \nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."
+                      "Kantoorhond\n\nKnuffelkont / grappenmaker\nSuper goed in slapen, spelen, puberen, wandelen en lief zijn."
                     }
                   />
                 </div>
@@ -85,7 +110,7 @@ const DitZijnWij = () => {
           }}
         />
       </Container>
-      <Footer show={fullpageIndex === 6} />
+      <Footer show={fullpageIndex === 7} />
     </>
   );
 };

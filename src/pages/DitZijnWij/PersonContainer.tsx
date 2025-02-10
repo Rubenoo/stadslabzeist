@@ -30,7 +30,7 @@ const PersonContainer = ({
         <img
           loading="eager"
           src={img}
-          style={{ height: "100%", width: "100%", objectFit: "cover" }}
+          style={{ height: "100%", width: "110%", objectFit: "cover" }}
           alt={name}
         ></img>
       }

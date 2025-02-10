@@ -7,7 +7,7 @@ const DitZijnWijBlock = () => {
     <div className="text-center position-relative">
       <img
         loading="lazy"
-        src="/img/wiezijnwij_nieuw.jpg"
+        src="/img/ditzijnwij.jpeg"
         style={{ height: "100vh", width: "100%", objectFit: "cover" }}
         alt="wiezijnwij"
       ></img>
