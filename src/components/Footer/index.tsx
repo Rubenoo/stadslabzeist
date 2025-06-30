@@ -38,7 +38,7 @@ const Footer = ({ show, relative }: any) => {
                     target="_blank"
                     href="http://maps.google.nl/?q=Weteringlaan+1,+3732+HZ+De+Bilt"
                   >
-                    WETERINGLAAN 1, 3732 HZ DE BILT
+                    WETERINGLAAN 1, 3732 HZ ZEIST
                   </FooterLink>
                 </div>
                 <div>
@@ -72,7 +72,7 @@ const Footer = ({ show, relative }: any) => {
                 target="_blank"
                 href="http://maps.google.nl/?q=Weteringlaan+1,+3732+HZ+De+Bilt"
               >
-                WETERINGLAAN 1, 3732 HZ DE BILT
+                WETERINGLAAN 1, 3732 HZ ZEIST
               </FooterLink>
             </div>
             <div>
