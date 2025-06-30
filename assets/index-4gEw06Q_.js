@@ -1,4 +1,4 @@
-import{p,j as o,L as u}from"./index-InUPUYmN.js";const a=p("button")`
+import{p,j as o,L as u}from"./index-6qmlfaPw.js";const a=p("button")`
   background: ${t=>t.backgroundcolor||"#1B3888"};
   color: ${t=>t.textcolor||"#E4E4E4"};
   font-weight: 700;
