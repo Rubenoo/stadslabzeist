@@ -41,13 +41,22 @@ const Organisatie = () => {
                   <b>Ons team</b> <br />
                   Merel de Jong
                   <br />
-                  Marloes van Haaren
-                  <br />
                   Emma Fijma
                   <br />
-                  Marloes Klok
-                  <br />
                   Xander Lenders
+                  <br />
+                  Sofie van Essen
+                  <br />
+                  Pyke Maas
+                  <br />
+                  Ellen van Roij
+                  <br />
+                  Marloes van Haaren
+                  <br />
+                  Vivian Brouwer
+                  <br />
+                  May van Loenen
+                  <br />
                 </p>
               </Col>
             </Row>
