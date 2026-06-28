@@ -15,7 +15,7 @@ const Youtube = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube-nocookie.com/embed/f-aTBG3nx3k?autoplay=1&mute=1"
+          src="https://www.youtube-nocookie.com/embed/q2KOiMPOgMk?autoplay=1&mute=1"
           title="YouTube video player"
           allow="autoplay"
         ></iframe>
