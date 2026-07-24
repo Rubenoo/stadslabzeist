@@ -124,7 +124,7 @@ const Organisatie = () => {
             </p>
              <p>
               <a
-                // href={"/documenten/Stadslab-Zeist-Jaarrekening-2024.pdf"}
+                href={"/documenten/Stadslab-Zeist-Jaarrekening-2025.pdf"}
                 className={"text-decoration-underline"}
                 download
               >
