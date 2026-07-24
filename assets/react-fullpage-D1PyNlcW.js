@@ -1,4 +1,4 @@
-import{p as Ut,d as Jo,a as $o}from"./index-5h8qxz8x.js";const ta=Ut("section")`
+import{p as Ut,d as Jo,a as $o}from"./index-fTeqNXQ8.js";const ta=Ut("section")`
   position: relative;
   ${ge=>ge.backgroundcolor&&"background-color: "+ge.backgroundcolor+";"}
   ${ge=>ge.backgroundsvg&&"background-image: url(/img/svg/"+ge.backgroundsvg+"); background-size: cover;"}
