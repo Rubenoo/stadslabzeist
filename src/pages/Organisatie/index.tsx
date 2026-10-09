@@ -95,7 +95,7 @@ const Organisatie = () => {
                 Jaarverslag 2024
               </a>
             </p>
-             <p>
+            <p>
               <a
                 href={"/documenten/Jaarverslag-2025-Stadslab-Zeist.pdf"}
                 className={"text-decoration-underline"}
@@ -122,7 +122,7 @@ const Organisatie = () => {
                 Jaarrekening 2024
               </a>
             </p>
-             <p>
+            <p>
               <a
                 href={"/documenten/Stadslab-Zeist-Jaarrekening-2025.pdf"}
                 className={"text-decoration-underline"}
