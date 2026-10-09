@@ -1,4 +1,4 @@
-import{p,j as o,L as u}from"./index-fTeqNXQ8.js";const a=p("button")`
+import{h as u,j as o,L as p}from"./index-C_hYcw5r.js";const a=u("button")`
   background: ${t=>t.backgroundcolor||"#1B3888"};
   color: ${t=>t.textcolor||"#E4E4E4"};
   font-weight: 700;
@@ -20,4 +20,4 @@ import{p,j as o,L as u}from"./index-fTeqNXQ8.js";const a=p("button")`
   &:focus {
     filter: brightness(80%);
   }
-`,x=({backgroundcolor:t,textcolor:r,fixedWidth:n,children:e,onClick:s,linkTo:i})=>i?o.jsx(u,{to:i,children:o.jsx(a,{backgroundcolor:t,textcolor:r,fixedWidth:n,onClick:s,children:e})}):o.jsx(a,{backgroundcolor:t,textcolor:r,fixedWidth:n,onClick:s,children:e});export{x as B};
+`,x=({backgroundcolor:t,textcolor:r,fixedWidth:n,children:e,onClick:s,linkTo:i})=>i?o.jsx(p,{to:i,children:o.jsx(a,{backgroundcolor:t,textcolor:r,fixedWidth:n,onClick:s,children:e})}):o.jsx(a,{backgroundcolor:t,textcolor:r,fixedWidth:n,onClick:s,children:e});export{x as B};
